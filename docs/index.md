@@ -67,6 +67,8 @@
 29. [Software / Hardware Co-design：Graph、Compiler、Kernel、Runtime 与 Silicon 如何闭环](21_software_hardware_codesign/software_hardware_codesign.md)
 30. [Engineering → Strategy：从 Bottleneck、Design Choice 到 Value Capture](26_engineering_to_strategy/engineering_to_strategy.md)
 31. [Technical Diligence Playbook：如何拆 Claim、验证 Evidence、识别 Scale-up Risk](27_technical_diligence/technical_diligence_playbook.md)
+32. [Engineer Language Decoder：把口语主张变成 Metric、Boundary 与追问](30_engineer_language/engineer_language_decoder.md)
+33. [End-to-End Case：如何审计一套“更快、更省电、可量产”的 AI Rack](28_case_studies/end_to_end_ai_system_case.md)
 
 ## 阅读纪律
 

@@ -6,6 +6,9 @@
 
 ### Added
 
+- 新增全栈 Engineer Language Decoder 与虚构 AI rack 的 end-to-end technical/strategy case。
+- 把口语claim、performance waterfall、manufacturing readiness、deployment/TCO与falsifier串成可复用workflow。
+
 - 新增五级 AI Datacenter Engineering Core Quiz、十二组 Fermi Exercises 与透明命令行估算脚本。
 - Phase 2 首轮 Core Curriculum 从工程主链延伸到可测试、可计算、可证伪的练习层。
 

@@ -1,17 +1,11 @@
 # Case Studies
 
-> 状态：框架已建立，内容将按 [Roadmap](https://github.com/FrankHuang94/semis_knowledge_gpt_chinese/blob/main/ROADMAP.md) 的依赖顺序深化。
+案例将多个模块合并为一条decision workflow，而不是复述产品规格。
 
-本模块不以术语数量为目标。每个主题将从 problem、constraint 与 dataflow 出发，比较 architecture alternatives，解释 trade-off、second-order effects，并连接到真实 workload、产品、制造与 Strategy Lens。
+## 核心案例
 
-## 本模块默认问题
+- [End-to-End Case：如何审计一套“更快、更省电、可量产”的 AI Rack](end_to_end_ai_system_case.md)
 
-1. 没有这项技术时，系统在哪里失败？
-2. 限制来自 physics、architecture、software 还是 manufacturing？
-3. 有哪些替代方案，为什么它们共存？
-4. 优化一个指标会牺牲什么？
-5. bottleneck 解决后移到哪里？
-6. 哪些 metric 能证伪产品主张？
-7. 谁控制关键 IP、capacity、validation 与 ecosystem？
+## 分析纪律
 
-具体内容将优先链接到 cornerstone articles，避免重复建立短定义页面。
+每个case必须定义workload与boundary，建立architecture/dataflow、performance waterfall、power/thermal、manufacturing/supply、deployment/TCO、evidence matrix、sensitivities与falsifiers。

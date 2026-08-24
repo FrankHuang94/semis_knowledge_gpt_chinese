@@ -139,12 +139,16 @@ nav:
       - Technical Diligence:
           - 模块入口: 27_technical_diligence/index.md
           - Technical Diligence Playbook: 27_technical_diligence/technical_diligence_playbook.md
-      - Case Studies: 28_case_studies/index.md
+      - Case Studies:
+          - 模块入口: 28_case_studies/index.md
+          - End-to-End AI Rack Case: 28_case_studies/end_to_end_ai_system_case.md
       - Hot Chips:
           - 模块入口: 29_hot_chips/index.md
           - Architecture Presentation Decoder: 29_hot_chips/how_to_read_architecture_presentation.md
   - Practice:
-      - Engineer Language: 30_engineer_language/index.md
+      - Engineer Language:
+          - 模块入口: 30_engineer_language/index.md
+          - Engineer Language Decoder: 30_engineer_language/engineer_language_decoder.md
       - Glossary: 31_glossary/index.md
       - Quizzes:
           - 模块入口: 32_quizzes/index.md

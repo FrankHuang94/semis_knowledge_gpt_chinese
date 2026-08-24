@@ -751,3 +751,25 @@ concepts:
     strategic_implications: [technical_conversation_quality]
     articles:
       - docs/32_quizzes/core_quiz.md
+  - id: engineer_language
+    name: 工程师语言解码
+    english_name: Engineer Language Decoder
+    category: [communication, diligence]
+    prerequisites: [metric, system_boundary, claim_decomposition]
+    solves: [compressed_context_misinterpretation]
+    connected_to: [technical_diligence, engineering_to_strategy]
+    tradeoffs: [precision, meeting_time, context]
+    strategic_implications: [cross_functional_decision_quality]
+    articles:
+      - docs/30_engineer_language/engineer_language_decoder.md
+  - id: end_to_end_case
+    name: 端到端系统案例
+    english_name: End-to-End System Case
+    category: [case_study, strategy]
+    prerequisites: [performance_waterfall, tco, technical_diligence]
+    solves: [component_only_analysis]
+    connected_to: [ai_rack, supply_chain, falsification]
+    tradeoffs: [scope, model_fidelity, evidence_access]
+    strategic_implications: [decision_gate, risk_adjusted_value]
+    articles:
+      - docs/28_case_studies/end_to_end_ai_system_case.md

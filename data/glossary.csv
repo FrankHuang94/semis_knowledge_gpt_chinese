@@ -111,3 +111,5 @@ evidence_ladder,证据阶梯,Evidence Ladder,diligence,按simulation prototype i
 falsification,证伪,Falsification,diligence,预先定义能够推翻或显著削弱thesis的observable和threshold,hypothesis|test,docs/27_technical_diligence/technical_diligence_playbook.md,diligence
 fermi_estimation,费米估算,Fermi Estimation,quantitative_reasoning,用透明假设和数量级模型快速定位主导变量,units|order_of_magnitude,docs/32_quizzes/fermi_exercises.md,practice
 sensitivity_analysis,敏感性分析,Sensitivity Analysis,quantitative_reasoning,改变关键输入观察结论何时翻转以识别决策边界,model|assumption,docs/32_quizzes/fermi_exercises.md,practice
+engineer_language_decoder,工程师语言解码,Engineer Language Decoder,communication,把compressed engineering claim还原为boundary metric condition和follow-up,claim|metric,docs/30_engineer_language/engineer_language_decoder.md,practice
+decision_gate,决策关卡,Decision Gate,strategy,用预先定义的evidence threshold决定项目是否进入下一阶段,evidence|threshold,docs/28_case_studies/end_to_end_ai_system_case.md,practice

@@ -45,9 +45,9 @@ flowchart LR
 | [Power / Cooling / Rack](docs/18_power_delivery/index.md) | 电如何进入、热如何离开并限制 rack | Power Delivery、Thermal/Cooling、Modern AI Rack 已完成 |
 | [Software / Hardware Co-design](docs/21_software_hardware_codesign/index.md) | compiler 与 runtime 如何兑现 silicon | 核心文章已完成 |
 | [Manufacturing & Supply Chain](docs/22_manufacturing_supply_chain/index.md) | wafer 到 good system 的 constraint 在哪里 | 核心文章已完成 |
-| [Engineer Language](docs/30_engineer_language/index.md) | 把工程师口语翻译为 metric 与追问 | 框架已建立 |
+| [Engineer Language](docs/30_engineer_language/index.md) | 把工程师口语翻译为 metric 与追问 | 全栈 Decoder 已完成 |
 | [Engineering → Strategy](docs/26_engineering_to_strategy/index.md) | 把 bottleneck 变化翻译为 value capture | 核心文章已完成 |
-| [Technical Diligence](docs/27_technical_diligence/index.md) | 从 physics 到 economics 检验技术主张 | Playbook 已完成 |
+| [Technical Diligence](docs/27_technical_diligence/index.md) | 从 physics 到 economics 检验技术主张 | Playbook 与 end-to-end case 已完成 |
 
 ## 默认推理链
 
