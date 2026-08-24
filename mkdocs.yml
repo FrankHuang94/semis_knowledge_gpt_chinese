@@ -144,6 +144,7 @@ nav:
       - Engineering to Strategy:
           - 模块入口: 26_engineering_to_strategy/index.md
           - Engineering → Strategy: 26_engineering_to_strategy/engineering_to_strategy.md
+          - Spec Sheet Translator & Performance Waterfall: 26_engineering_to_strategy/spec_sheet_translator.md
       - Technical Diligence:
           - 模块入口: 27_technical_diligence/index.md
           - Technical Diligence Playbook: 27_technical_diligence/technical_diligence_playbook.md
