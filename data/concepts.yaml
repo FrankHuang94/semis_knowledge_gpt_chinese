@@ -674,3 +674,58 @@ concepts:
     strategic_implications: [performance_data_moat]
     articles:
       - docs/21_software_hardware_codesign/software_hardware_codesign.md
+  - id: engineering_to_strategy
+    name: 工程到战略
+    english_name: Engineering to Strategy
+    category: [strategy, framework]
+    prerequisites: [bottleneck_shifting, system_boundary]
+    solves: [physics_to_economics_translation]
+    connected_to: [value_migration, tco, moat, roadmap_risk]
+    tradeoffs: [precision, complexity, uncertainty]
+    strategic_implications: [decision_quality, thesis_falsifiability]
+    articles:
+      - docs/26_engineering_to_strategy/engineering_to_strategy.md
+  - id: value_migration
+    name: 价值迁移
+    english_name: Value Migration
+    category: [strategy, economics]
+    prerequisites: [bottleneck_shifting, scarcity]
+    solves: [static_value_chain_thinking]
+    connected_to: [engineering_to_strategy, supplier_leverage]
+    tradeoffs: [timing, substitutability, standardization]
+    strategic_implications: [margin_pool_shift]
+    articles:
+      - docs/26_engineering_to_strategy/engineering_to_strategy.md
+  - id: technical_diligence
+    name: 技术尽职调查
+    english_name: Technical Diligence
+    category: [strategy, validation]
+    prerequisites: [engineering_to_strategy, evidence]
+    solves: [unstructured_technical_claim_assessment]
+    connected_to: [claim_decomposition, evidence_ladder, falsification]
+    tradeoffs: [speed, depth, access]
+    strategic_implications: [risk_adjusted_decision]
+    articles:
+      - docs/27_technical_diligence/technical_diligence_playbook.md
+  - id: evidence_ladder
+    name: 证据阶梯
+    english_name: Evidence Ladder
+    category: [diligence, methodology]
+    prerequisites: [claim, source]
+    solves: [prototype_to_production_confusion]
+    connected_to: [reproducibility, product_status, falsification]
+    tradeoffs: [confidence, time, access]
+    strategic_implications: [claim_confidence]
+    articles:
+      - docs/27_technical_diligence/technical_diligence_playbook.md
+  - id: falsification
+    name: 证伪
+    english_name: Falsification
+    category: [diligence, methodology]
+    prerequisites: [testable_claim, threshold]
+    solves: [unfalsifiable_thesis]
+    connected_to: [technical_diligence, evidence_ladder]
+    tradeoffs: [test_cost, decision_speed]
+    strategic_implications: [thesis_discipline]
+    articles:
+      - docs/27_technical_diligence/technical_diligence_playbook.md

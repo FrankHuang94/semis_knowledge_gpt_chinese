@@ -65,6 +65,8 @@
 27. [Distributed Training 与 Collectives：DP、TP、PP、EP 如何变成 Network Traffic](07_ai_workloads/distributed_training_collectives.md)
 28. [Semiconductor Manufacturing 与 Supply Chain：从 Wafer Start 到 Good AI System](22_manufacturing_supply_chain/manufacturing_supply_chain.md)
 29. [Software / Hardware Co-design：Graph、Compiler、Kernel、Runtime 与 Silicon 如何闭环](21_software_hardware_codesign/software_hardware_codesign.md)
+30. [Engineering → Strategy：从 Bottleneck、Design Choice 到 Value Capture](26_engineering_to_strategy/engineering_to_strategy.md)
+31. [Technical Diligence Playbook：如何拆 Claim、验证 Evidence、识别 Scale-up Risk](27_technical_diligence/technical_diligence_playbook.md)
 
 ## 阅读纪律
 

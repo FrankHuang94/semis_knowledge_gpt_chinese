@@ -133,8 +133,12 @@ nav:
       - Product Database: 24_product_database/index.md
       - Standards: 25_standards/index.md
   - Strategy:
-      - Engineering to Strategy: 26_engineering_to_strategy/index.md
-      - Technical Diligence: 27_technical_diligence/index.md
+      - Engineering to Strategy:
+          - 模块入口: 26_engineering_to_strategy/index.md
+          - Engineering → Strategy: 26_engineering_to_strategy/engineering_to_strategy.md
+      - Technical Diligence:
+          - 模块入口: 27_technical_diligence/index.md
+          - Technical Diligence Playbook: 27_technical_diligence/technical_diligence_playbook.md
       - Case Studies: 28_case_studies/index.md
       - Hot Chips:
           - 模块入口: 29_hot_chips/index.md

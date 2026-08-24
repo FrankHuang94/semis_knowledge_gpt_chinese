@@ -6,6 +6,9 @@
 
 ### Added
 
+- 完成 Engineering → Strategy 与 Technical Diligence Playbook 两篇决策层核心文章。
+- 扩展 value migration、TCO/moat、claim decomposition、evidence ladder、reproducibility 与 falsification 知识节点。
+
 - 完成 Semiconductor Manufacturing / Supply Chain 与 Software / Hardware Co-design 两篇 Core Curriculum drafts。
 - 扩展 good-system flow、yield/cycle time/capacity、compiler IR、fusion/layout、autotuning、runtime 与 performance portability 知识节点。
 
