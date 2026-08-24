@@ -187,10 +187,14 @@ nav:
       - Hot Chips:
           - 模块入口: 29_hot_chips/index.md
           - Architecture Presentation Decoder: 29_hot_chips/how_to_read_architecture_presentation.md
+          - Conference Learning Loop: 29_hot_chips/conference_learning_loop.md
+          - Architecture Claim Evidence Matrix: 29_hot_chips/architecture_claim_evidence_matrix.md
   - Practice:
       - Engineer Language:
           - 模块入口: 30_engineer_language/index.md
           - Engineer Language Decoder: 30_engineer_language/engineer_language_decoder.md
+          - Engineering Conversation Preparation: 30_engineer_language/engineering_conversation_preparation.md
+          - Technical Interview Field Guide: 30_engineer_language/technical_interview_field_guide.md
       - Glossary: 31_glossary/index.md
       - Quizzes:
           - 模块入口: 32_quizzes/index.md

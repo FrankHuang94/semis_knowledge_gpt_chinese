@@ -15,3 +15,11 @@
 7. 谁控制关键 IP、capacity、validation 与 ecosystem？
 
 具体内容将优先链接到 cornerstone articles，避免重复建立短定义页面。
+
+## 核心文章
+
+- [如何读懂一场 Architecture Presentation](how_to_read_architecture_presentation.md)
+- [Conference Learning Loop：从一场演讲变成可维护知识](conference_learning_loop.md)
+- [Architecture Claim Evidence Matrix](architecture_claim_evidence_matrix.md)
+
+会议原始材料先进入仓库根目录的 conference_inbox，完成证据分级、backlink、产品状态与 open-question 闭环后再迁入正式数据库。

@@ -74,13 +74,22 @@
 - [x] Source freshness policy 与 high-volatility review queue
 - [x] CI required-fields、status、date、source、reference、lineage 与 queue validation
 
-## Phase 4 — Conference Learning Loop（下一阶段）
+## Phase 4 — Conference Learning Loop（完成首轮）
 
-把 Hot Chips、ISSCC、OFC、SC、GTC、OCP 等材料进入 conference inbox，执行：提取概念 → 判断 prerequisites → 建立 backlinks → 更新 product case → 更新 strategy implications → 记录 open questions。
+- [x] 建立 conference inbox 与标准 note template
+- [x] 建立概念提取、prerequisite 与 backlink 工作流
+- [x] 建立 architecture claim evidence matrix
+- [x] 连接 product case、strategy implication 与 open questions
+- [x] 区分 provisional note 与 authoritative record
 
-## Phase 5 — Quantitative Strategy Toolkit
+## Phase 5 — Quantitative Strategy Toolkit（完成首轮）
 
-补齐 spec-sheet translator、system performance waterfall、cluster/rack sizing、yield economics、network/optics/power/cooling Fermi models 与 Technical Diligence playbooks。
+- [x] Spec-sheet translator 与 system performance waterfall
+- [x] Cluster / rack sizing
+- [x] Yield economics 与 good-output model
+- [x] Network / optics port-count model
+- [x] Power / cooling capacity planning
+- [x] Technical Diligence playbooks 与多类 end-to-end cases
 
 ## 持续质量指标
 
