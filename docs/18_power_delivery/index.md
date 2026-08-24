@@ -4,6 +4,7 @@
 
 ## 核心文章
 
+- [Power Integrity 与 Transients：平均功率为什么保护不了系统](power_integrity_transients.md)
 - [Power Delivery：从 Utility 到 Transistor 的 Voltage、Current、Loss 与 Transient](power_delivery.md)
 
 ## 学习结果

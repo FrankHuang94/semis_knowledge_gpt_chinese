@@ -80,6 +80,7 @@ nav:
           - Tensor Core: 06_gpu_accelerator/tensor_core.md
           - Precision 与量化: 06_gpu_accelerator/precision_numeric_formats.md
           - GPU Execution & Kernel Performance: 06_gpu_accelerator/gpu_execution_kernel_performance.md
+          - Sparsity & Compression: 06_gpu_accelerator/sparsity_and_compression.md
       - AI Workloads:
           - 模块入口: 07_ai_workloads/index.md
           - Training vs Inference: 07_ai_workloads/training_vs_inference.md
@@ -89,6 +90,7 @@ nav:
           - Distributed Training Step: 07_ai_workloads/training_step_end_to_end.md
           - Production Inference Request: 07_ai_workloads/inference_request_end_to_end.md
           - Distributed Training & Collectives: 07_ai_workloads/distributed_training_collectives.md
+          - Recommendation & Multimodal Systems: 07_ai_workloads/recommendation_and_multimodal_systems.md
   - Data Movement:
       - Memory:
           - 模块入口: 08_memory/index.md
@@ -136,9 +138,11 @@ nav:
           - Chiplet & 3D Integration: 17_chiplet_3d_integration/chiplet_3d.md
       - Power Delivery:
           - 模块入口: 18_power_delivery/index.md
+          - Power Integrity & Transients: 18_power_delivery/power_integrity_transients.md
           - Power Delivery Architecture: 18_power_delivery/power_delivery.md
       - Thermal & Cooling:
           - 模块入口: 19_thermal_cooling/index.md
+          - Cold Plate, CDU & Facility Loop: 19_thermal_cooling/cold_plate_cdu_facility_loop.md
           - Thermal & Cooling Architecture: 19_thermal_cooling/thermal_cooling.md
       - Rack / Cluster / Datacenter:
           - 模块入口: 20_rack_cluster_datacenter/index.md

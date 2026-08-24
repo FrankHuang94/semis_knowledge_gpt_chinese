@@ -12,7 +12,7 @@
 4. [一个 Distributed Training Step 的完整旅程](training_step_end_to_end.md)
 5. [一个 Production Inference Request 的完整旅程](inference_request_end_to_end.md)
 6. [Distributed Training 与 Collectives：DP、TP、PP、EP 如何变成 Network Traffic](distributed_training_collectives.md)
-7. 下一步：MoE、recommendation 与 multimodal workloads。
+7. [Recommendation 与 Multimodal Systems](recommendation_and_multimodal_systems.md)
 
 先读 Training vs Inference，建立“模型制造”与“在线生产”的目标差异；再读 Prefill vs Decode，把 inference 继续拆成 compute-intensive 与 memory/latency-sensitive phases。
 

@@ -23,6 +23,7 @@
 2. [为什么 Matrix Multiplication 主导 AI](why_matrix_multiplication.md)
 3. [Tensor Core：小矩阵乘法单元如何变成 AI Compute Engine](tensor_core.md)
 4. [GPU Execution 与 Kernel Performance：Warp、Occupancy、Tiling、Coalescing 与 Stall](gpu_execution_kernel_performance.md)
+5. [Sparsity 与 Compression：减少工作，不等于自动加速](sparsity_and_compression.md)
 
 四篇共同回答：workload为何产生规则matrix operations；GPU如何组织parallel threads与data；专用MMA datapath为什么仍依赖register、shared memory、HBM、compiler和kernel library。
 
