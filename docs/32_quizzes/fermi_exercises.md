@@ -84,7 +84,7 @@ Ring 每 rank traffic：<code>2 × (8 - 1) / 8 × 8 = 14 GiB</code>。理想时�
 
 [Estimate] 四颗 chiplet KGD pass 各 0.96，六组关键 bond 各 0.995，其余 assembly 0.97。
 
-<code>Y = 0.96^4 × 0.995^6 × 0.97 ≈ 79.6%</code>。
+<code>Y = 0.96^4 × 0.995^6 × 0.97 ≈ 79.9%</code>。
 
 如果 chiplet pass 提到 0.98，组合 yield 改善；但要比较新增 sort coverage 的 test time/cost。该乘法假设独立，真实 defect clustering、common process excursion 与 systematic design interaction 会破坏独立性。
 

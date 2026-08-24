@@ -95,7 +95,7 @@ def optical_modules(endpoints: int, ports_per_endpoint: float, links_per_module:
 def self_test() -> None:
     assert roofline(1000, 4, 50) == (1000, "compute")
     assert abs(coolant_flow(100, 10) - 2.392344) < 1e-5
-    assert abs(package_yield([0.96] * 4, [0.995] * 6, 0.97) - 0.795883) < 1e-4
+    assert abs(package_yield([0.96] * 4, [0.995] * 6, 0.97) - 0.799457) < 1e-4
     assert abs(delivered_compute(100, [0.75, 0.8, 0.95]) - 57) < 1e-9
     assert abs(kv_cache_gib(80, 16384, 1, 8, 128, 2) - 5) < 1e-9
     assert abs(ring_allreduce_seconds(8, 8, 200) - 0.07) < 1e-9
