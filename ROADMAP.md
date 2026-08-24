@@ -15,7 +15,7 @@
 
 完成定义：新内容有明确归属、可导航、可引用、可进入图谱，且 MkDocs strict build 通过。
 
-## Phase 1 — Core Cornerstones（当前）
+## Phase 1 — Core Cornerstones（完成）
 
 按依赖顺序完成：
 
@@ -39,11 +39,11 @@
 - [x] AI Ethernet / RDMA
 - [x] Datacenter Optics
 - [x] Advanced Packaging
-- [ ] Modern AI Rack
+- [x] Modern AI Rack
 
 质量门槛：每篇能够支撑 30–60 分钟工程对话；包含 mechanism、design space、why-not、quantitative example、second-order effects、strategy lens、diligence questions 与 primary sources。
 
-## Phase 2 — Core Curriculum（60–80 topics）
+## Phase 2 — Core Curriculum（60–80 topics，当前）
 
 目标为 100–150 小时 accelerated curriculum。深化 GPU execution、distributed training、collectives、switch/NIC/DPU、optics、chiplet、power/thermal、manufacturing、software/hardware co-design，并建立五级 quizzes 与 Fermi exercises。
 

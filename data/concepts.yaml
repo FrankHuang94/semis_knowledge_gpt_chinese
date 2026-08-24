@@ -300,3 +300,58 @@ concepts:
     strategic_implications: [equipment_process_moat, yield_learning]
     articles:
       - docs/16_advanced_packaging/advanced_packaging.md
+  - id: ai_rack
+    name: 现代 AI 机柜
+    english_name: Modern AI Rack
+    category: [rack, system]
+    prerequisites: [gpu, hbm, scale_up, scale_out, optics]
+    solves: [rack_scale_integration, dense_compute_deployment]
+    connected_to: [busbar, liquid_cooling, cdu, failure_domain]
+    tradeoffs: [density, availability, serviceability, facility_dependency]
+    strategic_implications: [platform_integration, facility_lock_in, deployment_velocity]
+    articles:
+      - docs/20_rack_cluster_datacenter/modern_ai_rack.md
+  - id: busbar
+    name: 母线
+    english_name: Busbar
+    category: [power, rack]
+    prerequisites: [voltage, current, power_distribution]
+    solves: [high_current_rack_distribution]
+    connected_to: [power_shelf, vrm, ai_rack]
+    tradeoffs: [fault_domain, safety, serviceability]
+    strategic_implications: [rack_power_standardization]
+    articles:
+      - docs/20_rack_cluster_datacenter/modern_ai_rack.md
+  - id: liquid_cooling
+    name: 液体冷却
+    english_name: Liquid Cooling
+    category: [thermal, rack]
+    prerequisites: [heat_transfer, fluid_flow]
+    solves: [high_heat_flux, rack_density]
+    connected_to: [cold_plate, manifold, cdu, ai_rack]
+    tradeoffs: [leak_risk, facility_integration, pump_power, maintenance]
+    strategic_implications: [cooling_supply_chain, facility_retrofit]
+    articles:
+      - docs/20_rack_cluster_datacenter/modern_ai_rack.md
+  - id: cdu
+    name: 冷却液分配单元
+    english_name: Coolant Distribution Unit
+    category: [thermal, facility]
+    prerequisites: [heat_exchanger, pump, coolant]
+    solves: [technology_facility_loop_coupling]
+    connected_to: [liquid_cooling, manifold, facility_water]
+    tradeoffs: [pressure, redundancy, control, footprint]
+    strategic_implications: [infrastructure_capacity, commissioning]
+    articles:
+      - docs/20_rack_cluster_datacenter/modern_ai_rack.md
+  - id: availability_adjusted_compute
+    name: 可用性调整后算力
+    english_name: Availability-Adjusted Compute
+    category: [economics, system]
+    prerequisites: [availability, utilization, peak_compute]
+    solves: [nameplate_performance_bias]
+    connected_to: [ai_rack, thermal_throttling, failure_domain]
+    tradeoffs: [performance, redundancy, repair_time]
+    strategic_implications: [tco, fleet_operations, vendor_accountability]
+    articles:
+      - docs/20_rack_cluster_datacenter/modern_ai_rack.md

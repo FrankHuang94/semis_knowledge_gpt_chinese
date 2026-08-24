@@ -56,3 +56,11 @@ microbump,微凸点,Microbump,packaging,用细间距solder joints连接die与int
 hybrid_bonding,混合键合,Hybrid Bonding,packaging,同时接合dielectric与metal以形成细间距低parasitic连接,bonding|alignment,docs/16_advanced_packaging/advanced_packaging.md,cornerstone
 known_good_die,已知良品裸片,Known-Good-Die,packaging,在昂贵assembly前通过测试筛选出的合格die,wafer_test|yield,docs/16_advanced_packaging/advanced_packaging.md,cornerstone
 package_yield,封装良率,Package Yield,manufacturing,投入assembly后最终通过封装和系统测试的good assemblies比例,die_yield|assembly,docs/16_advanced_packaging/advanced_packaging.md,cornerstone
+ai_rack,现代AI机柜,Modern AI Rack,rack,把compute network power cooling和control整合为一个可部署计算系统,gpu|network|power|cooling,docs/20_rack_cluster_datacenter/modern_ai_rack.md,cornerstone
+busbar,母线,Busbar,power,用低阻导体向rack trays集中分配大电流,voltage|current,docs/20_rack_cluster_datacenter/modern_ai_rack.md,cornerstone
+power_shelf,电源架,Power Shelf,power,组合多个PSUs并向rack DC busbar供电,psu|redundancy,docs/20_rack_cluster_datacenter/modern_ai_rack.md,cornerstone
+cold_plate,冷板,Cold Plate,thermal,与hot component接触并把heat传给流动coolant,heat_transfer|coolant,docs/20_rack_cluster_datacenter/modern_ai_rack.md,cornerstone
+manifold,分配歧管,Manifold,thermal,在rack内向多条tray cooling branches分配和汇集coolant,fluid_flow|pressure,docs/20_rack_cluster_datacenter/modern_ai_rack.md,cornerstone
+cdu,冷却液分配单元,Coolant Distribution Unit,thermal,在technology loop与facility loop之间换热泵送过滤和控制,heat_exchanger|pump,docs/20_rack_cluster_datacenter/modern_ai_rack.md,cornerstone
+failure_domain,故障域,Failure Domain,reliability,单一failure可能同时影响的一组components或workloads,redundancy|availability,docs/20_rack_cluster_datacenter/modern_ai_rack.md,cornerstone
+commissioning,投运调试,Commissioning,operations,在site验证power cooling network firmware和workload acceptance的过程,installation|validation,docs/20_rack_cluster_datacenter/modern_ai_rack.md,cornerstone

@@ -110,6 +110,7 @@ nav:
       - Rack / Cluster / Datacenter:
           - 模块入口: 20_rack_cluster_datacenter/index.md
           - 现代 AI 数据中心: 20_rack_cluster_datacenter/modern_ai_datacenter.md
+          - Modern AI Rack: 20_rack_cluster_datacenter/modern_ai_rack.md
   - Software & Supply:
       - Software / Hardware Co-design: 21_software_hardware_codesign/index.md
       - Manufacturing & Supply Chain: 22_manufacturing_supply_chain/index.md
