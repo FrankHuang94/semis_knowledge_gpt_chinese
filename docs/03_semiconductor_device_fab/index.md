@@ -1,17 +1,18 @@
-# Semiconductor Device & Fab
+# Semiconductor Device, Fab & Yield
 
-> 状态：框架已建立，内容将按 [Roadmap](https://github.com/FrankHuang94/semis_knowledge_gpt_chinese/blob/main/ROADMAP.md) 的依赖顺序深化。
+本模块把 architecture 连接到可制造性。重点不是背工艺步骤，而是判断一个设计如何变成 qualified good output。
 
-本模块不以术语数量为目标。每个主题将从 problem、constraint 与 dataflow 出发，比较 architecture alternatives，解释 trade-off、second-order effects，并连接到真实 workload、产品、制造与 Strategy Lens。
+## 核心文章
 
-## 本模块默认问题
+- [从 Transistor 到 Good Package：Fab、Yield 与量产爬坡](from_transistor_to_good_package.md)：FEOL/MOL/BEOL、lithography、process interaction、yield chain、cycle time、known-good-die、chiplet economics 与 capacity qualification。
+- [数字逻辑、时钟与功耗](../02_engineering_foundations/digital_logic_clock_power.md)：device 与 wire 如何限制 timing 和 power。
+- [Advanced Packaging](../16_advanced_packaging/advanced_packaging.md)：interposer、RDL、substrate、assembly 与 test。
+- [Manufacturing & Supply Chain](../22_manufacturing_supply_chain/manufacturing_supply_chain.md)：把 fab/package/test 约束翻译成供应风险。
 
-1. 没有这项技术时，系统在哪里失败？
-2. 限制来自 physics、architecture、software 还是 manufacturing？
-3. 有哪些替代方案，为什么它们共存？
-4. 优化一个指标会牺牲什么？
-5. bottleneck 解决后移到哪里？
-6. 哪些 metric 能证伪产品主张？
-7. 谁控制关键 IP、capacity、validation 与 ecosystem？
+## 学完以后应该能回答
 
-具体内容将优先链接到 cornerstone articles，避免重复建立短定义页面。
+- 为什么 node 名称不能直接预测 product PPA、cost 或 yield？
+- Die yield、binning yield、assembly yield、final-test yield 有什么区别？
+- Chiplet 为什么可能改善可筛选性，却增加 package/test 风险？
+- Installed capacity、qualified capacity 与 good output 为什么不能互换？
+- 制造 learning rate 为什么可能比某个时点的 nominal yield 更重要？

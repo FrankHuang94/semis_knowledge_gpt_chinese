@@ -64,7 +64,9 @@ nav:
           - 模块入口: 02_engineering_foundations/index.md
           - 数字逻辑、时钟与功耗: 02_engineering_foundations/digital_logic_clock_power.md
           - 电路与 Signal Integrity 直觉: 02_engineering_foundations/circuit_signal_integrity_intuition.md
-      - Device & Fab: 03_semiconductor_device_fab/index.md
+      - Device & Fab:
+          - 模块入口: 03_semiconductor_device_fab/index.md
+          - Transistor 到 Good Package: 03_semiconductor_device_fab/from_transistor_to_good_package.md
       - Computer Architecture: 04_computer_architecture/index.md
       - CPU:
           - 模块入口: 05_cpu/index.md
