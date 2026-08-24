@@ -1,5 +1,160 @@
 schema_version: 1
-companies: []
+companies:
+  - id: nvidia
+    name: NVIDIA
+    categories: [accelerator, networking, systems, software]
+    last_verified: 2026-08-24
+    architecture_control_points: [gpu, nvlink, nvswitch, nic_dpu, cuda_nccl, rack_reference_architecture]
+    manufacturing_dependencies: [leading_edge_foundry, hbm, advanced_packaging, substrates, optics]
+    software_ecosystem: [CUDA, NCCL, DOCA, TensorRT]
+    customer_switching_cost: [kernel_libraries, model_validation, fleet_operations, proprietary_scale_up]
+    supplier_dependencies: [foundry, memory_vendors, osat_and_packaging, system_odms]
+    moat_hypotheses: [full_stack_codesign, developer_ecosystem, rack_scale_integration]
+    diligence_questions:
+      - How much end-to-end value depends on proprietary scale-up versus portable software?
+      - Which supply constraint limits good rack output?
+    sources:
+      - https://www.nvidia.com/en-us/data-center/
+      - https://docs.nvidia.com/dgx/dgxgb200-user-guide/
+  - id: amd
+    name: AMD
+    categories: [cpu, accelerator, dpu, software]
+    last_verified: 2026-08-24
+    architecture_control_points: [epyc_cpu, instinct_gpu, infinity_fabric, pensando_dpu, rocm]
+    manufacturing_dependencies: [leading_edge_foundry, hbm, advanced_packaging]
+    software_ecosystem: [ROCm, HIP, RCCL]
+    customer_switching_cost: [kernel_porting, framework_validation, fleet_qualification]
+    supplier_dependencies: [foundry, memory_vendors, packaging_partners, oem_odm]
+    moat_hypotheses: [chiplet_experience, cpu_gpu_portfolio, open_software_positioning]
+    diligence_questions:
+      - Is performance portability broad across production model shapes?
+      - How quickly can rack-scale integration and software mature together?
+    sources:
+      - https://www.amd.com/en/products/accelerators/instinct.html
+      - https://rocm.docs.amd.com/
+  - id: intel
+    name: Intel
+    categories: [cpu, accelerator, foundry, networking, packaging]
+    last_verified: 2026-08-24
+    architecture_control_points: [x86_cpu, ethernet, foundry_process, emib, foveros, software]
+    manufacturing_dependencies: [internal_fabs, external_foundry, advanced_packaging, memory]
+    software_ecosystem: [oneAPI, OpenVINO, Ethernet software]
+    customer_switching_cost: [x86_platform_qualification, enterprise_software, server_installed_base]
+    supplier_dependencies: [equipment, materials, memory, substrate]
+    moat_hypotheses: [installed_base, process_packaging_integration, enterprise_channel]
+    diligence_questions:
+      - Which products use internal versus external manufacturing and why?
+      - Can process and packaging roadmaps convert to competitive delivered systems?
+    sources:
+      - https://www.intel.com/content/www/us/en/foundry/packaging.html
+      - https://www.intel.com/content/www/us/en/data-center/overview.html
+  - id: tsmc
+    name: TSMC
+    categories: [foundry, advanced_packaging]
+    last_verified: 2026-08-24
+    architecture_control_points: [process_design_rules, manufacturing_yield, cowos, soic, capacity_allocation]
+    manufacturing_dependencies: [lithography_and_process_equipment, materials, utilities, substrates]
+    software_ecosystem: [eda_and_ip_ecosystem, design_enablement]
+    customer_switching_cost: [process_porting, physical_design, qualification, packaging_codesign]
+    supplier_dependencies: [equipment, chemicals, gases, mask, substrate]
+    moat_hypotheses: [yield_learning, customer_trust, process_packaging_codesign]
+    diligence_questions:
+      - Which qualified capacity step limits AI good-package output?
+      - How fungible are sites, processes and packaging flows?
+    sources:
+      - https://investor.tsmc.com/static/annualReports/2025/english/index.html
+      - https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm
+  - id: aws
+    name: Amazon Web Services
+    categories: [cloud, custom_accelerator, networking]
+    last_verified: 2026-08-24
+    architecture_control_points: [trainium, inferentia, neuron, nitro, efa, cloud_service]
+    manufacturing_dependencies: [foundry, hbm, packaging, server_and_network_supply]
+    software_ecosystem: [Neuron SDK, EC2, SageMaker, EKS]
+    customer_switching_cost: [cloud_data_and_operations, neuron_compilation, service_integration]
+    supplier_dependencies: [semiconductor_manufacturing, memory, networking, datacenter_infrastructure]
+    moat_hypotheses: [cloud_workload_visibility, vertical_service_integration, fleet_scale]
+    diligence_questions:
+      - How broad is model and operator coverage outside optimized reference workloads?
+      - Does internal silicon lower customer TCO after software and migration?
+    sources:
+      - https://aws.amazon.com/ec2/instance-types/trn2/
+  - id: google
+    name: Google
+    categories: [cloud, custom_accelerator, software]
+    last_verified: 2026-08-24
+    architecture_control_points: [tpu, xla, jax_tensorflow, optical_and_network_infrastructure, cloud_service]
+    manufacturing_dependencies: [foundry, hbm, packaging, datacenter_infrastructure]
+    software_ecosystem: [XLA, JAX, TensorFlow, Google Cloud]
+    customer_switching_cost: [compiler_and_framework_integration, cloud_operations, model_validation]
+    supplier_dependencies: [semiconductor_manufacturing, memory, networking, power_and_cooling]
+    moat_hypotheses: [workload_codesign, compiler_stack, internal_deployment_learning]
+    diligence_questions:
+      - How much internal workload advantage transfers to external customers?
+      - Which TPU features require XLA-specific model changes?
+    sources:
+      - https://cloud.google.com/tpu
+      - https://openxla.org/
+  - id: broadcom
+    name: Broadcom
+    categories: [switch_silicon, serdes, custom_asic, optics]
+    last_verified: 2026-08-24
+    architecture_control_points: [ethernet_switch_asic, serdes_ip, custom_accelerator_asic, connectivity]
+    manufacturing_dependencies: [leading_edge_foundry, advanced_packaging, substrates]
+    software_ecosystem: [switch_sdk, network_os_partners, custom_asic_enablement]
+    customer_switching_cost: [sdk_integration, network_qualification, custom_design_nre]
+    supplier_dependencies: [foundry, packaging, optics_ecosystem]
+    moat_hypotheses: [high_speed_serdes, switch_scale, custom_silicon_relationships]
+    diligence_questions:
+      - Where does value split between merchant switch silicon and custom ASICs?
+      - Can optics and packaging keep pace with switch radix?
+    sources:
+      - https://www.broadcom.com/products/ethernet-connectivity/switching
+  - id: marvell
+    name: Marvell
+    categories: [custom_asic, networking, dpu, optics, interconnect]
+    last_verified: 2026-08-24
+    architecture_control_points: [custom_compute, ethernet, electro_optics, dpu, serdes]
+    manufacturing_dependencies: [foundry, packaging, memory, optical_supply]
+    software_ecosystem: [networking_sdk, custom_silicon_enablement]
+    customer_switching_cost: [custom_design_nre, qualification, firmware]
+    supplier_dependencies: [foundry, osat, optics_components]
+    moat_hypotheses: [data_infrastructure_ip_portfolio, custom_silicon_execution]
+    diligence_questions:
+      - Which design wins are production versus roadmap?
+      - How reusable is IP across custom programs?
+    sources:
+      - https://www.marvell.com/products.html
+  - id: sk_hynix
+    name: SK hynix
+    categories: [dram, hbm, nand]
+    last_verified: 2026-08-24
+    architecture_control_points: [dram_process, hbm_stacking, memory_test, customer_qualification]
+    manufacturing_dependencies: [memory_fabs, tsv_and_stacking, materials, equipment]
+    software_ecosystem: []
+    customer_switching_cost: [memory_controller_qualification, package_and_thermal_validation]
+    supplier_dependencies: [equipment, materials, substrates]
+    moat_hypotheses: [hbm_yield_learning, stacking_capacity, accelerator_qualification]
+    diligence_questions:
+      - Is the bottleneck wafer, stacking, test or customer qualification?
+      - How does mix shift affect conventional DRAM supply?
+    sources:
+      - https://www.skhynix.com/eng/product/dramHBM.jsp
+  - id: micron
+    name: Micron
+    categories: [dram, hbm, nand]
+    last_verified: 2026-08-24
+    architecture_control_points: [dram_process, hbm_design, memory_test, qualification]
+    manufacturing_dependencies: [memory_fabs, packaging_and_stacking, equipment, materials]
+    software_ecosystem: []
+    customer_switching_cost: [controller_qualification, system_validation]
+    supplier_dependencies: [equipment, materials, packaging]
+    moat_hypotheses: [memory_process_efficiency, hbm_product_execution]
+    diligence_questions:
+      - What is qualified HBM good-output growth rather than nominal capacity?
+      - How does power efficiency translate at system level?
+    sources:
+      - https://www.micron.com/products/memory/hbm
 company_schema:
   required: [id, name, categories, last_verified, sources]
   recommended:

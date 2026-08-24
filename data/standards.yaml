@@ -1,5 +1,85 @@
 schema_version: 1
-standards: []
+standards:
+  - id: pcie_7_0
+    name: PCI Express Base Specification
+    organization: PCI-SIG
+    version: "7.0"
+    status: Released
+    last_verified: 2026-08-24
+    source_date: 2025-06-11
+    layers: [transaction, data_link, physical, software_architecture]
+    topology: [point_to_point, switched_fabric]
+    interoperability: member_specification_and_compliance_ecosystem
+    open_questions: [product_adoption_timeline, channel_reach_and_power]
+    sources:
+      - https://pcisig.com/specification-overview/pci-express-base
+  - id: pcie_6_4
+    name: PCI Express Base Specification
+    organization: PCI-SIG
+    version: "6.4"
+    status: Released
+    last_verified: 2026-08-24
+    source_date: 2025-06-11
+    layers: [transaction, data_link, physical, software_architecture]
+    topology: [point_to_point, switched_fabric]
+    interoperability: member_specification_and_compliance_ecosystem
+    open_questions: [platform_deployment_mix, retimer_and_channel_requirements]
+    sources:
+      - https://pcisig.com/specification-overview/pci-express-base
+  - id: cxl_3_2
+    name: Compute Express Link Specification
+    organization: CXL Consortium
+    version: "3.2"
+    status: Released
+    last_verified: 2026-08-24
+    source_date: 2024-12-03
+    layers: [cxl_io, cxl_cache, cxl_mem, fabric_management]
+    topology: [direct_attach, switched_fabric]
+    interoperability: consortium_specification_and_compliance
+    open_questions: [deployment_scale, latency_tiering_policy, security_and_failure_domains]
+    sources:
+      - https://computeexpresslink.org/wp-content/uploads/2024/12/CXL_3.2-Spec-Announcement_FINAL-1.pdf
+  - id: ucie_3_0
+    name: Universal Chiplet Interconnect Express
+    organization: UCIe Consortium
+    version: "3.0"
+    status: Released
+    last_verified: 2026-08-24
+    source_date: 2025-08-05
+    layers: [physical, adapter, protocol_mapping, manageability]
+    topology: [package_die_to_die, two_dimensional_and_three_dimensional]
+    interoperability: specification_plus_package_and_compliance_requirements
+    open_questions: [multi_vendor_chiplet_commercial_model, package_fungibility]
+    sources:
+      - https://www.uciexpress.org/specifications
+      - https://www.uciexpress.org/press-releases
+  - id: oif_800zr_1_0
+    name: 800ZR Coherent Implementation Agreement
+    organization: OIF
+    version: "01.0"
+    status: Released
+    last_verified: 2026-08-24
+    source_date: 2025-11-18
+    layers: [optical, framing, fec, management_profile]
+    reach: single_span_amplified_dci
+    interoperability: implementation_agreement_and_multi_vendor_testing
+    open_questions: [volume_cost, pluggable_thermal, deployment_mix]
+    sources:
+      - https://www.oiforum.com/wp-content/uploads/OIF-800ZR-01.0.pdf
+      - https://www.oiforum.com/technical-work/implementation-agreements-ias/
+  - id: ocp_open_rack_v3
+    name: Open Rack V3 Base Specification
+    organization: Open Compute Project
+    version: "1.1"
+    status: Adopted
+    last_verified: 2026-08-24
+    source_date: 2023-12-01
+    layers: [mechanical, power, service, rack_infrastructure]
+    topology: [rack]
+    interoperability: open_rack_component_interfaces
+    open_questions: [high_power_evolution, facility_compatibility, liquid_cooling_integration]
+    sources:
+      - https://www.opencompute.org/wiki/Open_Rack/SpecsAndDesigns
 standard_schema:
   required: [id, name, organization, version, status, last_verified, sources]
   status_allowed: [Draft, Released, Adopted, Superseded]

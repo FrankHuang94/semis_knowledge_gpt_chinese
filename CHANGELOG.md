@@ -6,6 +6,9 @@
 
 ### Added
 
+- 建立首批 company/product/standard/interface intelligence records，并加入 freshness/status/source 元数据。
+- 新增结构化情报 CI validator，检查 required fields、唯一 ID、产品到公司引用、状态、日期与 source URL。
+
 - 新增全栈 Engineer Language Decoder 与虚构 AI rack 的 end-to-end technical/strategy case。
 - 把口语claim、performance waterfall、manufacturing readiness、deployment/TCO与falsifier串成可复用workflow。
 

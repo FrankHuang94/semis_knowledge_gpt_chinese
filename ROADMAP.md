@@ -63,6 +63,17 @@
 
 建立有 freshness metadata 的 product/company database；优先覆盖 NVIDIA、AMD、Google、AWS、Intel、Arm、Broadcom、Marvell、HBM vendors、foundry 与 packaging ecosystem。所有状态明确标记 Announced、Sampling、Production、Shipping、Deployed、Roadmap 或 Rumored。
 
+当前进度：
+
+- [x] Company / Product / Standard / Interface schemas
+- [x] 首批 10 家公司 architecture-control records
+- [x] 首批 8 个已核验产品/平台 records
+- [x] 首批 6 个 standards 与 8 个 interfaces
+- [x] CI required-fields、status、date、source 与 reference validation
+- [ ] 扩展 Arm、Samsung、switch/optics、HBM 与 power/cooling vendors
+- [ ] 建立 product-generation predecessor/successor time series
+- [ ] 建立 source freshness review queue
+
 ## Phase 4 — Conference Learning Loop
 
 把 Hot Chips、ISSCC、OFC、SC、GTC、OCP 等材料进入 conference inbox，执行：提取概念 → 判断 prerequisites → 建立 backlinks → 更新 product case → 更新 strategy implications → 记录 open questions。

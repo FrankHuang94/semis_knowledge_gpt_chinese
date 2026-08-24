@@ -1,5 +1,153 @@
 schema_version: 1
-products: []
+products:
+  - id: nvidia_gb200_nvl72
+    name: NVIDIA GB200 NVL72
+    company_id: nvidia
+    category: rack_scale_accelerator_system
+    product_status: Shipping
+    last_verified: 2026-08-24
+    source_date: 2026-08-24
+    generation: Blackwell
+    workload_target: [training, inference, moe]
+    architecture: [grace_blackwell_superchip, nvlink_domain, nvswitch_trays, liquid_cooled_rack]
+    memory: [hbm, coherent_cpu_gpu_memory_path]
+    interconnect: [nvlink, ethernet_or_infiniband_scale_out]
+    package: [multi_die_gpu, hbm_advanced_package]
+    cooling: hybrid_liquid_and_air
+    software: [CUDA, NCCL, TensorRT]
+    old_bottleneck: [single_node_model_scale, accelerator_to_accelerator_communication]
+    architectural_response: rack_scale_nvlink_domain
+    new_bottleneck: [rack_power_and_cooling, package_and_hbm_supply, serviceability]
+    missing_disclosures: [independent_end_to_end_workload_distribution, field_availability_distribution]
+    sources:
+      - https://www.nvidia.com/en-us/data-center/gb200-nvl72/
+      - https://docs.nvidia.com/dgx/dgxgb200-user-guide/hardware.html
+  - id: amd_instinct_mi355x
+    name: AMD Instinct MI355X
+    company_id: amd
+    category: datacenter_gpu
+    product_status: Production
+    last_verified: 2026-08-24
+    source_date: 2026-08-24
+    generation: MI350_series
+    predecessor: AMD Instinct MI325X
+    workload_target: [training, inference, hpc]
+    process: heterogeneous_leading_edge_chiplet
+    architecture: [cdna4, chiplets, infinity_fabric]
+    memory: [hbm3e]
+    interconnect: [infinity_fabric, pcie]
+    software: [ROCm]
+    old_bottleneck: [compute_throughput, memory_capacity_and_bandwidth]
+    architectural_response: more_compute_and_hbm_with_chiplet_integration
+    new_bottleneck: [software_coverage, scale_up_system_integration, supply]
+    missing_disclosures: [broad_independent_workload_results, fleet_reliability]
+    sources:
+      - https://www.amd.com/en/products/accelerators/instinct/mi350/mi355x.html
+      - https://www.amd.com/en/blogs/2025/amd-instinct-mi350-series-and-beyond-accelerating-the-future-of-ai-and-hpc.html
+  - id: aws_ec2_trn2
+    name: Amazon EC2 Trn2
+    company_id: aws
+    category: cloud_accelerator_instance
+    product_status: Deployed
+    last_verified: 2026-08-24
+    source_date: 2026-08-24
+    generation: Trainium2
+    workload_target: [training, inference]
+    architecture: [trainium2, neuronlink, ultraserver_option]
+    interconnect: [neuronlink, efa]
+    software: [Neuron SDK, PyTorch, JAX]
+    old_bottleneck: [cloud_ai_cost, model_scale]
+    architectural_response: vertically_integrated_cloud_accelerator_and_network
+    new_bottleneck: [software_portability, service_availability, customer_migration]
+    missing_disclosures: [cross_workload_independent_price_performance, silicon_supply]
+    sources:
+      - https://aws.amazon.com/ec2/instance-types/trn2/
+  - id: google_cloud_tpu_ironwood
+    name: Google Cloud TPU Ironwood
+    company_id: google
+    category: cloud_accelerator
+    product_status: Deployed
+    last_verified: 2026-08-24
+    source_date: 2026-08-24
+    generation: seventh_generation_tpu
+    workload_target: [training, reinforcement_learning, inference]
+    architecture: [tpu, pod_scale_system]
+    software: [XLA, JAX, TensorFlow]
+    old_bottleneck: [frontier_model_compute_and_serving_efficiency]
+    architectural_response: workload_specific_silicon_and_compiler_codesign
+    new_bottleneck: [software_portability, external_customer_access, facility_scale]
+    missing_disclosures: [broad_external_workload_distribution, exact_deployment_footprint]
+    sources:
+      - https://cloud.google.com/blog/products/compute/ironwood-tpus-and-new-axion-based-vms-for-your-ai-workloads
+      - https://cloud.google.com/tpu
+  - id: nvidia_bluefield_3
+    name: NVIDIA BlueField-3 DPU
+    company_id: nvidia
+    category: dpu
+    product_status: Deployed
+    last_verified: 2026-08-24
+    source_date: 2026-08-24
+    workload_target: [networking, storage, security, infrastructure_isolation]
+    architecture: [ethernet_or_infiniband_nic, embedded_cores, accelerators, eswitch]
+    io: [pcie, ethernet, infiniband]
+    software: [DOCA]
+    old_bottleneck: [host_cpu_infrastructure_overhead, tenant_isolation]
+    architectural_response: infrastructure_offload_and_independent_trust_domain
+    new_bottleneck: [firmware_lifecycle, software_complexity, observability]
+    missing_disclosures: [feature_specific_cpu_savings_distribution, fleet_failure_modes]
+    sources:
+      - https://docs.nvidia.com/doca-documentation-3-1-0.pdf
+      - https://docs.nvidia.com/enterprise-reference-architectures/nvl72-ai-factory/latest/networking-hardware.html
+  - id: nvidia_connectx_8
+    name: NVIDIA ConnectX-8 SuperNIC
+    company_id: nvidia
+    category: high_performance_nic
+    product_status: Deployed
+    last_verified: 2026-08-24
+    source_date: 2026-08-24
+    workload_target: [scale_out_ai_networking, rdma]
+    architecture: [high_speed_nic, rdma_offload, congestion_control]
+    io: [pcie, ethernet_or_infiniband]
+    old_bottleneck: [endpoint_bandwidth, collective_completion]
+    architectural_response: higher_rate_endpoint_and_offload
+    new_bottleneck: [fabric_congestion, pcie_path, software_tuning]
+    missing_disclosures: [independent_tail_latency_under_contention]
+    sources:
+      - https://docs.nvidia.com/enterprise-reference-architectures/nvl72-ai-factory/latest/networking-hardware.html
+  - id: tsmc_cowos
+    name: TSMC CoWoS Platform
+    company_id: tsmc
+    category: advanced_packaging_service
+    product_status: Production
+    last_verified: 2026-08-24
+    source_date: 2026-08-24
+    architecture: [cowos_s, cowos_r, cowos_l]
+    workload_target: [hpc, ai]
+    package: [silicon_interposer, rdl_interposer, local_silicon_interconnect, hbm_integration]
+    old_bottleneck: [reticle_limit, hbm_connectivity]
+    architectural_response: heterogeneous_2_5d_integration
+    new_bottleneck: [packaging_capacity, substrate, yield, thermal]
+    missing_disclosures: [customer_specific_yield, qualified_capacity_by_flow]
+    sources:
+      - https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm
+  - id: intel_gaudi_3
+    name: Intel Gaudi 3 AI Accelerator
+    company_id: intel
+    category: datacenter_ai_accelerator
+    product_status: Shipping
+    last_verified: 2026-08-24
+    source_date: 2026-08-24
+    workload_target: [training, inference]
+    architecture: [matrix_engines, tensor_processor_cores, integrated_ethernet]
+    memory: [hbm]
+    interconnect: [ethernet_scale_out]
+    software: [SynapseAI, PyTorch]
+    old_bottleneck: [ai_compute_cost, scale_out_openness]
+    architectural_response: accelerator_with_integrated_ethernet_and_software_stack
+    new_bottleneck: [software_ecosystem, adoption, product_roadmap]
+    missing_disclosures: [current_deployment_scale, workload_coverage_distribution]
+    sources:
+      - https://www.intel.com/content/www/us/en/products/details/processors/ai-accelerators/gaudi.html
 product_schema:
   required:
     - id

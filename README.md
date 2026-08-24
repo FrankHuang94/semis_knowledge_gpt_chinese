@@ -110,6 +110,9 @@ Competitive / Strategic Implication
 - [贡献与写作规范](CONTRIBUTING.md)
 - [变更记录](CHANGELOG.md)
 - [知识图谱数据](data/concepts.yaml)
+- [公司数据库](data/companies.yaml)
+- [结构化产品数据库](data/products.yaml)
+- [标准与接口数据库](data/standards.yaml)
 - [产品数据库](data/products.yaml)
 - [术语数据库](data/glossary.csv)
 - [文章模板](docs/_templates/major_article.md)
@@ -120,7 +123,7 @@ Competitive / Strategic Implication
 
 ## 当前建设阶段
 
-第一阶段聚焦一组高质量 cornerstone articles，而不是铺开数百个浅页面。全栈 mental model、数据流、bottleneck reasoning、architecture presentation decoder、CPU、GPU、Matrix Multiplication、Tensor Core、Training/Inference、Prefill/Decode、Memory Hierarchy、DRAM、HBM、Roofline、Scale-up、AI Ethernet/RDMA、Datacenter Optics 与 Advanced Packaging 已建立与 Modern AI Rack 已建立，Phase 1 主链已闭环；Phase 1 主链与 Phase 2 首轮 Core Curriculum 已闭环，并补齐五级测验、Fermi exercises 与透明估算脚本；当前进入产品、公司、标准与案例数据库。
+第一阶段聚焦一组高质量 cornerstone articles，而不是铺开数百个浅页面。全栈 mental model、数据流、bottleneck reasoning、architecture presentation decoder、CPU、GPU、Matrix Multiplication、Tensor Core、Training/Inference、Prefill/Decode、Memory Hierarchy、DRAM、HBM、Roofline、Scale-up、AI Ethernet/RDMA、Datacenter Optics 与 Advanced Packaging 已建立与 Modern AI Rack 已建立，Phase 1 主链已闭环；Phase 1 主链与 Phase 2 首轮 Core Curriculum 已闭环，并补齐五级测验、Fermi exercises 与透明估算脚本；当前进入产品、公司、标准与案例数据库；首批 10 家公司、8 个产品/平台、6 个标准与 8 个接口已结构化并由 CI 校验。
 
 详细里程碑与完成定义见 [ROADMAP.md](ROADMAP.md)。
 

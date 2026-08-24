@@ -1,5 +1,94 @@
 schema_version: 1
-interfaces: []
+interfaces:
+  - id: pcie_7
+    name: PCI Express 7.0
+    scope: board_and_system_io
+    layers: [transaction, data_link, physical]
+    status: Released
+    last_verified: 2026-08-24
+    protocol: load_store_dma_and_messages
+    topology: [point_to_point, switched]
+    alternatives: [cxl_for_coherent_semantics, proprietary_scale_up]
+    sources:
+      - https://pcisig.com/specification-overview/pci-express-base
+  - id: cxl_3_2
+    name: CXL 3.2
+    scope: coherent_accelerator_and_memory_fabric
+    layers: [cxl_io, cxl_cache, cxl_mem, fabric_management, pcie_phy]
+    status: Released
+    last_verified: 2026-08-24
+    protocol: coherent_cache_and_memory_plus_io
+    topology: [direct_attach, switched_fabric]
+    alternatives: [pcie_io_only, proprietary_coherent_fabric]
+    sources:
+      - https://computeexpresslink.org/wp-content/uploads/2024/12/CXL_3.2-Spec-Announcement_FINAL-1.pdf
+  - id: ucie_3
+    name: UCIe 3.0
+    scope: package_die_to_die
+    layers: [physical, adapter, protocol_mapping, manageability]
+    status: Released
+    last_verified: 2026-08-24
+    protocol: raw_streaming_and_standard_protocol_mappings
+    topology: [two_dimensional_package, three_dimensional_package]
+    alternatives: [proprietary_d2d, on_die_interconnect]
+    sources:
+      - https://www.uciexpress.org/specifications
+  - id: nvlink_5
+    name: NVIDIA NVLink Fifth Generation
+    scope: accelerator_scale_up
+    layers: [physical, link, memory_and_collective_semantics]
+    status: Deployed
+    last_verified: 2026-08-24
+    protocol: proprietary_accelerator_interconnect
+    topology: [direct, switched_nvlink_domain]
+    alternatives: [ethernet_scale_up, infiniband, pcie]
+    sources:
+      - https://docs.nvidia.com/dgx/dgxgb200-user-guide/hardware.html
+  - id: roce_v2
+    name: RoCE v2
+    scope: loss_sensitive_rdma_over_ethernet
+    layers: [rdma_transport, udp_ip, ethernet]
+    status: Deployed
+    last_verified: 2026-08-24
+    protocol: remote_direct_memory_access
+    topology: [routed_ethernet_fabric]
+    alternatives: [infiniband, tcp, proprietary_transport]
+    sources:
+      - https://docs.nvidia.com/networking/display/rdmaawareprogrammingv17
+  - id: oif_800zr
+    name: OIF 800ZR
+    scope: coherent_datacenter_interconnect
+    layers: [optical, framing, fec]
+    status: Released
+    last_verified: 2026-08-24
+    protocol: coherent_optical_interface
+    topology: [point_to_point_dci]
+    alternatives: [direct_detection_datacenter_optics, longer_reach_coherent]
+    sources:
+      - https://www.oiforum.com/wp-content/uploads/OIF-800ZR-01.0.pdf
+  - id: hbm3e
+    name: HBM3E
+    scope: package_adjacent_high_bandwidth_memory
+    layers: [dram_protocol, wide_io_phy, package]
+    status: Deployed
+    last_verified: 2026-08-24
+    protocol: high_bandwidth_dram
+    topology: [controller_to_multiple_hbm_stacks]
+    alternatives: [gddr, ddr, future_hbm_generations]
+    sources:
+      - https://www.skhynix.com/eng/product/dramHBM.jsp
+      - https://www.micron.com/products/memory/hbm
+  - id: open_rack_v3_power
+    name: Open Rack V3 Power Interface
+    scope: rack_power_distribution
+    layers: [power_shelf, busbar, connector, management]
+    status: Adopted
+    last_verified: 2026-08-24
+    protocol: dc_power_distribution_and_monitoring
+    topology: [central_power_shelf_to_rack_busbar]
+    alternatives: [server_level_psu, other_rack_power_architectures]
+    sources:
+      - https://www.opencompute.org/documents/ocp-open-rack-v3-power-shelf-rev-1-0-1-pdf
 interface_schema:
   required: [id, name, scope, layers, status, last_verified, sources]
   recommended:
