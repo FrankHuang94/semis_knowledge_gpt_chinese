@@ -1,0 +1,19 @@
+schema_version: 1
+review_policies:
+  companies: {review_interval_days: 180, trigger_events: [annual_report, major_architecture_change, acquisition, supply_chain_change]}
+  products: {review_interval_days: 90, trigger_events: [status_change, launch, sampling, production_ramp, deployment_disclosure, end_of_life]}
+  standards: {review_interval_days: 180, trigger_events: [new_revision, errata, compliance_program, supersession]}
+  interfaces: {review_interval_days: 180, trigger_events: [new_revision, deployment_evidence, interoperability_event, supersession]}
+watchlist:
+  - {entity_type: products, entity_id: broadcom_tomahawk_6, last_reviewed: 2026-08-24, next_review: 2026-11-22, priority: high, status: Scheduled, reason: shipping_status_and_cpo_variant_adoption}
+  - {entity_type: products, entity_id: astera_scorpio_x_series, last_reviewed: 2026-08-24, next_review: 2026-11-22, priority: high, status: Scheduled, reason: initial_production_ramp_and_protocol_ecosystem}
+  - {entity_type: products, entity_id: samsung_hbm3e_8h, last_reviewed: 2026-08-24, next_review: 2026-11-22, priority: high, status: Scheduled, reason: customer_qualification_and_generation_transition}
+  - {entity_type: products, entity_id: arm_neoverse_css_v3, last_reviewed: 2026-08-24, next_review: 2026-11-22, priority: medium, status: Scheduled, reason: partner_silicon_and_production_evidence}
+  - {entity_type: products, entity_id: vertiv_coolchip_cdu, last_reviewed: 2026-08-24, next_review: 2026-11-22, priority: medium, status: Scheduled, reason: commercial_availability_and_field_deployment}
+  - {entity_type: standards, entity_id: ualink_1_0, last_reviewed: 2026-08-24, next_review: 2027-02-20, priority: high, status: Scheduled, reason: first_generation_product_and_compliance_ecosystem}
+  - {entity_type: standards, entity_id: ultra_ethernet_1_0, last_reviewed: 2026-08-24, next_review: 2027-02-20, priority: high, status: Scheduled, reason: errata_revision_and_multivendor_adoption}
+  - {entity_type: standards, entity_id: ocp_project_deschutes_1_0, last_reviewed: 2026-08-24, next_review: 2027-02-20, priority: medium, status: Scheduled, reason: cooling_spec_revision_and_vendor_conformance}
+source_review_schema:
+  required: [entity_type, entity_id, last_reviewed, next_review, priority, status, reason]
+  priority_allowed: [high, medium, low]
+  status_allowed: [Scheduled, Due, Blocked]

@@ -1,0 +1,31 @@
+schema_version: 1
+lineages:
+  - id: broadcom_tomahawk
+    company_id: broadcom
+    category: ethernet_switch_asic
+    generations:
+      - {name: Tomahawk 5, milestone_date: 2022-08-16, product_status: Shipping, relation: predecessor, sources: [https://www.broadcom.com/company/news/product-releases/60271]}
+      - {name: Tomahawk 6, product_id: broadcom_tomahawk_6, milestone_date: 2025-06-03, product_status: Shipping, relation: current_base_generation, sources: [https://www.broadcom.com/company/news/product-releases/63146]}
+      - {name: Tomahawk 6 Davisson, milestone_date: 2025-10-08, product_status: Shipping, relation: cpo_variant, sources: [https://investors.broadcom.com/news-releases/news-release-details/broadcom-announces-tomahawkr-6-davisson-industrys-first-1024]}
+  - id: samsung_hbm3e
+    company_id: samsung
+    category: high_bandwidth_memory
+    generations:
+      - {name: HBM3E 12H sampling, milestone_date: 2024-02-27, product_status: Sampling, relation: higher_stack_sampling, sources: [https://news.samsung.com/global/samsung-develops-industry-first-36gb-hbm3e-12h-dram]}
+      - {name: HBM3E 8H production, product_id: samsung_hbm3e_8h, milestone_date: 2024-04-30, product_status: Production, relation: volume_production_milestone, sources: [https://news.samsung.com/global/samsung-electronics-announces-first-quarter-2024-results]}
+  - id: astera_scorpio
+    company_id: astera_labs
+    category: ai_fabric_switch
+    generations:
+      - {name: Scorpio P-Series and X-Series pre-production, milestone_date: 2024-10-08, product_status: Sampling, relation: preproduction, sources: [https://ir.asteralabs.com/node/7351/pdf]}
+      - {name: Scorpio X-Series initial production, product_id: astera_scorpio_x_series, milestone_date: 2026-01-22, product_status: Production, relation: initial_production, sources: [https://www.asteralabs.com/news/astera-labs-broadens-scorpio-x-series-smart-fabric-switch-roadmap-to-address-expanding-scale-up-market-opportunities/]}
+      - {name: Scorpio X-Series 320-lane, milestone_date: 2026-05-05, product_status: Shipping, relation: higher_radix_successor, sources: [https://www.asteralabs.com/news/astera-labs-extends-leadership-in-open-ai-scale-up-networking-with-new-320-lane-scorpio-x-series-smart-fabric-switch/]}
+  - id: arm_neoverse_css
+    company_id: arm
+    category: cpu_compute_subsystem_ip
+    generations:
+      - {name: Neoverse CSS N2, milestone_date: 2023-08-28, product_status: Announced, relation: predecessor, sources: [https://newsroom.arm.com/news/arm-neoverse-compute-subsystems]}
+      - {name: Neoverse CSS V3, product_id: arm_neoverse_css_v3, milestone_date: 2024-02-21, product_status: Announced, relation: performance_successor, sources: [https://newsroom.arm.com/news/enabling-ai-infrastructure-on-arm]}
+lineage_schema:
+  required: [id, company_id, category, generations]
+  generation_required: [name, milestone_date, product_status, relation, sources]

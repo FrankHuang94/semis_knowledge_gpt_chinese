@@ -148,6 +148,116 @@ products:
     missing_disclosures: [current_deployment_scale, workload_coverage_distribution]
     sources:
       - https://www.intel.com/content/www/us/en/products/details/processors/ai-accelerators/gaudi.html
+  - id: arm_neoverse_css_v3
+    name: Arm Neoverse CSS V3
+    company_id: arm
+    category: cpu_compute_subsystem_ip
+    product_status: Announced
+    last_verified: 2026-08-24
+    source_date: 2024-02-21
+    generation: Neoverse_V3
+    predecessor: Neoverse_CSS_N2
+    workload_target: [cloud, hpc, ai_ml]
+    architecture: [neoverse_v3_cpu, coherent_mesh, system_ip, verified_compute_subsystem]
+    software: [Arm_ecosystem, Linux, cloud_native]
+    old_bottleneck: [custom_cpu_soc_schedule, integration_and_validation]
+    architectural_response: pre_integrated_verified_compute_subsystem
+    new_bottleneck: [partner_differentiation, physical_implementation, foundry_and_package_execution]
+    missing_disclosures: [partner_specific_delivery_dates, production_volume]
+    sources:
+      - https://newsroom.arm.com/news/enabling-ai-infrastructure-on-arm
+  - id: samsung_hbm3e_8h
+    name: Samsung HBM3E 8H
+    company_id: samsung
+    category: high_bandwidth_memory
+    product_status: Production
+    last_verified: 2026-08-24
+    source_date: 2024-04-30
+    generation: HBM3E
+    predecessor: Samsung_HBM3_8H
+    workload_target: [ai_accelerator, hpc]
+    architecture: [eight_high_dram_stack, tsv, wide_io]
+    memory: [hbm3e]
+    package: [stacked_dram, accelerator_adjacent_integration]
+    old_bottleneck: [accelerator_memory_bandwidth, capacity_per_package]
+    architectural_response: higher_rate_stacked_dram
+    new_bottleneck: [customer_qualification, stack_yield, thermal, packaging_capacity]
+    missing_disclosures: [customer_specific_qualification, shipment_mix]
+    sources:
+      - https://news.samsung.com/global/samsung-electronics-announces-first-quarter-2024-results
+  - id: broadcom_tomahawk_6
+    name: Broadcom Tomahawk 6
+    company_id: broadcom
+    category: ethernet_switch_asic
+    product_status: Shipping
+    last_verified: 2026-08-24
+    source_date: 2025-06-03
+    generation: Tomahawk_6
+    predecessor: Broadcom_Tomahawk_5
+    successor: Broadcom_Tomahawk_6_Davisson
+    workload_target: [ai_scale_out, ai_scale_up, cloud_networking]
+    architecture: [ethernet_switch_asic, high_radix, ai_routing_features]
+    interconnect: [ethernet, high_speed_serdes, optional_cpo]
+    old_bottleneck: [switch_radix, fabric_layers, front_panel_signal_reach]
+    architectural_response: higher_aggregate_switching_and_cpo_option
+    new_bottleneck: [optics_yield, packaging, control_plane, fleet_qualification]
+    missing_disclosures: [field_port_mix, independent_power_under_real_traffic]
+    sources:
+      - https://www.broadcom.com/company/news/product-releases/63146
+  - id: astera_scorpio_x_series
+    name: Astera Labs Scorpio X-Series
+    company_id: astera_labs
+    category: ai_scale_up_fabric_switch
+    product_status: Production
+    last_verified: 2026-08-24
+    source_date: 2026-01-22
+    generation: Scorpio_X
+    predecessor: Scorpio_preproduction_platform
+    workload_target: [ai_scale_up, heterogeneous_accelerator_fabric]
+    architecture: [memory_semantic_switch, high_radix, telemetry_and_management]
+    interconnect: [pcie_derived_and_platform_specific_protocols]
+    software: [COSMOS]
+    old_bottleneck: [accelerator_scale_up_optionality, fabric_diagnostics]
+    architectural_response: merchant_memory_semantic_fabric_switch
+    new_bottleneck: [protocol_adoption, accelerator_qualification, production_ramp]
+    missing_disclosures: [broad_customer_deployment, workload_level_tail_latency]
+    sources:
+      - https://www.asteralabs.com/news/astera-labs-broadens-scorpio-x-series-smart-fabric-switch-roadmap-to-address-expanding-scale-up-market-opportunities/
+  - id: credo_hiwire_aec
+    name: Credo HiWire Active Electrical Cable
+    company_id: credo
+    category: active_electrical_cable
+    product_status: Production
+    last_verified: 2026-08-24
+    source_date: 2019-07-09
+    generation: HiWire_AEC
+    workload_target: [in_rack_connectivity, ethernet_breakout, speed_shifting]
+    architecture: [copper_cable, integrated_retimer_or_gearbox, standard_pluggable_connectors]
+    interconnect: [ethernet, pam4, nrz]
+    old_bottleneck: [passive_copper_reach, optical_power_and_cost]
+    architectural_response: active_signal_conditioning_inside_copper_cable
+    new_bottleneck: [connector_reliability, cable_thermal, reach_limit, interoperability]
+    missing_disclosures: [fleet_failure_distribution, current_generation_unit_mix]
+    sources:
+      - https://credosemi.com/news/credo-announces-production-availability-of-hiwire-active-electrical-cables/
+      - https://credosemi.com/products/zeroflapaec/
+  - id: vertiv_coolchip_cdu
+    name: Vertiv CoolChip CDU Family
+    company_id: vertiv
+    category: coolant_distribution_unit
+    product_status: Announced
+    last_verified: 2026-08-24
+    source_date: 2026-08-24
+    generation: CoolChip_CDU
+    workload_target: [direct_to_chip_liquid_cooling, rear_door_heat_exchange, high_density_datacenter]
+    architecture: [liquid_to_liquid_or_liquid_to_air_heat_exchange, pumps, filtration, controls]
+    cooling: [in_rack, in_row, perimeter]
+    old_bottleneck: [air_cooling_density, facility_water_to_it_loop_isolation]
+    architectural_response: controlled_secondary_coolant_loop
+    new_bottleneck: [facility_water, commissioning, water_quality, leak_and_pump_failure]
+    missing_disclosures: [installed_base_by_model, field_availability, site_specific_derating]
+    sources:
+      - https://www.vertiv.com/en-us/products-catalog/thermal-management/high-density-solutions/vertiv-coolchip-cdu/
 product_schema:
   required:
     - id

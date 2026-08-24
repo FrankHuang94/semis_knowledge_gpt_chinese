@@ -80,6 +80,45 @@ standards:
     open_questions: [high_power_evolution, facility_compatibility, liquid_cooling_integration]
     sources:
       - https://www.opencompute.org/wiki/Open_Rack/SpecsAndDesigns
+  - id: ualink_1_0
+    name: Ultra Accelerator Link Specification
+    organization: UALink Consortium
+    version: "1.0"
+    status: Released
+    last_verified: 2026-08-24
+    source_date: 2025-04-01
+    layers: [physical, link, protocol, management]
+    topology: [accelerator_to_accelerator, switched_scale_up_pod]
+    interoperability: consortium_specification_and_compliance_ecosystem
+    open_questions: [commercial_product_timing, multi_vendor_management, failure_isolation]
+    sources:
+      - https://ualinkconsortium.org/about-ualink/
+  - id: ultra_ethernet_1_0
+    name: Ultra Ethernet Specification
+    organization: Ultra Ethernet Consortium
+    version: "1.0"
+    status: Released
+    last_verified: 2026-08-24
+    source_date: 2025-06-11
+    layers: [transport, congestion_management, security, management, ethernet_integration]
+    topology: [routed_scale_out_fabric]
+    interoperability: open_specification_across_nics_switches_optics_and_cables
+    open_questions: [hardware_adoption, mixed_fabric_interoperability, operational_tuning]
+    sources:
+      - https://ultraethernet.org/ultra-ethernet-consortium-uec-launches-specification-1-0-transforming-ethernet-for-ai-and-hpc-at-scale/
+  - id: ocp_project_deschutes_1_0
+    name: OCP Project Deschutes Data Center Facilities
+    organization: Open Compute Project
+    version: "1.0"
+    status: Released
+    last_verified: 2026-08-24
+    source_date: 2025-07-01
+    layers: [facility_water, cdu, technology_cooling_system, labeling_and_qualification]
+    topology: [facility_to_cdu_to_it_loop]
+    interoperability: reference_requirements_for_liquid_cooling_facilities_and_components
+    open_questions: [vendor_conformance_testing, coolant_compatibility, facility_specific_design]
+    sources:
+      - https://ocpprodweb3.opencompute.org/documents/ocp-specification-deschutes-final-2025-09-05-pdf
 standard_schema:
   required: [id, name, organization, version, status, last_verified, sources]
   status_allowed: [Draft, Released, Adopted, Superseded]

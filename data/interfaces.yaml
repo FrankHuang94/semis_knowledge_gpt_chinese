@@ -89,6 +89,51 @@ interfaces:
     alternatives: [server_level_psu, other_rack_power_architectures]
     sources:
       - https://www.opencompute.org/documents/ocp-open-rack-v3-power-shelf-rev-1-0-1-pdf
+  - id: ualink_1
+    name: UALink 1.0
+    scope: accelerator_scale_up_memory_semantic_fabric
+    layers: [physical, link, protocol, management]
+    status: Released
+    last_verified: 2026-08-24
+    protocol: load_store_atomic_and_dma_between_accelerators
+    topology: [direct, switched_scale_up_pod]
+    alternatives: [nvlink, proprietary_accelerator_fabrics, pcie]
+    sources:
+      - https://ualinkconsortium.org/about-ualink/
+  - id: ultra_ethernet_transport
+    name: Ultra Ethernet Transport
+    scope: ai_and_hpc_scale_out_network
+    layers: [transport, congestion_management, security, management, ethernet]
+    status: Released
+    last_verified: 2026-08-24
+    protocol: ethernet_based_high_performance_transport
+    topology: [routed_multi_tier_fabric]
+    alternatives: [rocev2, infiniband, proprietary_transport]
+    sources:
+      - https://ultraethernet.org/specification-history/
+  - id: cxl_memory_pooling
+    name: CXL Memory Pooling and Switching
+    scope: coherent_memory_expansion_and_pooling
+    layers: [cxl_mem, cxl_io, fabric_management, pcie_phy]
+    status: Released
+    last_verified: 2026-08-24
+    protocol: host_managed_and_device_managed_memory_semantics
+    topology: [direct_attach, single_or_multi_level_switching, multi_domain_pool]
+    alternatives: [local_dram, memory_over_network, proprietary_coherent_fabric]
+    sources:
+      - https://computeexpresslink.org/wp-content/uploads/2024/12/CXL_3.2-Spec-Announcement_FINAL-1.pdf
+  - id: ocp_deschutes_liquid_loop
+    name: OCP Project Deschutes Liquid Cooling Boundary
+    scope: facility_to_technology_cooling_system
+    layers: [facility_water, cdu, secondary_fluid_network, cold_plate_loop, monitoring]
+    status: Released
+    last_verified: 2026-08-24
+    protocol: thermal_fluid_distribution_and_operational_requirements
+    topology: [facility_loop_to_cdu_to_secondary_loop_to_it]
+    alternatives: [air_cooling, rear_door_heat_exchange, immersion]
+    sources:
+      - https://www.opencompute.org/community/coolant-distribution-unit
+      - https://ocpprodweb3.opencompute.org/documents/ocp-specification-deschutes-final-2025-09-05-pdf
 interface_schema:
   required: [id, name, scope, layers, status, last_verified, sources]
   recommended:

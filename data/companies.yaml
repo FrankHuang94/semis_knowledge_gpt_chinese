@@ -155,6 +155,101 @@ companies:
       - How does power efficiency translate at system level?
     sources:
       - https://www.micron.com/products/memory/hbm
+  - id: arm
+    name: Arm
+    categories: [cpu_ip, compute_subsystem, system_ip, software_ecosystem]
+    last_verified: 2026-08-24
+    architecture_control_points: [instruction_set_ecosystem, neoverse_cpu_ip, compute_subsystems, system_ip, total_design]
+    manufacturing_dependencies: [foundry_partners, physical_ip, eda, chiplet_and_soc_partners]
+    software_ecosystem: [Arm_software_tools, Linux, cloud_native_ecosystem]
+    customer_switching_cost: [isa_and_software_porting, soc_integration, validation, licensing_relationship]
+    supplier_dependencies: [foundries, eda, physical_ip, silicon_partners]
+    moat_hypotheses: [broad_software_ecosystem, reusable_ip, partner_based_custom_silicon]
+    diligence_questions:
+      - Which value remains with Arm versus the licensee and foundry?
+      - Does CSS shorten schedule without constraining partner differentiation?
+    sources:
+      - https://newsroom.arm.com/news/enabling-ai-infrastructure-on-arm
+      - https://newsroom.arm.com/news/arm-total-design-sustainable-ai-datacenter
+  - id: samsung
+    name: Samsung Electronics
+    categories: [dram, hbm, foundry, advanced_packaging]
+    last_verified: 2026-08-24
+    architecture_control_points: [dram_process, hbm_stacking, foundry_process, packaging, customer_qualification]
+    manufacturing_dependencies: [memory_fabs, foundry_fabs, equipment, materials, substrates]
+    software_ecosystem: []
+    customer_switching_cost: [memory_qualification, foundry_porting, package_and_thermal_validation]
+    supplier_dependencies: [equipment, materials, packaging_supply_chain]
+    moat_hypotheses: [memory_foundry_packaging_scope, vertical_manufacturing_learning]
+    diligence_questions:
+      - Which HBM status is sampling, qualified production, or customer deployment?
+      - Can foundry and packaging integration improve good-package yield and schedule?
+    sources:
+      - https://news.samsung.com/global/samsung-electronics-announces-first-quarter-2024-results
+      - https://semiconductor.samsung.com/dram/hbm/
+  - id: astera_labs
+    name: Astera Labs
+    categories: [pcie_switch, cxl_connectivity, retimer, smart_cable]
+    last_verified: 2026-08-24
+    architecture_control_points: [pcie_fabric_switch, cxl_memory_connectivity, retimer, diagnostics_and_fleet_management]
+    manufacturing_dependencies: [foundry, packaging, board_and_cable_partners]
+    software_ecosystem: [COSMOS_connectivity_system_management]
+    customer_switching_cost: [platform_qualification, firmware_integration, fleet_telemetry]
+    supplier_dependencies: [foundry, osat, system_oem_odm]
+    moat_hypotheses: [connectivity_portfolio_breadth, hyperscaler_codesign, diagnostics]
+    diligence_questions:
+      - Which Scorpio volumes are pre-production, initial production, or broad deployment?
+      - How portable are protocol and management features across accelerator ecosystems?
+    sources:
+      - https://www.asteralabs.com/news/astera-labs-broadens-scorpio-x-series-smart-fabric-switch-roadmap-to-address-expanding-scale-up-market-opportunities/
+      - https://www.asteralabs.com/products/
+  - id: credo
+    name: Credo
+    categories: [serdes, active_electrical_cable, optical_dsp, retimer]
+    last_verified: 2026-08-24
+    architecture_control_points: [high_speed_serdes, aec_signal_conditioning, optical_dsp, link_diagnostics]
+    manufacturing_dependencies: [foundry, packaging, cable_assembly, optical_component_supply]
+    software_ecosystem: [cable_and_link_management, diagnostics]
+    customer_switching_cost: [cable_qualification, switch_nic_interoperability, fleet_reliability_validation]
+    supplier_dependencies: [foundry, osat, cable_manufacturers, optical_partners]
+    moat_hypotheses: [signal_integrity_ip, low_power_connectivity, system_level_reliability]
+    diligence_questions:
+      - At what reach and topology does AEC lose to passive copper or optics?
+      - Are lower flap claims sustained across field temperature and connector aging?
+    sources:
+      - https://credosemi.com/products/zeroflapaec/
+      - https://credosemi.com/news/credo-announces-production-availability-of-hiwire-active-electrical-cables/
+  - id: vertiv
+    name: Vertiv
+    categories: [liquid_cooling, power_distribution, ups, datacenter_infrastructure]
+    last_verified: 2026-08-24
+    architecture_control_points: [cdu, heat_rejection, rack_power, ups, controls_and_service]
+    manufacturing_dependencies: [heat_exchangers, pumps, power_electronics, controls, field_service]
+    software_ecosystem: [thermal_and_power_monitoring, building_and_fleet_integration]
+    customer_switching_cost: [facility_design, controls_integration, spares_and_service, commissioning]
+    supplier_dependencies: [mechanical_components, power_electronics, field_service_network]
+    moat_hypotheses: [facility_level_portfolio, installed_base, deployment_and_service_capability]
+    diligence_questions:
+      - Is stated thermal capacity available at the customer's approach temperature and flow?
+      - Which failures are contained by pump, power, filtration, and control redundancy?
+    sources:
+      - https://www.vertiv.com/en-us/products-catalog/thermal-management/high-density-solutions/vertiv-coolchip-cdu/
+  - id: schneider_electric
+    name: Schneider Electric
+    categories: [datacenter_power, liquid_cooling, controls, facility_infrastructure]
+    last_verified: 2026-08-24
+    architecture_control_points: [medium_and_low_voltage_distribution, ups, cdu, building_controls, datacenter_reference_design]
+    manufacturing_dependencies: [power_electronics, switchgear, cooling_equipment, controls, service]
+    software_ecosystem: [EcoStruxure, power_monitoring, building_management]
+    customer_switching_cost: [facility_architecture, controls_data, service_contracts, commissioning]
+    supplier_dependencies: [electrical_components, cooling_components, field_service]
+    moat_hypotheses: [end_to_end_facility_scope, installed_base, controls_and_service]
+    diligence_questions:
+      - How much integration is product-level versus project-engineering work?
+      - Can cooling and electrical control loops respond to AI load transients together?
+    sources:
+      - https://www.se.com/ww/en/work/solutions/data-centers-and-networks/
+      - https://www.se.com/eg/en/product-range/312500210-uniflair-liquid-to-liquid-cdu/
 company_schema:
   required: [id, name, categories, last_verified, sources]
   recommended:

@@ -59,22 +59,22 @@
 - [x] Software / Hardware Co-design
 - [x] 五级 quizzes 与 Fermi exercises
 
-## Phase 3 — Product and Company Intelligence（当前）
+## Phase 3 — Product and Company Intelligence（完成首轮）
 
-建立有 freshness metadata 的 product/company database；优先覆盖 NVIDIA、AMD、Google、AWS、Intel、Arm、Broadcom、Marvell、HBM vendors、foundry 与 packaging ecosystem。所有状态明确标记 Announced、Sampling、Production、Shipping、Deployed、Roadmap 或 Rumored。
+建立有 freshness metadata 的 product/company database；所有状态明确标记 Announced、Sampling、Production、Shipping、Deployed、Roadmap 或 Rumored。
 
 当前进度：
 
 - [x] Company / Product / Standard / Interface schemas
-- [x] 首批 10 家公司 architecture-control records
-- [x] 首批 8 个已核验产品/平台 records
-- [x] 首批 6 个 standards 与 8 个 interfaces
-- [x] CI required-fields、status、date、source 与 reference validation
-- [ ] 扩展 Arm、Samsung、switch/optics、HBM 与 power/cooling vendors
-- [ ] 建立 product-generation predecessor/successor time series
-- [ ] 建立 source freshness review queue
+- [x] 16 家公司 architecture-control records
+- [x] 14 个已核验产品/平台 records
+- [x] 9 个 standards 与 12 个 interfaces
+- [x] Arm、Samsung、switch/retimer/AEC、HBM 与 power/cooling ecosystem
+- [x] Product-generation milestone time series
+- [x] Source freshness policy 与 high-volatility review queue
+- [x] CI required-fields、status、date、source、reference、lineage 与 queue validation
 
-## Phase 4 — Conference Learning Loop
+## Phase 4 — Conference Learning Loop（下一阶段）
 
 把 Hot Chips、ISSCC、OFC、SC、GTC、OCP 等材料进入 conference inbox，执行：提取概念 → 判断 prerequisites → 建立 backlinks → 更新 product case → 更新 strategy implications → 记录 open questions。
 
