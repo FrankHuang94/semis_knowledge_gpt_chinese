@@ -1,17 +1,31 @@
 # Memory
 
-> 状态：框架已建立，内容将按 [Roadmap](https://github.com/FrankHuang94/semis_knowledge_gpt_chinese/blob/main/ROADMAP.md) 的依赖顺序深化。
+> 目标：从 cell、array、hierarchy 与 data placement 理解 memory wall，而不是把 bandwidth 和 capacity 当成两个孤立规格。
 
-本模块不以术语数量为目标。每个主题将从 problem、constraint 与 dataflow 出发，比较 architecture alternatives，解释 trade-off、second-order effects，并连接到真实 workload、产品、制造与 Strategy Lens。
+Memory subsystem 的任务是让正确的数据在正确时间、以足够低的 energy 到达 compute。第一篇建立从 register 到 storage 的 hierarchy；第二篇进入 DRAM cell、bank、row buffer、commands 与 timing，为后续 HBM 和 CXL 奠定基础。
+
+## Cornerstone sequence
+
+1. [Memory Hierarchy：为什么算力必须被多层数据供给系统包围](memory_hierarchy.md)
+2. [DRAM：从一个电容到 AI 系统的容量与带宽墙](dram.md)
+3. 下一步：[HBM](../09_hbm/index.md)、Roofline、memory controller、virtual memory 与 memory pooling。
+
+~~~mermaid
+flowchart LR
+    C[Compute] <--> R[Register / SRAM]
+    R <--> L[Cache / Scratchpad]
+    L <--> D[DRAM]
+    D --> H[HBM / DDR / GDDR choices]
+    D --> T[Host / Tiered Memory]
+    H --> P[Package + Power + Supply]
+~~~
 
 ## 本模块默认问题
 
-1. 没有这项技术时，系统在哪里失败？
-2. 限制来自 physics、architecture、software 还是 manufacturing？
-3. 有哪些替代方案，为什么它们共存？
-4. 优化一个指标会牺牲什么？
-5. bottleneck 解决后移到哪里？
-6. 哪些 metric 能证伪产品主张？
-7. 谁控制关键 IP、capacity、validation 与 ecosystem？
-
-具体内容将优先链接到 cornerstone articles，避免重复建立短定义页面。
+1. 需要保存的 working set 多大、lifetime 多长、由谁共享？
+2. 限制是 latency、bandwidth、capacity、transaction efficiency 还是 reliability？
+3. 数据在哪一层复用，谁负责 placement、tiling、prefetch 与 eviction？
+4. Peak GB/s 中有多少是 sustained、useful、SLO-compliant bandwidth？
+5. 增加 cache、channels、data rate 或 stacks 会牺牲什么？
+6. Memory 改动如何牵动 controller、PHY、package、power、thermal 与 yield？
+7. Bottleneck 解除后是否转移到 software、fabric 或 compute supply？

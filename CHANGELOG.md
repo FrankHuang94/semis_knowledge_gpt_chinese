@@ -6,6 +6,9 @@
 
 ### Added
 
+- 完成 Training vs Inference、Prefill vs Decode、Memory Hierarchy 与 DRAM 四篇 cornerstone drafts。
+- 扩展 serving SLO、KV cache、locality、cache/DRAM organization、bank、row buffer 与 refresh 的知识图谱和 glossary。
+
 - 完成 CPU Architecture、GPU Architecture、Matrix Multiplication 与 Tensor Core 四篇 cornerstone drafts。
 - 扩展 CPU/GPU execution、GEMM dataflow、MMA、precision 与 software pipeline 的知识图谱和 glossary。
 

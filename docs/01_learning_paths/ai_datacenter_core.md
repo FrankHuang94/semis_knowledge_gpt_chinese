@@ -7,14 +7,14 @@
 1. 现代 AI 数据中心
 2. Follow the Data
 3. Bottleneck Map
-4. Training vs Inference
-5. Prefill vs Decode
+4. [Training vs Inference](../07_ai_workloads/training_vs_inference.md)
+5. [Prefill vs Decode](../07_ai_workloads/prefill_vs_decode.md)
 
 完成后应能说清：token 为什么会在 compute、memory 与 network 之间移动；peak FLOPS 为什么不是 application performance。
 
 ## 第二圈：芯片内（15–20 小时）
 
-Computer Architecture → GPU → GEMM/Tensor Core → Precision → Memory Hierarchy → DRAM → HBM → Roofline。
+Computer Architecture → GPU → GEMM/Tensor Core → Precision → [Memory Hierarchy](../08_memory/memory_hierarchy.md) → [DRAM](../08_memory/dram.md) → HBM → Roofline。
 
 完成后应能判断一个 kernel 何时 compute-bound、memory-bound 或 latency-bound，并解释 HBM 增加为何会牵动 package、power、thermal 与 yield。
 

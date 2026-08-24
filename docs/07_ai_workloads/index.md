@@ -1,17 +1,34 @@
 # AI Workloads
 
-> 状态：框架已建立，内容将按 [Roadmap](https://github.com/FrankHuang94/semis_knowledge_gpt_chinese/blob/main/ROADMAP.md) 的依赖顺序深化。
+> 目标：把 model execution 翻译成 compute、memory、network 与服务指标，而不是只记算法名称。
 
-本模块不以术语数量为目标。每个主题将从 problem、constraint 与 dataflow 出发，比较 architecture alternatives，解释 trade-off、second-order effects，并连接到真实 workload、产品、制造与 Strategy Lens。
+硬件需求来自 workload。即使使用同一个 Transformer，training、prefill 与 decode 也会产生不同的 state、shape、parallelism、data movement 与 objective function。
+
+## Cornerstone sequence
+
+1. [Training vs Inference：同一个模型，为什么需要两套系统思维](training_vs_inference.md)
+2. [Prefill vs Decode：一次 LLM 请求为什么像两种不同 workload](prefill_vs_decode.md)
+3. 下一步：MoE、parallelism、collectives、recommendation 与 multimodal workloads。
+
+先读 Training vs Inference，建立“模型制造”与“在线生产”的目标差异；再读 Prefill vs Decode，把 inference 继续拆成 compute-intensive 与 memory/latency-sensitive phases。
+
+~~~mermaid
+flowchart LR
+    T[Training<br/>forward + backward + update] --> W[Weights]
+    W --> P[Prefill<br/>many prompt tokens]
+    P --> K[KV cache]
+    K --> D[Decode<br/>iterative token]
+    T -->|state + collective| SYS[System requirements]
+    P -->|TTFT + compute| SYS
+    D -->|ITL + memory| SYS
+~~~
 
 ## 本模块默认问题
 
-1. 没有这项技术时，系统在哪里失败？
-2. 限制来自 physics、architecture、software 还是 manufacturing？
-3. 有哪些替代方案，为什么它们共存？
-4. 优化一个指标会牺牲什么？
-5. bottleneck 解决后移到哪里？
-6. 哪些 metric 能证伪产品主张？
-7. 谁控制关键 IP、capacity、validation 与 ecosystem？
-
-具体内容将优先链接到 cornerstone articles，避免重复建立短定义页面。
+1. Model phase 的目标指标是什么：time-to-quality、TTFT、ITL、throughput 还是 cost/token？
+2. Live state 是 weights、activations、gradients、optimizer state 还是 KV cache？
+3. Shape 与 batch 能否给 matrix units 足够 reuse？
+4. Bottleneck 是 compute、capacity、bandwidth、latency、communication 还是 scheduling？
+5. 为提高利用率牺牲了 convergence、quality、tail latency 还是 reliability？
+6. Benchmark 是否匹配真实 sequence、arrival、precision、SLO 与 system boundary？
+7. 优化后价值迁移到 memory、fabric、runtime 还是 model architecture？

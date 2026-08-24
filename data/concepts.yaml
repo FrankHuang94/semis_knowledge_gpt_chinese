@@ -90,3 +90,63 @@ concepts:
     strategic_implications: [accelerator_differentiation, compiler_library_moat]
     articles:
       - docs/06_gpu_accelerator/tensor_core.md
+  - id: training
+    name: Training
+    category: [ai_workload, system]
+    prerequisites: [forward_pass, backward_pass, optimization]
+    solves: [model_parameter_learning]
+    connected_to: [inference, mixed_precision, optimizer_state, data_parallel, collective_communication]
+    tradeoffs: [compute, memory_capacity, communication, convergence, reliability]
+    strategic_implications: [time_to_quality, cluster_scale, fabric_value]
+    articles:
+      - docs/07_ai_workloads/training_vs_inference.md
+  - id: inference
+    name: Inference
+    category: [ai_workload, serving]
+    prerequisites: [forward_pass, trained_model]
+    solves: [model_prediction_and_generation]
+    connected_to: [training, prefill, decode, serving_slo, quantization]
+    tradeoffs: [latency, throughput, quality, utilization, cost]
+    strategic_implications: [cost_per_token, deployment_scale, runtime_value]
+    articles:
+      - docs/07_ai_workloads/training_vs_inference.md
+  - id: prefill
+    name: Prefill
+    category: [llm_inference, workload]
+    prerequisites: [transformer, attention, inference]
+    solves: [prompt_state_encoding, kv_cache_initialization]
+    connected_to: [decode, kv_cache, gemm, ttft]
+    tradeoffs: [compute, ttft, phase_interference, kv_capacity]
+    strategic_implications: [phase_specific_hardware, serving_scheduler]
+    articles:
+      - docs/07_ai_workloads/prefill_vs_decode.md
+  - id: decode
+    name: Decode
+    category: [llm_inference, workload]
+    prerequisites: [transformer, kv_cache, inference]
+    solves: [autoregressive_token_generation]
+    connected_to: [prefill, kv_cache, memory_bandwidth, continuous_batching]
+    tradeoffs: [inter_token_latency, throughput, memory_capacity, batching_delay]
+    strategic_implications: [memory_value, runtime_moat, cost_per_token]
+    articles:
+      - docs/07_ai_workloads/prefill_vs_decode.md
+  - id: memory_hierarchy
+    name: Memory Hierarchy
+    category: [memory, architecture]
+    prerequisites: [bandwidth, latency, locality]
+    solves: [compute_memory_speed_gap, data_reuse]
+    connected_to: [register_file, cache, shared_memory, dram, hbm, arithmetic_intensity]
+    tradeoffs: [capacity, latency, bandwidth, area, power, scope]
+    strategic_implications: [balanced_system_design, compiler_value, memory_supplier_leverage]
+    articles:
+      - docs/08_memory/memory_hierarchy.md
+  - id: dram
+    name: DRAM
+    category: [memory, device]
+    prerequisites: [capacitor, memory_hierarchy, signal_integrity]
+    solves: [dense_main_memory]
+    connected_to: [row_buffer, bank, refresh, memory_controller, ddr, gddr, hbm]
+    tradeoffs: [latency, refresh, power, signal_integrity, reliability]
+    strategic_implications: [memory_cycle, hbm_supply, packaging_capacity]
+    articles:
+      - docs/08_memory/dram.md

@@ -27,10 +27,10 @@
 - [x] GPU Architecture
 - [x] 为什么 Matrix Multiplication 主导 AI
 - [x] Tensor Core
-- [ ] Training vs Inference
-- [ ] Prefill vs Decode
-- [ ] Memory Hierarchy
-- [ ] DRAM
+- [x] Training vs Inference
+- [x] Prefill vs Decode
+- [x] Memory Hierarchy
+- [x] DRAM
 - [ ] HBM
 - [ ] Roofline Model
 - [ ] PCIe vs CXL

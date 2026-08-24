@@ -14,3 +14,13 @@ gemm,通用矩阵乘,GEMM,ai_compute,将大量dot products组织为可复用和�
 tiling,分块,Tiling,performance,把大problem切成适配memory hierarchy和parallel hardware的小块,cache|shared_memory,docs/06_gpu_accelerator/why_matrix_multiplication.md,cornerstone
 tensor_core,张量核心,Tensor Core,ai_compute,协同执行小矩阵multiply-accumulate tile的专用datapath,gemm|warp,docs/06_gpu_accelerator/tensor_core.md,cornerstone
 mma,矩阵乘加,MMA,ai_compute,执行D等于A乘B加C的小矩阵primitive,matrix_fragment|accumulator,docs/06_gpu_accelerator/tensor_core.md,cornerstone
+training,训练,Training,ai_workload,通过forward backward和optimizer反复更新模型参数的过程,forward_pass|gradient,docs/07_ai_workloads/training_vs_inference.md,cornerstone
+inference,推理,Inference,ai_workload,使用固定模型参数把输入转换成预测或生成结果,trained_model|forward_pass,docs/07_ai_workloads/training_vs_inference.md,cornerstone
+prefill,预填充,Prefill,llm_inference,并行处理prompt tokens并建立每层KV状态的阶段,attention|inference,docs/07_ai_workloads/prefill_vs_decode.md,cornerstone
+decode,解码,Decode,llm_inference,依赖此前输出逐步生成新token的阶段,prefill|autoregressive,docs/07_ai_workloads/prefill_vs_decode.md,cornerstone
+kv_cache,键值缓存,KV Cache,llm_inference,保存历史tokens的attention K和V以避免每步重复计算,attention|decode,docs/07_ai_workloads/prefill_vs_decode.md,cornerstone
+memory_hierarchy,存储层级,Memory Hierarchy,memory,用多层不同容量延迟带宽和scope的存储捕获数据局部性,locality|bandwidth,docs/08_memory/memory_hierarchy.md,cornerstone
+cache_line,缓存行,Cache Line,memory,cache与相邻层之间一次查找和搬运的基本数据块,cache|spatial_locality,docs/08_memory/memory_hierarchy.md,cornerstone
+row_buffer,行缓冲,Row Buffer,dram,保存DRAM bank当前激活整行数据的sense-amplifier阵列,dram_cell|bank,docs/08_memory/dram.md,cornerstone
+dram_bank,存储体,DRAM Bank,dram,具有独立row buffer并可与其他banks重叠操作的DRAM子阵列,row_buffer|channel,docs/08_memory/dram.md,cornerstone
+refresh,刷新,Refresh,dram,周期性恢复DRAM cell电荷以保持数据,dram_cell|retention,docs/08_memory/dram.md,cornerstone
