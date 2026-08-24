@@ -38,7 +38,7 @@ flowchart LR
 | [Core Engineering](docs/02_engineering_foundations/index.md) | 补齐 clock、pipeline、RC、signal integrity 等必要基础 | 框架已建立 |
 | [AI Compute](docs/06_gpu_accelerator/index.md) | GPU、Tensor Core 与 workload 为什么匹配 | 4 篇核心文章已完成 |
 | [AI Workloads](docs/07_ai_workloads/index.md) | Training、Prefill、Decode、MoE 如何改变硬件需求 | 2 篇核心文章已完成 |
-| [Memory / HBM](docs/08_memory/index.md) | 为什么 memory hierarchy 必然存在 | Memory Hierarchy 与 DRAM 已完成 |
+| [Memory / HBM](docs/08_memory/index.md) | 为什么 memory hierarchy 必然存在 | Memory Hierarchy、DRAM、HBM 与 Roofline 已完成 |
 | [Networking](docs/13_scale_out_networking/index.md) | collective traffic 如何映射 topology 与 silicon | 规划中 |
 | [Optics](docs/15_optics/index.md) | electrical reach 为什么把系统推向 optics | 规划中 |
 | [Packaging](docs/16_advanced_packaging/index.md) | die、HBM、routing、power、thermal 如何互相约束 | 规划中 |
@@ -116,7 +116,7 @@ Competitive / Strategic Implication
 
 ## 当前建设阶段
 
-第一阶段聚焦一组高质量 cornerstone articles，而不是铺开数百个浅页面。全栈 mental model、数据流、bottleneck reasoning、architecture presentation decoder、CPU、GPU、Matrix Multiplication、Tensor Core、Training/Inference、Prefill/Decode、Memory Hierarchy 与 DRAM 已建立；下一轮沿 HBM、Roofline、PCIe/CXL 与 SerDes 深入。
+第一阶段聚焦一组高质量 cornerstone articles，而不是铺开数百个浅页面。全栈 mental model、数据流、bottleneck reasoning、architecture presentation decoder、CPU、GPU、Matrix Multiplication、Tensor Core、Training/Inference、Prefill/Decode、Memory Hierarchy、DRAM、HBM 与 Roofline 已建立；下一轮沿 PCIe/CXL、SerDes、Scale-up 与 Networking 深入。
 
 详细里程碑与完成定义见 [ROADMAP.md](ROADMAP.md)。
 

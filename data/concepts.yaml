@@ -29,7 +29,8 @@ concepts:
     connected_to: [gpu, tsv, interposer, advanced_packaging]
     tradeoffs: [cost, capacity, yield, thermal, package_complexity]
     strategic_implications: [supplier_concentration, packaging_capacity, accelerator_supply]
-    articles: []
+    articles:
+      - docs/09_hbm/hbm.md
   - id: scale_up
     name: Scale-up
     category: [interconnect, system]
@@ -150,3 +151,13 @@ concepts:
     strategic_implications: [memory_cycle, hbm_supply, packaging_capacity]
     articles:
       - docs/08_memory/dram.md
+  - id: roofline
+    name: Roofline Model
+    category: [performance_modeling, architecture]
+    prerequisites: [arithmetic_intensity, memory_bandwidth, peak_compute]
+    solves: [compute_vs_memory_bound_classification]
+    connected_to: [hbm, gpu, gemm, prefill, decode]
+    tradeoffs: [model_simplicity, boundary_choice, counter_accuracy]
+    strategic_implications: [benchmark_skepticism, balanced_roadmap]
+    articles:
+      - docs/08_memory/roofline_model.md

@@ -1,17 +1,20 @@
 # HBM
 
-> 状态：框架已建立，内容将按 [Roadmap](https://github.com/FrankHuang94/semis_knowledge_gpt_chinese/blob/main/ROADMAP.md) 的依赖顺序深化。
+> HBM 是 DRAM、TSV stacking、wide I/O、memory controller 与 advanced packaging 的共同系统，不是一条孤立规格。
 
-本模块不以术语数量为目标。每个主题将从 problem、constraint 与 dataflow 出发，比较 architecture alternatives，解释 trade-off、second-order effects，并连接到真实 workload、产品、制造与 Strategy Lens。
+## Cornerstone
 
-## 本模块默认问题
+1. [HBM：为什么 AI 加速器必须把 DRAM 堆到封装旁边](hbm.md)
+2. 前置：[DRAM](../08_memory/dram.md)、[Memory Hierarchy](../08_memory/memory_hierarchy.md)、[Roofline](../08_memory/roofline_model.md)
+3. 后续：[Advanced Packaging](../16_advanced_packaging/index.md)、Power/Thermal 与 product case studies。
 
-1. 没有这项技术时，系统在哪里失败？
-2. 限制来自 physics、architecture、software 还是 manufacturing？
-3. 有哪些替代方案，为什么它们共存？
-4. 优化一个指标会牺牲什么？
-5. bottleneck 解决后移到哪里？
-6. 哪些 metric 能证伪产品主张？
-7. 谁控制关键 IP、capacity、validation 与 ecosystem？
+~~~mermaid
+flowchart LR
+  W[Memory Wall] --> H[Wide-I/O stacked DRAM]
+  H --> P[Interposer / package]
+  H --> T[TSV / bonding / test]
+  H --> E[Power / thermal]
+  P --> S[Supply / yield / cost]
+~~~
 
-具体内容将优先链接到 cornerstone articles，避免重复建立短定义页面。
+阅读时始终同时问：raw bandwidth、useful bandwidth、usable capacity、energy/bit、stack/package yield 和 supplier qualification。

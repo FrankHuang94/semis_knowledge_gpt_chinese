@@ -48,6 +48,8 @@
 10. [Prefill vs Decode：一次 LLM 请求为什么像两种不同 workload](07_ai_workloads/prefill_vs_decode.md)
 11. [Memory Hierarchy：为什么算力必须被多层数据供给系统包围](08_memory/memory_hierarchy.md)
 12. [DRAM：从一个电容到 AI 系统的容量与带宽墙](08_memory/dram.md)
+13. [HBM：为什么 AI 加速器必须把 DRAM 堆到封装旁边](09_hbm/hbm.md)
+14. [Roofline Model：把算力、带宽与 workload 放到同一张图](08_memory/roofline_model.md)
 
 ## 阅读纪律
 

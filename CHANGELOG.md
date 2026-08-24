@@ -6,6 +6,8 @@
 
 ### Added
 
+- 完成 HBM 与 Roofline Model 两篇 cornerstone drafts，并补齐 memory/package economics 与 quantitative bound 的交叉链接。
+
 - 完成 Training vs Inference、Prefill vs Decode、Memory Hierarchy 与 DRAM 四篇 cornerstone drafts。
 - 扩展 serving SLO、KV cache、locality、cache/DRAM organization、bank、row buffer 与 refresh 的知识图谱和 glossary。
 

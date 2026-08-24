@@ -80,7 +80,10 @@ nav:
           - 模块入口: 08_memory/index.md
           - Memory Hierarchy: 08_memory/memory_hierarchy.md
           - DRAM: 08_memory/dram.md
-      - HBM: 09_hbm/index.md
+          - Roofline Model: 08_memory/roofline_model.md
+      - HBM:
+          - 模块入口: 09_hbm/index.md
+          - HBM Architecture & Economics: 09_hbm/hbm.md
       - PCIe / CXL / I/O: 10_pcie_cxl_io/index.md
       - SerDes & SI: 11_serdes_signal_integrity/index.md
       - Scale-up: 12_scale_up/index.md

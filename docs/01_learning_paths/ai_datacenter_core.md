@@ -14,7 +14,7 @@
 
 ## 第二圈：芯片内（15–20 小时）
 
-Computer Architecture → GPU → GEMM/Tensor Core → Precision → [Memory Hierarchy](../08_memory/memory_hierarchy.md) → [DRAM](../08_memory/dram.md) → HBM → Roofline。
+Computer Architecture → GPU → GEMM/Tensor Core → Precision → [Memory Hierarchy](../08_memory/memory_hierarchy.md) → [DRAM](../08_memory/dram.md) → [HBM](../09_hbm/hbm.md) → [Roofline](../08_memory/roofline_model.md)。
 
 完成后应能判断一个 kernel 何时 compute-bound、memory-bound 或 latency-bound，并解释 HBM 增加为何会牵动 package、power、thermal 与 yield。
 

@@ -31,8 +31,8 @@
 - [x] Prefill vs Decode
 - [x] Memory Hierarchy
 - [x] DRAM
-- [ ] HBM
-- [ ] Roofline Model
+- [x] HBM
+- [x] Roofline Model
 - [ ] PCIe vs CXL
 - [ ] SerDes
 - [ ] Scale-up vs Scale-out

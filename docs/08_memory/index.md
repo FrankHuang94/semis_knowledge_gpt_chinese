@@ -8,7 +8,9 @@ Memory subsystem 的任务是让正确的数据在正确时间、以足够低的
 
 1. [Memory Hierarchy：为什么算力必须被多层数据供给系统包围](memory_hierarchy.md)
 2. [DRAM：从一个电容到 AI 系统的容量与带宽墙](dram.md)
-3. 下一步：[HBM](../09_hbm/index.md)、Roofline、memory controller、virtual memory 与 memory pooling。
+3. [Roofline Model：把算力、带宽与 workload 放到同一张图](roofline_model.md)
+4. [HBM：为什么 AI 加速器必须把 DRAM 堆到封装旁边](../09_hbm/hbm.md)
+5. 下一步：memory controller、virtual memory 与 memory pooling。
 
 ~~~mermaid
 flowchart LR

@@ -24,3 +24,6 @@ cache_line,缓存行,Cache Line,memory,cache与相邻层之间一次查找和搬
 row_buffer,行缓冲,Row Buffer,dram,保存DRAM bank当前激活整行数据的sense-amplifier阵列,dram_cell|bank,docs/08_memory/dram.md,cornerstone
 dram_bank,存储体,DRAM Bank,dram,具有独立row buffer并可与其他banks重叠操作的DRAM子阵列,row_buffer|channel,docs/08_memory/dram.md,cornerstone
 refresh,刷新,Refresh,dram,周期性恢复DRAM cell电荷以保持数据,dram_cell|retention,docs/08_memory/dram.md,cornerstone
+hbm,高带宽内存,High Bandwidth Memory,memory,通过TSV堆叠DRAM和超宽近封装接口提供高总带宽,dram|tsv,docs/09_hbm/hbm.md,cornerstone
+roofline,屋顶线模型,Roofline Model,performance_modeling,用compute roof和bandwidth乘算术强度的memory roof给出性能上界,arithmetic_intensity|bandwidth,docs/08_memory/roofline_model.md,cornerstone
+ridge_point,屋脊点,Ridge Point,performance_modeling,compute roof与memory roof相交的算术强度阈值,roofline|peak_compute,docs/08_memory/roofline_model.md,cornerstone
