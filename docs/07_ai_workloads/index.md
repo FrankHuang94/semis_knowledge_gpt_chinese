@@ -33,3 +33,8 @@ flowchart LR
 5. 为提高利用率牺牲了 convergence、quality、tail latency 还是 reliability？
 6. Benchmark 是否匹配真实 sequence、arrival、precision、SLO 与 system boundary？
 7. 优化后价值迁移到 memory、fabric、runtime 还是 model architecture？
+
+
+## Attention、KV Cache 与 MoE
+
+[Attention、KV Cache 与 MoE](attention_kv_cache_moe.md) 把模型结构直接映射到 HBM capacity/bandwidth、serving scheduler、All-to-All、expert load balance 与 tail latency。它补齐 long context、paged KV、GQA/MQA 与 Expert Parallelism 的系统推理。

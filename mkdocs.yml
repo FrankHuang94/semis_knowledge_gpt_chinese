@@ -82,6 +82,7 @@ nav:
           - 模块入口: 07_ai_workloads/index.md
           - Training vs Inference: 07_ai_workloads/training_vs_inference.md
           - Prefill vs Decode: 07_ai_workloads/prefill_vs_decode.md
+          - Attention、KV Cache 与 MoE: 07_ai_workloads/attention_kv_cache_moe.md
           - Distributed Training & Collectives: 07_ai_workloads/distributed_training_collectives.md
   - Data Movement:
       - Memory:
