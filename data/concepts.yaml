@@ -608,3 +608,69 @@ concepts:
     strategic_implications: [network_value, runtime_control]
     articles:
       - docs/07_ai_workloads/distributed_training_collectives.md
+  - id: semiconductor_manufacturing
+    name: 半导体制造系统
+    english_name: Semiconductor Manufacturing
+    category: [manufacturing, supply_chain]
+    prerequisites: [wafer, process_flow, yield]
+    solves: [semiconductor_product_realization]
+    connected_to: [wafer_start, cycle_time, capacity, advanced_packaging]
+    tradeoffs: [cost, yield, lead_time, flexibility]
+    strategic_implications: [capacity_control, supplier_leverage]
+    articles:
+      - docs/22_manufacturing_supply_chain/manufacturing_supply_chain.md
+  - id: cycle_time
+    name: 制造周期
+    english_name: Cycle Time
+    category: [manufacturing, operations]
+    prerequisites: [wip, queue, process_step]
+    solves: []
+    connected_to: [capacity, utilization, lead_time]
+    tradeoffs: [utilization, responsiveness, inventory]
+    strategic_implications: [delivery_predictability, working_capital]
+    articles:
+      - docs/22_manufacturing_supply_chain/manufacturing_supply_chain.md
+  - id: supply_chain
+    name: 半导体供应链
+    english_name: Semiconductor Supply Chain
+    category: [manufacturing, strategy]
+    prerequisites: [bom, capacity, qualification]
+    solves: [component_to_system_coordination]
+    connected_to: [hbm, advanced_packaging, test, ai_rack]
+    tradeoffs: [inventory, resilience, cost, obsolescence]
+    strategic_implications: [bottleneck_value, geographic_risk]
+    articles:
+      - docs/22_manufacturing_supply_chain/manufacturing_supply_chain.md
+  - id: software_hardware_codesign
+    name: 软硬件协同设计
+    english_name: Software Hardware Co-design
+    category: [software, architecture]
+    prerequisites: [workload, compiler, hardware]
+    solves: [hardware_feature_accessibility]
+    connected_to: [compiler_ir, kernel_library, runtime, autotuning]
+    tradeoffs: [performance, portability, complexity, compile_time]
+    strategic_implications: [software_moat, switching_cost]
+    articles:
+      - docs/21_software_hardware_codesign/software_hardware_codesign.md
+  - id: compiler_ir
+    name: 编译器中间表示
+    english_name: Compiler Intermediate Representation
+    category: [compiler, software]
+    prerequisites: [graph, operation, semantics]
+    solves: [multi_level_transformation]
+    connected_to: [stablehlo, mlir, lowering, graph_compiler]
+    tradeoffs: [abstraction, target_specificity, stability]
+    strategic_implications: [ecosystem_interface, portability]
+    articles:
+      - docs/21_software_hardware_codesign/software_hardware_codesign.md
+  - id: autotuning
+    name: 自动调优
+    english_name: Autotuning
+    category: [compiler, performance]
+    prerequisites: [kernel, search_space, benchmark]
+    solves: [target_specific_parameter_selection]
+    connected_to: [tiling, kernel_library, cost_model]
+    tradeoffs: [search_time, reproducibility, specialization]
+    strategic_implications: [performance_data_moat]
+    articles:
+      - docs/21_software_hardware_codesign/software_hardware_codesign.md

@@ -6,6 +6,9 @@
 
 ### Added
 
+- 完成 Semiconductor Manufacturing / Supply Chain 与 Software / Hardware Co-design 两篇 Core Curriculum drafts。
+- 扩展 good-system flow、yield/cycle time/capacity、compiler IR、fusion/layout、autotuning、runtime 与 performance portability 知识节点。
+
 - 完成 GPU Execution / Kernel Performance 与 Distributed Training / Collectives 两篇 Core Curriculum drafts。
 - 扩展 warp scheduling、coalescing、fusion/stall、DP/TP/PP/EP、collective semantics、topology mapping 与 communication overlap 知识节点。
 

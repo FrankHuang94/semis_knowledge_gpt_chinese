@@ -55,8 +55,8 @@
 - [x] Thermal & Cooling
 - [x] Distributed Training & Collectives
 - [x] GPU Execution & Kernel Performance
-- [ ] Manufacturing & Supply Chain
-- [ ] Software / Hardware Co-design
+- [x] Manufacturing & Supply Chain
+- [x] Software / Hardware Co-design
 - [ ] 五级 quizzes 与 Fermi exercises
 
 ## Phase 3 — Product and Company Intelligence

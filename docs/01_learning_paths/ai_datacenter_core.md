@@ -32,7 +32,7 @@ Computer Architecture → GPU → [GPU Execution](../06_gpu_accelerator/gpu_exec
 
 ## 第五圈：Strategy（10–15 小时）
 
-System Performance Waterfall → Spec Sheet Translator → Value Capture → Supply Chain → Product Evolution → Technical Diligence。
+[Software / Hardware Co-design](../21_software_hardware_codesign/software_hardware_codesign.md) → System Performance Waterfall → Spec Sheet Translator → Value Capture → [Manufacturing & Supply Chain](../22_manufacturing_supply_chain/manufacturing_supply_chain.md) → Product Evolution → Technical Diligence。
 
 完成后应能把 engineering delta 翻译成 BOM、TCO、supplier leverage、switching cost、moat 与 roadmap risk。
 

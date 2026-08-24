@@ -122,8 +122,12 @@ nav:
           - 现代 AI 数据中心: 20_rack_cluster_datacenter/modern_ai_datacenter.md
           - Modern AI Rack: 20_rack_cluster_datacenter/modern_ai_rack.md
   - Software & Supply:
-      - Software / Hardware Co-design: 21_software_hardware_codesign/index.md
-      - Manufacturing & Supply Chain: 22_manufacturing_supply_chain/index.md
+      - Software / Hardware Co-design:
+          - 模块入口: 21_software_hardware_codesign/index.md
+          - Co-design Architecture: 21_software_hardware_codesign/software_hardware_codesign.md
+      - Manufacturing & Supply Chain:
+          - 模块入口: 22_manufacturing_supply_chain/index.md
+          - Manufacturing & Supply Chain: 22_manufacturing_supply_chain/manufacturing_supply_chain.md
   - Products & Standards:
       - Company Architecture: 23_company_architecture/index.md
       - Product Database: 24_product_database/index.md
