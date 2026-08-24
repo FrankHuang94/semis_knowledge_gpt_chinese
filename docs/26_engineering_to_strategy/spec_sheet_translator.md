@@ -22,10 +22,7 @@ flowchart TD
 
 可以把 sustained performance 写成启发式乘积：
 
-[
-P_{useful}=P_{peak}	imeseta_{precision}	imeseta_{kernel}	imes
-eta_{memory}	imeseta_{communication}	imeseta_{runtime}	imeseta_{fleet}
-]
+<code>P_useful = P_peak × η_precision × η_kernel × η_memory × η_communication × η_runtime × η_fleet</code>
 
 这些效率不是彼此完全独立，不能用一个乘法预测器替代 measurement；公式的价值是迫使分析者列出每个 loss bucket。Communication stall 会改变 kernel occupancy，thermal throttling 会改变 peak，batch policy 会同时改变 memory 与 latency。
 
@@ -45,9 +42,7 @@ FLOPS 是每秒 floating-point operation 的计数约定，不是 token、sample
 
 ### Roofline 快速检查
 
-[
-P_{bound}=min(P_{peak}, Bandwidth	imes Arithmetic Intensity)
-]
+<code>P_bound = min(P_peak, Bandwidth × Arithmetic Intensity)</code>
 
 Berkeley Lab 对 Roofline 的说明把 Arithmetic Intensity 定义为 operation 与 data movement bytes 的比例。[Primary Source] 如果 kernel 的 intensity 低于 ridge point (P_{peak}/Bandwidth)，它首先受 bandwidth ceiling 限制。
 
@@ -93,7 +88,7 @@ Aggregate bandwidth 可能把每方向、所有 links、双向或多 port 相加
 
 ## 7. 看到 SerDes rate
 
-“224G SerDes”通常描述 lane signaling generation，不等于 224 GB/s payload。要核对 symbol modulation、coding/FEC overhead、lane count、reach、BER target、electrical/optical boundary、power/lane 与 package/board assumptions。更高 lane rate 可减少 lane 数，却可能缩短 reach并增加 equalization、retimer或optics。
+[Vendor Claim] “224G SerDes”通常描述 lane signaling generation，不等于 224 GB/s payload。要核对 symbol modulation、coding/FEC overhead、lane count、reach、BER target、electrical/optical boundary、power/lane 与 package/board assumptions。更高 lane rate 可减少 lane 数，却可能缩短 reach并增加 equalization、retimer或optics。
 
 ## 8. Benchmark skepticism：先固定 comparison contract
 
@@ -148,10 +143,7 @@ Pre-silicon estimate 可用于 architecture exploration，但必须标 [Estimate
 
 启发式 useful ceiling：
 
-[
-10	imes0.8	imes0.7	imes0.65	imes0.75	imes0.85
-approx2.3 PFLOP/s
-]
+<code>10 × 0.8 × 0.7 × 0.65 × 0.75 × 0.85 ≈ 2.3 PFLOP/s</code>
 
 结果不是产品预测，而是 sensitivity map。最大的 loss 不一定最值得优化：若 memory 与 kernel efficiency 相互依赖，先 fuse kernel 可能同时改善两项。Diligence 应要求 vendor 用 profiler 把真实时间与 bytes 分解，而不是接受分析者随意给出的效率。
 
