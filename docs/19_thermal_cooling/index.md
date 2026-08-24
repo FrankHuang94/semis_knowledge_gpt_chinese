@@ -1,6 +1,6 @@
 # Thermal & Cooling
 
-> 状态：框架已建立，内容将按 [Roadmap](../../ROADMAP.md) 的依赖顺序深化。
+> 状态：框架已建立，内容将按 [Roadmap](https://github.com/FrankHuang94/semis_knowledge_gpt_chinese/blob/main/ROADMAP.md) 的依赖顺序深化。
 
 本模块不以术语数量为目标。每个主题将从 problem、constraint 与 dataflow 出发，比较 architecture alternatives，解释 trade-off、second-order effects，并连接到真实 workload、产品、制造与 Strategy Lens。
 

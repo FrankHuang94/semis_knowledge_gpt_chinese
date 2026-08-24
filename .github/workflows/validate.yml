@@ -14,12 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -36,10 +36,10 @@ jobs:
       - name: Validate knowledge graph
         run: python scripts/build_graph.py
 
-      - name: Generate glossary and indexes
+      - name: Build MkDocs in strict mode
+        run: mkdocs build --strict
+
+      - name: Exercise content generators
         run: |
           python scripts/generate_glossary.py
           python scripts/generate_indexes.py
-
-      - name: Build MkDocs in strict mode
-        run: mkdocs build --strict
