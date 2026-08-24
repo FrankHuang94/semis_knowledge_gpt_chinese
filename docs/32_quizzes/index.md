@@ -1,11 +1,19 @@
-# Quizzes
+# Quizzes & Fermi Exercises
 
-测验采用五级体系：
+测验采用五级体系，从准确工程语言一路提升到可证伪的战略判断。
 
-1. Terminology：能否准确使用工程语言？
-2. Mechanism：能否解释数据或信号实际发生什么？
-3. Architecture：能否画出 blocks、state、control 与 dataflow？
-4. Trade-off：能否解释 why-not 与 bottleneck shifting？
-5. Strategy：能否把工程差异翻译成 economics、moat 与 diligence？
+## 入口
 
-示例：某 accelerator 的 FP8 peak compute 提升 2.5×，HBM bandwidth 提升 35%，capacity 提升 50%。哪些 workload 最不可能获得 2.5× performance？你还缺哪些信息才能下结论？
+- [AI Datacenter Engineering Core 五级测验](core_quiz.md)
+- [AI Datacenter Fermi Exercises：从数量级到决策边界](fermi_exercises.md)
+- [透明 Fermi 模型脚本](https://github.com/FrankHuang94/semis_knowledge_gpt_chinese/blob/main/scripts/fermi_models.py)
+
+## 五级体系
+
+1. Terminology：准确区分metric与boundary。
+2. Mechanism：解释data/signal/heat/power实际发生什么。
+3. Architecture：画blocks、state、control与dataflow。
+4. Trade-off：解释why-not与bottleneck shifting。
+5. Strategy：翻译为economics、moat、risk与falsifier。
+
+每道数量题都必须写assumptions、units、range、sensitivity与模型失效条件。

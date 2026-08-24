@@ -71,3 +71,11 @@
 ## 阅读纪律
 
 看到任何性能主张，先问 workload、precision、batch、sequence length、software、power、system size、network 与 baseline。看到任何 architecture block，先问它保存什么 state、数据从哪里来、控制从哪里来、带宽和 latency 在哪里，以及删掉它会发生什么。
+
+## Practice & Quantitative Toolkit
+
+- [AI Datacenter Engineering Core 五级测验](32_quizzes/core_quiz.md)
+- [AI Datacenter Fermi Exercises](32_quizzes/fermi_exercises.md)
+- [Technical Diligence Playbook](27_technical_diligence/technical_diligence_playbook.md)
+
+测验按 Terminology → Mechanism → Architecture → Trade-off → Strategy 递进；数量题要求公开 assumptions、units、sensitivity 与 model failure boundary。

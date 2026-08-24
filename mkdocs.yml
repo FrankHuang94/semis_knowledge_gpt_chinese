@@ -146,5 +146,8 @@ nav:
   - Practice:
       - Engineer Language: 30_engineer_language/index.md
       - Glossary: 31_glossary/index.md
-      - Quizzes: 32_quizzes/index.md
+      - Quizzes:
+          - 模块入口: 32_quizzes/index.md
+          - 五级 Core Quiz: 32_quizzes/core_quiz.md
+          - Fermi Exercises: 32_quizzes/fermi_exercises.md
       - Open Questions: 33_open_questions/index.md

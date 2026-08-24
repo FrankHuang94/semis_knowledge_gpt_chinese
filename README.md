@@ -115,11 +115,12 @@ Competitive / Strategic Implication
 - [文章模板](docs/_templates/major_article.md)
 - [引用规范](references/README.md)
 - [开放问题](docs/33_open_questions/index.md)
-- [测验](docs/32_quizzes/index.md)
+- [五级测验与 Fermi Exercises](docs/32_quizzes/index.md)
+- [透明 Fermi 模型脚本](scripts/fermi_models.py)
 
 ## 当前建设阶段
 
-第一阶段聚焦一组高质量 cornerstone articles，而不是铺开数百个浅页面。全栈 mental model、数据流、bottleneck reasoning、architecture presentation decoder、CPU、GPU、Matrix Multiplication、Tensor Core、Training/Inference、Prefill/Decode、Memory Hierarchy、DRAM、HBM、Roofline、Scale-up、AI Ethernet/RDMA、Datacenter Optics 与 Advanced Packaging 已建立与 Modern AI Rack 已建立，Phase 1 主链已闭环；当前进入 60–80 topics 的 Core Curriculum 深化；Switch/NIC/DPU、Chiplet/3D、Power Delivery 与 Thermal/Cooling 已完成。
+第一阶段聚焦一组高质量 cornerstone articles，而不是铺开数百个浅页面。全栈 mental model、数据流、bottleneck reasoning、architecture presentation decoder、CPU、GPU、Matrix Multiplication、Tensor Core、Training/Inference、Prefill/Decode、Memory Hierarchy、DRAM、HBM、Roofline、Scale-up、AI Ethernet/RDMA、Datacenter Optics 与 Advanced Packaging 已建立与 Modern AI Rack 已建立，Phase 1 主链已闭环；Phase 1 主链与 Phase 2 首轮 Core Curriculum 已闭环，并补齐五级测验、Fermi exercises 与透明估算脚本；当前进入产品、公司、标准与案例数据库。
 
 详细里程碑与完成定义见 [ROADMAP.md](ROADMAP.md)。
 

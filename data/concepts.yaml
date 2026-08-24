@@ -729,3 +729,25 @@ concepts:
     strategic_implications: [thesis_discipline]
     articles:
       - docs/27_technical_diligence/technical_diligence_playbook.md
+  - id: fermi_estimation
+    name: 费米估算
+    english_name: Fermi Estimation
+    category: [quantitative_reasoning, strategy]
+    prerequisites: [units, order_of_magnitude, system_boundary]
+    solves: [false_precision, missing_scale_intuition]
+    connected_to: [sensitivity, roofline, tco, capacity]
+    tradeoffs: [speed, fidelity, uncertainty]
+    strategic_implications: [decision_boundary, diligence_prioritization]
+    articles:
+      - docs/32_quizzes/fermi_exercises.md
+  - id: engineering_reasoning
+    name: 工程推理
+    english_name: Engineering Reasoning
+    category: [learning, methodology]
+    prerequisites: [mechanism, architecture, quantitative_reasoning]
+    solves: [terminology_only_learning]
+    connected_to: [technical_diligence, engineering_to_strategy, falsification]
+    tradeoffs: [depth, time, scope]
+    strategic_implications: [technical_conversation_quality]
+    articles:
+      - docs/32_quizzes/core_quiz.md

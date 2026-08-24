@@ -43,7 +43,7 @@
 
 质量门槛：每篇能够支撑 30–60 分钟工程对话；包含 mechanism、design space、why-not、quantitative example、second-order effects、strategy lens、diligence questions 与 primary sources。
 
-## Phase 2 — Core Curriculum（60–80 topics，当前）
+## Phase 2 — Core Curriculum（60–80 topics，首轮完成）
 
 目标为 100–150 小时 accelerated curriculum。深化 GPU execution、distributed training、collectives、switch/NIC/DPU、optics、chiplet、power/thermal、manufacturing、software/hardware co-design，并建立五级 quizzes 与 Fermi exercises。
 
@@ -57,9 +57,9 @@
 - [x] GPU Execution & Kernel Performance
 - [x] Manufacturing & Supply Chain
 - [x] Software / Hardware Co-design
-- [ ] 五级 quizzes 与 Fermi exercises
+- [x] 五级 quizzes 与 Fermi exercises
 
-## Phase 3 — Product and Company Intelligence
+## Phase 3 — Product and Company Intelligence（当前）
 
 建立有 freshness metadata 的 product/company database；优先覆盖 NVIDIA、AMD、Google、AWS、Intel、Arm、Broadcom、Marvell、HBM vendors、foundry 与 packaging ecosystem。所有状态明确标记 Announced、Sampling、Production、Shipping、Deployed、Roadmap 或 Rumored。
 

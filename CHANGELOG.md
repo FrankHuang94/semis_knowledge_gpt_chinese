@@ -6,6 +6,9 @@
 
 ### Added
 
+- 新增五级 AI Datacenter Engineering Core Quiz、十二组 Fermi Exercises 与透明命令行估算脚本。
+- Phase 2 首轮 Core Curriculum 从工程主链延伸到可测试、可计算、可证伪的练习层。
+
 - 完成 Engineering → Strategy 与 Technical Diligence Playbook 两篇决策层核心文章。
 - 扩展 value migration、TCO/moat、claim decomposition、evidence ladder、reproducibility 与 falsification 知识节点。
 
