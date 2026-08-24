@@ -19,3 +19,8 @@ flowchart LR
 ~~~
 
 核心纪律：永远同时报告 bit rate、baud、modulation、loss、BER、FEC、energy/bit、reach、PVT margin 与test boundary。
+
+
+## 深化阅读
+
+- [Channel Budget、Compliance 与 Production Test](channel_budget_compliance_production.md)

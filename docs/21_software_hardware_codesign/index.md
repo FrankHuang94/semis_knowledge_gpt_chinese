@@ -10,3 +10,8 @@
 ## 学习结果
 
 完成后应能区分correctness与performance portability，分析shape specialization、fusion、layout、precision、kernel coverage、compile/warm-up和distributed placement，并判断software moat如何兑现hardware feature。
+
+
+## 深化阅读
+
+- [Performance Regression Operations](performance_regression_operations.md)

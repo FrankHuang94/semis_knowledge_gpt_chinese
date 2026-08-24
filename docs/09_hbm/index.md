@@ -18,3 +18,8 @@ flowchart LR
 ~~~
 
 阅读时始终同时问：raw bandwidth、useful bandwidth、usable capacity、energy/bit、stack/package yield 和 supplier qualification。
+
+
+## 深化阅读
+
+- [HBM Scaling：Capacity、Bandwidth、Thermal 与 Yield](hbm_scaling_tradeoffs.md)

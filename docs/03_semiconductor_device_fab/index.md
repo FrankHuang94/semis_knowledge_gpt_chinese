@@ -16,3 +16,8 @@
 - Chiplet 为什么可能改善可筛选性，却增加 package/test 风险？
 - Installed capacity、qualified capacity 与 good output 为什么不能互换？
 - 制造 learning rate 为什么可能比某个时点的 nominal yield 更重要？
+
+
+## 深化阅读
+
+- [Process Control、Cycle Time 与 Learning Rate](process_control_cycle_time_learning.md)

@@ -15,3 +15,8 @@
 - 从 die yield 推导 final package yield，而不是只看单颗 die；
 - 定位 power、thermal、warpage、test 与 supply bottleneck；
 - 把先进封装翻译为 good-package economics 与 ecosystem control。
+
+
+## 深化阅读
+
+- [Test、Repair 与 Known-Good Die](test_repair_known_good_die.md)

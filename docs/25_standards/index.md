@@ -27,3 +27,8 @@ Standards 定义可互操作边界；interfaces 记录真实系统中 data、mem
 ## 判断纪律
 
 “符合标准”只支持被测试层的互操作，不自动证明 performance、package、firmware、coherence、management 或 production qualification。Diligence 必须要求 compliance matrix、版本组合、failed cases、firmware rollback 与 degraded-mode 行为。
+
+
+## 深化阅读
+
+- [从 Standard Compliance 到 Interoperability](standards_to_interoperability.md)

@@ -10,3 +10,8 @@
 ## 学习结果
 
 完成后应能区分 switch、NIC、SmartNIC 与 DPU；画出 fast/slow path；解释 DMA、RDMA、offload、queue 与 trust boundary；并用 CPU savings、tail、power、software lifecycle 与 failure domain评价产品。
+
+
+## 深化阅读
+
+- [Queue、Buffer 与 Telemetry](queue_buffer_telemetry.md)

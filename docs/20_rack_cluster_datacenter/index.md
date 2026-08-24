@@ -19,3 +19,8 @@
 - 区分 rack、network、cooling 与 software failure domains；
 - 用 availability-adjusted compute 而不是 nameplate specs 评价系统；
 - 把 installation、commissioning、service 与 spares 纳入 TCO。
+
+
+## 深化阅读
+
+- [Commissioning 与 Acceptance Testing](commissioning_acceptance_testing.md)

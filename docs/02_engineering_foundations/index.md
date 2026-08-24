@@ -18,3 +18,8 @@
 - Retimer、redriver、equalization 与 optics 分别在重分配哪一段 channel budget？
 
 合格标准不是会背公式，而是看到 “timing cannot close” 或 “signal margin is tight” 时，知道该要求哪些 boundary、corner、metric 与验证证据。
+
+
+## 深化阅读
+
+- [Clock、Reset 与 Error Containment](clock_reset_error_containment.md)

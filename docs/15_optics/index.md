@@ -20,3 +20,8 @@
 ## Optical architecture comparison
 
 [Pluggable、LPO 与 CPO](pluggable_lpo_cpo.md) 比较 retiming、electrical reach、laser、thermal、yield 与 service boundary，解释为什么三种方案会共存，以及 CPO 如何把瓶颈从 PCB Signal Integrity 移向 photonic packaging 与 fleet repair。
+
+
+## 深化阅读
+
+- [Optical Link Budget 与 Operations](link_budget_operations_reliability.md)

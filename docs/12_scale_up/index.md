@@ -15,3 +15,8 @@ flowchart LR
   T --> O[Topology]
   O --> B[Bisection / tail / fault]
 ~~~
+
+
+## 深化阅读
+
+- [Scale-up Fabric：Topology、Coherence 与 Failure Domain](fabric_topology_coherence_failure_domains.md)

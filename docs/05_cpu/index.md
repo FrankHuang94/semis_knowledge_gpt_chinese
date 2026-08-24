@@ -23,3 +23,8 @@
 2. 回到 [GPU Architecture](../06_gpu_accelerator/gpu_architecture.md) 比较两种 latency-hiding philosophy。
 
 完成后应能从 frontend、branch、rename、OoO、ROB、cache、NUMA、power 与 I/O 判断真实 CPU bottleneck。
+
+
+## 深化阅读
+
+- [CPU Host Orchestration 与 Data Feeding](host_orchestration_data_feeding.md)

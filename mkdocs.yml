@@ -64,15 +64,18 @@ nav:
           - 模块入口: 02_engineering_foundations/index.md
           - 数字逻辑、时钟与功耗: 02_engineering_foundations/digital_logic_clock_power.md
           - 电路与 Signal Integrity 直觉: 02_engineering_foundations/circuit_signal_integrity_intuition.md
+          - Clock, Reset & Error Containment: 02_engineering_foundations/clock_reset_error_containment.md
       - Device & Fab:
           - 模块入口: 03_semiconductor_device_fab/index.md
           - Transistor 到 Good Package: 03_semiconductor_device_fab/from_transistor_to_good_package.md
+          - Process Control, Cycle Time & Learning: 03_semiconductor_device_fab/process_control_cycle_time_learning.md
       - Computer Architecture:
           - 模块入口: 04_computer_architecture/index.md
           - CPU vs GPU vs NPU: 04_computer_architecture/cpu_gpu_npu.md
       - CPU:
           - 模块入口: 05_cpu/index.md
           - CPU Architecture: 05_cpu/cpu_architecture.md
+          - Host Orchestration & Data Feeding: 05_cpu/host_orchestration_data_feeding.md
       - GPU & Accelerator:
           - 模块入口: 06_gpu_accelerator/index.md
           - GPU Architecture: 06_gpu_accelerator/gpu_architecture.md
@@ -101,6 +104,7 @@ nav:
       - HBM:
           - 模块入口: 09_hbm/index.md
           - HBM Architecture & Economics: 09_hbm/hbm.md
+          - HBM Scaling Trade-offs: 09_hbm/hbm_scaling_tradeoffs.md
       - PCIe / CXL / I/O:
           - 模块入口: 10_pcie_cxl_io/index.md
           - CXL & Tiered Memory: 10_pcie_cxl_io/cxl_tiered_memory.md
@@ -110,9 +114,11 @@ nav:
           - NRZ vs PAM4: 11_serdes_signal_integrity/nrz_vs_pam4.md
           - Retimer vs Redriver: 11_serdes_signal_integrity/retimer_vs_redriver.md
           - SerDes & Signal Integrity: 11_serdes_signal_integrity/serdes.md
+          - Channel Budget, Compliance & Production: 11_serdes_signal_integrity/channel_budget_compliance_production.md
       - Scale-up:
           - 模块入口: 12_scale_up/index.md
           - Scale-up vs Scale-out: 12_scale_up/scale_up_vs_scale_out.md
+          - Fabric Topology, Coherence & Failure Domains: 12_scale_up/fabric_topology_coherence_failure_domains.md
       - Scale-out Networking:
           - 模块入口: 13_scale_out_networking/index.md
           - Topology-Aware Collectives: 13_scale_out_networking/topology_aware_collectives.md
@@ -122,20 +128,24 @@ nav:
           - 模块入口: 14_switch_nic_dpu/index.md
           - NIC vs SmartNIC vs DPU: 14_switch_nic_dpu/nic_smartnic_dpu.md
           - Switch, NIC & DPU: 14_switch_nic_dpu/switch_nic_dpu.md
+          - Queue, Buffer & Telemetry: 14_switch_nic_dpu/queue_buffer_telemetry.md
       - Optics:
           - 模块入口: 15_optics/index.md
           - Network & Optics Port-Count Model: 15_optics/network_optics_port_count_model.md
           - Datacenter Optics: 15_optics/datacenter_optics.md
           - Pluggable vs LPO vs CPO: 15_optics/pluggable_lpo_cpo.md
+          - Optical Link Budget & Operations: 15_optics/link_budget_operations_reliability.md
   - Physical System:
       - Advanced Packaging:
           - 模块入口: 16_advanced_packaging/index.md
           - Advanced Packaging Architecture: 16_advanced_packaging/advanced_packaging.md
+          - Test, Repair & Known-Good Die: 16_advanced_packaging/test_repair_known_good_die.md
       - Chiplet & 3D:
           - 模块入口: 17_chiplet_3d_integration/index.md
           - Monolithic vs Chiplet: 17_chiplet_3d_integration/monolithic_vs_chiplet.md
           - 2.5D vs 3D Integration: 17_chiplet_3d_integration/two_point_five_d_vs_3d.md
           - Chiplet & 3D Integration: 17_chiplet_3d_integration/chiplet_3d.md
+          - 3D Power, Thermal & Mechanical Co-design: 17_chiplet_3d_integration/power_thermal_mechanical_codesign.md
       - Power Delivery:
           - 模块入口: 18_power_delivery/index.md
           - Power Integrity & Transients: 18_power_delivery/power_integrity_transients.md
@@ -150,11 +160,13 @@ nav:
           - Reliability, Availability & Serviceability: 20_rack_cluster_datacenter/reliability_availability_serviceability.md
           - Power & Cooling Capacity Planning: 20_rack_cluster_datacenter/power_cooling_capacity_planning.md
           - Modern AI Rack: 20_rack_cluster_datacenter/modern_ai_rack.md
+          - Commissioning & Acceptance Testing: 20_rack_cluster_datacenter/commissioning_acceptance_testing.md
   - Software & Supply:
       - Software / Hardware Co-design:
           - 模块入口: 21_software_hardware_codesign/index.md
           - Compiler, Graph Lowering & Fusion: 21_software_hardware_codesign/compiler_graph_lowering_fusion.md
           - Co-design Architecture: 21_software_hardware_codesign/software_hardware_codesign.md
+          - Performance Regression Operations: 21_software_hardware_codesign/performance_regression_operations.md
       - Manufacturing & Supply Chain:
           - 模块入口: 22_manufacturing_supply_chain/index.md
           - Qualification to Volume Ramp: 22_manufacturing_supply_chain/qualification_to_volume_ramp.md
@@ -163,7 +175,9 @@ nav:
   - Products & Standards:
       - Company Architecture: 23_company_architecture/index.md
       - Product Database: 24_product_database/index.md
-      - Standards: 25_standards/index.md
+      - Standards:
+          - 模块入口: 25_standards/index.md
+          - Compliance to Interoperability: 25_standards/standards_to_interoperability.md
   - Strategy:
       - Engineering to Strategy:
           - 模块入口: 26_engineering_to_strategy/index.md

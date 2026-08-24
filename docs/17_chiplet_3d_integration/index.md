@@ -11,3 +11,8 @@
 ## 学习结果
 
 完成后应能选择 die partition；区分 D2D PHY/protocol/coherence；比较 2.5D 与 3D；解释 active base die、KGD 与 thermal；并按 final good-package economics评价 chiplet主张。
+
+
+## 深化阅读
+
+- [3D Integration 的 Power、Thermal 与 Mechanical Co-design](power_thermal_mechanical_codesign.md)
