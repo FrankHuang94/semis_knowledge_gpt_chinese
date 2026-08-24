@@ -1,0 +1,104 @@
+site_name: AI 数据中心与半导体工程知识库
+site_description: 面向半导体战略、Corporate Development 与投资人员的工程系统思维训练
+repo_url: https://github.com/FrankHuang94/semis_knowledge_gpt_chinese
+repo_name: FrankHuang94/semis_knowledge_gpt_chinese
+docs_dir: docs
+strict: true
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+    - scheme: slate
+      primary: indigo
+      accent: amber
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - git-revision-date-localized:
+      enable_creation_date: true
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+nav:
+  - START HERE:
+      - 首页: index.md
+      - 使用方法: 00_start_here/index.md
+      - Follow the Data: 00_start_here/follow_the_data.md
+      - Bottleneck Map: 00_start_here/follow_the_bottleneck.md
+  - Learning Paths:
+      - 路径总览: 01_learning_paths/index.md
+      - AI Datacenter Engineering Core: 01_learning_paths/ai_datacenter_core.md
+  - Core Engineering:
+      - Foundations: 02_engineering_foundations/index.md
+      - Device & Fab: 03_semiconductor_device_fab/index.md
+      - Computer Architecture: 04_computer_architecture/index.md
+      - CPU: 05_cpu/index.md
+      - GPU & Accelerator: 06_gpu_accelerator/index.md
+      - AI Workloads: 07_ai_workloads/index.md
+  - Data Movement:
+      - Memory: 08_memory/index.md
+      - HBM: 09_hbm/index.md
+      - PCIe / CXL / I/O: 10_pcie_cxl_io/index.md
+      - SerDes & SI: 11_serdes_signal_integrity/index.md
+      - Scale-up: 12_scale_up/index.md
+      - Scale-out Networking: 13_scale_out_networking/index.md
+      - Switch / NIC / DPU: 14_switch_nic_dpu/index.md
+      - Optics: 15_optics/index.md
+  - Physical System:
+      - Advanced Packaging: 16_advanced_packaging/index.md
+      - Chiplet & 3D: 17_chiplet_3d_integration/index.md
+      - Power Delivery: 18_power_delivery/index.md
+      - Thermal & Cooling: 19_thermal_cooling/index.md
+      - Rack / Cluster / Datacenter:
+          - 模块入口: 20_rack_cluster_datacenter/index.md
+          - 现代 AI 数据中心: 20_rack_cluster_datacenter/modern_ai_datacenter.md
+  - Software & Supply:
+      - Software / Hardware Co-design: 21_software_hardware_codesign/index.md
+      - Manufacturing & Supply Chain: 22_manufacturing_supply_chain/index.md
+  - Products & Standards:
+      - Company Architecture: 23_company_architecture/index.md
+      - Product Database: 24_product_database/index.md
+      - Standards: 25_standards/index.md
+  - Strategy:
+      - Engineering to Strategy: 26_engineering_to_strategy/index.md
+      - Technical Diligence: 27_technical_diligence/index.md
+      - Case Studies: 28_case_studies/index.md
+      - Hot Chips:
+          - 模块入口: 29_hot_chips/index.md
+          - Architecture Presentation Decoder: 29_hot_chips/how_to_read_architecture_presentation.md
+  - Practice:
+      - Engineer Language: 30_engineer_language/index.md
+      - Glossary: 31_glossary/index.md
+      - Quizzes: 32_quizzes/index.md
+      - Open Questions: 33_open_questions/index.md

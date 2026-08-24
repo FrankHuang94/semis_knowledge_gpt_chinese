@@ -1,0 +1,52 @@
+schema_version: 1
+concepts:
+  - id: arithmetic_intensity
+    name: 算术强度
+    english_name: Arithmetic Intensity
+    category: [performance_modeling, workload]
+    prerequisites: [operations, memory_traffic]
+    solves: [compute_vs_memory_bound_classification]
+    connected_to: [roofline, memory_bandwidth, gemm, prefill, decode]
+    tradeoffs: []
+    strategic_implications: [benchmark_skepticism, balanced_system_design]
+    articles:
+      - docs/00_start_here/follow_the_bottleneck.md
+  - id: memory_wall
+    name: Memory Wall
+    category: [memory, bottleneck]
+    prerequisites: [memory_hierarchy, bandwidth, latency]
+    solves: []
+    connected_to: [hbm, cache, roofline, kv_cache, advanced_packaging]
+    tradeoffs: [cost, power, area, package_complexity]
+    strategic_implications: [hbm_supplier_leverage, packaging_capacity]
+    articles:
+      - docs/00_start_here/follow_the_bottleneck.md
+  - id: hbm
+    name: HBM
+    category: [memory, packaging]
+    prerequisites: [dram, bandwidth, memory_controller]
+    solves: [memory_bandwidth_wall]
+    connected_to: [gpu, tsv, interposer, advanced_packaging]
+    tradeoffs: [cost, capacity, yield, thermal, package_complexity]
+    strategic_implications: [supplier_concentration, packaging_capacity, accelerator_supply]
+    articles: []
+  - id: scale_up
+    name: Scale-up
+    category: [interconnect, system]
+    prerequisites: [serdes, topology, collective_communication]
+    solves: [tightly_coupled_accelerator_communication]
+    connected_to: [all_reduce, gpu, switch, scale_out]
+    tradeoffs: [power, topology_complexity, fault_domain, cost]
+    strategic_implications: [platform_control, switching_cost]
+    articles:
+      - docs/20_rack_cluster_datacenter/modern_ai_datacenter.md
+  - id: bottleneck_shifting
+    name: Bottleneck Shifting
+    category: [master_framework]
+    prerequisites: [system_boundary, utilization]
+    solves: [single_metric_thinking]
+    connected_to: [compute_wall, memory_wall, communication_wall, power_wall]
+    tradeoffs: []
+    strategic_implications: [roadmap_risk, value_migration]
+    articles:
+      - docs/00_start_here/follow_the_bottleneck.md

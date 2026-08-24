@@ -1,0 +1,6 @@
+schema_version: 1
+standards: []
+standard_schema:
+  required: [id, name, organization, version, status, last_verified, sources]
+  status_allowed: [Draft, Released, Adopted, Superseded]
+  recommended: [layers, data_rate, reach, topology, interoperability, open_questions]

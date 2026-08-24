@@ -1,0 +1,6 @@
+id,term,english_term,category,one_sentence_intuition,prerequisites,primary_article,status
+arithmetic_intensity,算术强度,Arithmetic Intensity,performance_modeling,每搬运一个 byte 数据完成多少次有效运算,operations|memory_traffic,docs/00_start_here/follow_the_bottleneck.md,seed
+bandwidth,带宽,Bandwidth,system,单位时间能够通过边界的数据量,unit|time,docs/00_start_here/follow_the_data.md,seed
+latency,延迟,Latency,system,一个请求从发出到可用结果返回所经历的时间,time|queueing,docs/00_start_here/follow_the_data.md,seed
+utilization,利用率,Utilization,performance,峰值资源中真正被有效工作占用的比例,throughput|stall,docs/00_start_here/follow_the_bottleneck.md,seed
+bottleneck,瓶颈,Bottleneck,master_framework,在给定 workload 与 system boundary 下最先限制目标函数的资源,system_boundary|workload,docs/00_start_here/follow_the_bottleneck.md,seed

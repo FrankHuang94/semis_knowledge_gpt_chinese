@@ -1,0 +1,46 @@
+# Learning Command Center
+
+欢迎进入 AI Datacenter & Semiconductor Engineering Knowledge Base。
+
+这里的学习单位不是“术语”，而是**一条能够解释真实产品的因果链**。先从 [AI Datacenter Engineering Core](01_learning_paths/ai_datacenter_core.md) 开始；如果马上要参加技术会议，则先读 [Architecture Presentation Decoder](29_hot_chips/how_to_read_architecture_presentation.md)。
+
+## 四个入口
+
+<div class="grid cards" markdown>
+
+- :material-database-arrow-right: **Follow the Data**
+
+    数据在哪里产生、移动、复用、排队和等待？
+
+    [开始追踪一个 Token](00_start_here/follow_the_data.md)
+
+- :material-flash: **Follow the Power**
+
+    设施功率如何变成 transistor switching，又如何限制 rack density？
+
+    [进入 Power Delivery](18_power_delivery/index.md)
+
+- :material-thermometer: **Follow the Heat**
+
+    为什么 cooling 已经成为 chip、package 与 rack 的 architecture input？
+
+    [进入 Thermal](19_thermal_cooling/index.md)
+
+- :material-wall: **Follow the Bottleneck**
+
+    峰值 compute 增加后，为什么 application performance 经常不同比例增加？
+
+    [打开 Bottleneck Map](00_start_here/follow_the_bottleneck.md)
+
+</div>
+
+## 当前 cornerstone
+
+1. [一个现代 AI 数据中心到底是怎么工作的？](20_rack_cluster_datacenter/modern_ai_datacenter.md)
+2. [Follow the Data：一个 Token 的完整旅程](00_start_here/follow_the_data.md)
+3. [AI 芯片 Bottleneck Map](00_start_here/follow_the_bottleneck.md)
+4. [如何读懂一场 Hot Chips 芯片架构演讲](29_hot_chips/how_to_read_architecture_presentation.md)
+
+## 阅读纪律
+
+看到任何性能主张，先问 workload、precision、batch、sequence length、software、power、system size、network 与 baseline。看到任何 architecture block，先问它保存什么 state、数据从哪里来、控制从哪里来、带宽和 latency 在哪里，以及删掉它会发生什么。

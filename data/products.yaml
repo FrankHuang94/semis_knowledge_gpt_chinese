@@ -1,0 +1,31 @@
+schema_version: 1
+products: []
+product_schema:
+  required:
+    - id
+    - name
+    - company_id
+    - category
+    - product_status
+    - last_verified
+    - sources
+  product_status:
+    allowed: [Announced, Sampling, Production, Shipping, Deployed, Roadmap, Rumored]
+  recommended:
+    - generation
+    - predecessor
+    - workload_target
+    - process
+    - architecture
+    - compute
+    - memory
+    - interconnect
+    - io
+    - package
+    - power
+    - cooling
+    - software
+    - old_bottleneck
+    - architectural_response
+    - new_bottleneck
+    - missing_disclosures

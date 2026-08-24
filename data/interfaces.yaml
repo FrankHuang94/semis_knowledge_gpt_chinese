@@ -1,0 +1,18 @@
+schema_version: 1
+interfaces: []
+interface_schema:
+  required: [id, name, scope, layers, status, last_verified, sources]
+  recommended:
+    - protocol
+    - transaction_layer
+    - data_link_layer
+    - phy
+    - signaling
+    - lane_rate
+    - lane_count
+    - aggregate_bandwidth
+    - latency
+    - reach
+    - power_per_bit
+    - topology
+    - alternatives

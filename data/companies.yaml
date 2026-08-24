@@ -1,0 +1,12 @@
+schema_version: 1
+companies: []
+company_schema:
+  required: [id, name, categories, last_verified, sources]
+  recommended:
+    - architecture_control_points
+    - manufacturing_dependencies
+    - software_ecosystem
+    - customer_switching_cost
+    - supplier_dependencies
+    - moat_hypotheses
+    - diligence_questions
