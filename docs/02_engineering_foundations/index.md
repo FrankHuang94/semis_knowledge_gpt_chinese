@@ -1,17 +1,20 @@
-# Engineering Foundations
+# Engineering Foundations for Semiconductor Strategists
 
-> 状态：框架已建立，内容将按 [Roadmap](https://github.com/FrankHuang94/semis_knowledge_gpt_chinese/blob/main/ROADMAP.md) 的依赖顺序深化。
+本模块只补后续 architecture、SerDes、power、timing 与 manufacturing 推理真正依赖的 EE / CE 基础，不按本科教材顺序铺开。
 
-本模块不以术语数量为目标。每个主题将从 problem、constraint 与 dataflow 出发，比较 architecture alternatives，解释 trade-off、second-order effects，并连接到真实 workload、产品、制造与 Strategy Lens。
+## 学习顺序
 
-## 本模块默认问题
+1. [数字逻辑、时钟与功耗](digital_logic_clock_power.md)：从 transistor、gate、register、pipeline 到 timing closure 与动态功耗。
+2. [电路与 Signal Integrity 直觉](circuit_signal_integrity_intuition.md)：从 R/C/L、impedance、transmission line 到 eye、equalization、retimer 与 optics。
+3. 带着上述直觉进入 [CPU Architecture](../05_cpu/cpu_architecture.md)、[SerDes](../11_serdes_signal_integrity/serdes.md)、[Power Delivery](../18_power_delivery/power_delivery.md) 与 [Thermal](../19_thermal_cooling/thermal_cooling.md)。
 
-1. 没有这项技术时，系统在哪里失败？
-2. 限制来自 physics、architecture、software 还是 manufacturing？
-3. 有哪些替代方案，为什么它们共存？
-4. 优化一个指标会牺牲什么？
-5. bottleneck 解决后移到哪里？
-6. 哪些 metric 能证伪产品主张？
-7. 谁控制关键 IP、capacity、validation 与 ecosystem？
+## 学完以后应该能回答
 
-具体内容将优先链接到 cornerstone articles，避免重复建立短定义页面。
+- 为什么提高 clock 会同时影响 timing、voltage、power 与 thermal？
+- Pipeline 为什么提高 throughput，却可能增加 latency 与控制成本？
+- 为什么 wire delay、fan-out 与 clock tree 会反过来改变 architecture？
+- 什么情况下 PCB trace 必须视为 transmission line？
+- Eye、BER、FEC、link flap 与 system reliability 有什么区别？
+- Retimer、redriver、equalization 与 optics 分别在重分配哪一段 channel budget？
+
+合格标准不是会背公式，而是看到 “timing cannot close” 或 “signal margin is tight” 时，知道该要求哪些 boundary、corner、metric 与验证证据。

@@ -60,7 +60,10 @@ nav:
       - 路径总览: 01_learning_paths/index.md
       - AI Datacenter Engineering Core: 01_learning_paths/ai_datacenter_core.md
   - Core Engineering:
-      - Foundations: 02_engineering_foundations/index.md
+      - Engineering Foundations:
+          - 模块入口: 02_engineering_foundations/index.md
+          - 数字逻辑、时钟与功耗: 02_engineering_foundations/digital_logic_clock_power.md
+          - 电路与 Signal Integrity 直觉: 02_engineering_foundations/circuit_signal_integrity_intuition.md
       - Device & Fab: 03_semiconductor_device_fab/index.md
       - Computer Architecture: 04_computer_architecture/index.md
       - CPU:
