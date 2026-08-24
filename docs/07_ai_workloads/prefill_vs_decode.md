@@ -168,7 +168,7 @@ B\times S\times L\times 2\times H_{\text{KV}}\times D_h\times b
 t_{\text{step}}\ge \frac{W}{BW}
 \]
 
-例如读取 70 GB quantized weights、有效 HBM 带宽 3 TB/s：
+[Estimate] 例如读取 70 GB quantized weights、有效 HBM 带宽 3 TB/s：
 
 \[
 t\ge 70/3000\text{ s}\approx23.3\text{ ms}

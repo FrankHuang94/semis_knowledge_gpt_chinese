@@ -277,7 +277,7 @@ Old bottleneck 被解决后，价值会迁移：从 DRAM cell density 到 PHY/co
 
 - “It is a row-buffer hit.”：目标 row 已在 sense amplifiers，避开部分 ACT/PRE。
 - “We are not getting bank-level parallelism.”：outstanding requests 或地址分布不足以让多个 banks overlap。
-- “DDR5-6400 gives 51.2 GB/s per 64-bit path.”：这是 raw arithmetic，需问 module organization 与 sustained efficiency。
+- [Inference] “DDR5-6400 gives 51.2 GB/s per 64-bit path.”：这是基于 data rate 与 bus width 的 raw arithmetic，需问 module organization 与 sustained efficiency。
 - “Refresh is eating bandwidth.”：要问 density、temperature、refresh mode 与测量方法。
 - “HBM has lower energy per bit.”：需给 generation、traffic、PHY/package boundary 与测量。
 - “On-die ECC fixes reliability.”：需问 coverage、visibility 与 end-to-end protection。

@@ -144,7 +144,7 @@ BW_{\text{required}}=\text{useful operations per second}\times
 \frac{\text{bytes moved}}{\text{operation}}
 \]
 
-若目标是 1 PFLOP/s，而 kernel arithmetic intensity 只有 50 FLOP/byte：
+[Estimate] 若目标是 1 PFLOP/s，而 kernel arithmetic intensity 只有 50 FLOP/byte：
 
 \[
 BW=10^{15}/50=20\text{ TB/s}
