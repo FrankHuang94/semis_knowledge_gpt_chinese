@@ -136,7 +136,7 @@ Command/Work Distributor
 
 ## 7. Bandwidth number：先画 boundary
 
-“8 TB/s”只有在知道端点后才有含义：
+**[Estimate]** 以下“8 TB/s”只作为教学用的 generic number；它只有在知道端点后才有含义：
 
 ```mermaid
 flowchart LR
@@ -428,7 +428,7 @@ Source status:
 
 推测 compute-bound大 GEMM更受益；低-AI workload可能只接近 bandwidth 增幅。继续问 cache、capacity、precision、kernel、power与 effective bandwidth。
 
-### Case B：HBM stack 数不变，bandwidth 8→12 TB/s
+### Case B：HBM stack 数不变，bandwidth 8→12 TB/s（教学假设，[Estimate]）
 
 可能来自新 HBM generation/per-pin rate、更多有效 channels、PHY/controller 或更高 sustained efficiency。代价可能是 signal/power/thermal。不能仅凭数字断言具体实现。
 
