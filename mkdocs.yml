@@ -120,6 +120,7 @@ nav:
           - Switch, NIC & DPU: 14_switch_nic_dpu/switch_nic_dpu.md
       - Optics:
           - 模块入口: 15_optics/index.md
+          - Network & Optics Port-Count Model: 15_optics/network_optics_port_count_model.md
           - Datacenter Optics: 15_optics/datacenter_optics.md
           - Pluggable vs LPO vs CPO: 15_optics/pluggable_lpo_cpo.md
   - Physical System:
@@ -140,6 +141,7 @@ nav:
       - Rack / Cluster / Datacenter:
           - 模块入口: 20_rack_cluster_datacenter/index.md
           - 现代 AI 数据中心: 20_rack_cluster_datacenter/modern_ai_datacenter.md
+          - Power & Cooling Capacity Planning: 20_rack_cluster_datacenter/power_cooling_capacity_planning.md
           - Modern AI Rack: 20_rack_cluster_datacenter/modern_ai_rack.md
   - Software & Supply:
       - Software / Hardware Co-design:
@@ -147,6 +149,7 @@ nav:
           - Co-design Architecture: 21_software_hardware_codesign/software_hardware_codesign.md
       - Manufacturing & Supply Chain:
           - 模块入口: 22_manufacturing_supply_chain/index.md
+          - Yield Economics: 22_manufacturing_supply_chain/yield_economics.md
           - Manufacturing & Supply Chain: 22_manufacturing_supply_chain/manufacturing_supply_chain.md
   - Products & Standards:
       - Company Architecture: 23_company_architecture/index.md
@@ -156,6 +159,7 @@ nav:
       - Engineering to Strategy:
           - 模块入口: 26_engineering_to_strategy/index.md
           - Engineering → Strategy: 26_engineering_to_strategy/engineering_to_strategy.md
+          - Cluster & Rack Sizing: 26_engineering_to_strategy/cluster_rack_sizing.md
           - Spec Sheet Translator & Performance Waterfall: 26_engineering_to_strategy/spec_sheet_translator.md
       - Technical Diligence:
           - 模块入口: 27_technical_diligence/index.md

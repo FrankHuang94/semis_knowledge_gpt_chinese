@@ -4,6 +4,7 @@
 
 ## 核心文章
 
+- [AI Rack Power 与 Cooling Capacity Planning](power_cooling_capacity_planning.md)
 - [一个现代 AI 数据中心到底是怎么工作的？](modern_ai_datacenter.md)
 - [Modern AI Rack：为什么机柜已经成为计算机](modern_ai_rack.md)
 
