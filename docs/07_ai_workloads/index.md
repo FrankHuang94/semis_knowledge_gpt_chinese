@@ -8,8 +8,11 @@
 
 1. [Training vs Inference：同一个模型，为什么需要两套系统思维](training_vs_inference.md)
 2. [Prefill vs Decode：一次 LLM 请求为什么像两种不同 workload](prefill_vs_decode.md)
-3. [Distributed Training 与 Collectives：DP、TP、PP、EP 如何变成 Network Traffic](distributed_training_collectives.md)
-4. 下一步：MoE、recommendation 与 multimodal workloads。
+3. [Compute-bound vs Memory-bound：可证伪诊断](compute_bound_vs_memory_bound.md)
+4. [一个 Distributed Training Step 的完整旅程](training_step_end_to_end.md)
+5. [一个 Production Inference Request 的完整旅程](inference_request_end_to_end.md)
+6. [Distributed Training 与 Collectives：DP、TP、PP、EP 如何变成 Network Traffic](distributed_training_collectives.md)
+7. 下一步：MoE、recommendation 与 multimodal workloads。
 
 先读 Training vs Inference，建立“模型制造”与“在线生产”的目标差异；再读 Prefill vs Decode，把 inference 继续拆成 compute-intensive 与 memory/latency-sensitive phases。
 

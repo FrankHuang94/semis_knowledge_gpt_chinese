@@ -85,6 +85,9 @@ nav:
           - Training vs Inference: 07_ai_workloads/training_vs_inference.md
           - Prefill vs Decode: 07_ai_workloads/prefill_vs_decode.md
           - Attention、KV Cache 与 MoE: 07_ai_workloads/attention_kv_cache_moe.md
+          - Compute-bound vs Memory-bound: 07_ai_workloads/compute_bound_vs_memory_bound.md
+          - Distributed Training Step: 07_ai_workloads/training_step_end_to_end.md
+          - Production Inference Request: 07_ai_workloads/inference_request_end_to_end.md
           - Distributed Training & Collectives: 07_ai_workloads/distributed_training_collectives.md
   - Data Movement:
       - Memory:
