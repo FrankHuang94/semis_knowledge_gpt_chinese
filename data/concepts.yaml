@@ -520,3 +520,91 @@ concepts:
     strategic_implications: [architecture_limit]
     articles:
       - docs/19_thermal_cooling/thermal_cooling.md
+  - id: gpu_execution
+    name: GPU 执行模型
+    english_name: GPU Execution Model
+    category: [gpu, software]
+    prerequisites: [gpu, simt, memory_hierarchy]
+    solves: [parallel_work_mapping]
+    connected_to: [warp, occupancy, kernel, coalescing]
+    tradeoffs: [parallelism, resources, synchronization]
+    strategic_implications: [software_hardware_codesign, kernel_ecosystem]
+    articles:
+      - docs/06_gpu_accelerator/gpu_execution_kernel_performance.md
+  - id: kernel
+    name: GPU 内核
+    english_name: GPU Kernel
+    category: [gpu, software]
+    prerequisites: [gpu_execution, thread]
+    solves: [device_parallel_computation]
+    connected_to: [tiling, coalescing, fusion, occupancy]
+    tradeoffs: [launch_overhead, specialization, resources]
+    strategic_implications: [compiler_library_moat]
+    articles:
+      - docs/06_gpu_accelerator/gpu_execution_kernel_performance.md
+  - id: coalescing
+    name: 内存访问合并
+    english_name: Memory Coalescing
+    category: [gpu, memory]
+    prerequisites: [warp, memory_transaction]
+    solves: [unused_memory_traffic]
+    connected_to: [data_layout, hbm, cache]
+    tradeoffs: [layout, branch, load_balance]
+    strategic_implications: [software_efficiency]
+    articles:
+      - docs/06_gpu_accelerator/gpu_execution_kernel_performance.md
+  - id: distributed_training
+    name: 分布式训练
+    english_name: Distributed Training
+    category: [ai_workload, distributed]
+    prerequisites: [training, collective, network]
+    solves: [model_and_compute_scaling]
+    connected_to: [data_parallel, tensor_parallel, pipeline_parallel, expert_parallel]
+    tradeoffs: [communication, synchronization, reliability]
+    strategic_implications: [cluster_scale, fabric_value, software_moat]
+    articles:
+      - docs/07_ai_workloads/distributed_training_collectives.md
+  - id: data_parallel
+    name: 数据并行
+    english_name: Data Parallelism
+    category: [distributed_training]
+    prerequisites: [training, gradient]
+    solves: [sample_parallelism]
+    connected_to: [all_reduce, sharding, distributed_training]
+    tradeoffs: [model_replication, batch_scale, communication]
+    strategic_implications: [scale_out_demand]
+    articles:
+      - docs/07_ai_workloads/distributed_training_collectives.md
+  - id: tensor_parallel
+    name: 张量并行
+    english_name: Tensor Parallelism
+    category: [distributed_training]
+    prerequisites: [matrix_multiplication, collective]
+    solves: [single_layer_model_parallelism]
+    connected_to: [all_gather, reduce_scatter, scale_up]
+    tradeoffs: [latency, bandwidth, software_complexity]
+    strategic_implications: [scale_up_fabric_value]
+    articles:
+      - docs/07_ai_workloads/distributed_training_collectives.md
+  - id: pipeline_parallel
+    name: 流水线并行
+    english_name: Pipeline Parallelism
+    category: [distributed_training]
+    prerequisites: [model_layers, microbatch]
+    solves: [layer_partitioning]
+    connected_to: [activation, pipeline_bubble, point_to_point]
+    tradeoffs: [bubble, activation_memory, balance]
+    strategic_implications: [cluster_scheduler_value]
+    articles:
+      - docs/07_ai_workloads/distributed_training_collectives.md
+  - id: expert_parallel
+    name: 专家并行
+    english_name: Expert Parallelism
+    category: [distributed_training, moe]
+    prerequisites: [mixture_of_experts, routing]
+    solves: [expert_parameter_distribution]
+    connected_to: [all_to_all, load_balance, scale_out]
+    tradeoffs: [network_bisection, imbalance, capacity]
+    strategic_implications: [network_value, runtime_control]
+    articles:
+      - docs/07_ai_workloads/distributed_training_collectives.md

@@ -6,6 +6,9 @@
 
 ### Added
 
+- 完成 GPU Execution / Kernel Performance 与 Distributed Training / Collectives 两篇 Core Curriculum drafts。
+- 扩展 warp scheduling、coalescing、fusion/stall、DP/TP/PP/EP、collective semantics、topology mapping 与 communication overlap 知识节点。
+
 - 完成 Power Delivery 与 Thermal / Cooling 两篇 Core Curriculum drafts。
 - 扩展 utility-to-transistor power chain、VRM/PDN/droop、junction-to-facility heat path、cold plate/manifold/CDU 与 flow sizing 知识节点。
 

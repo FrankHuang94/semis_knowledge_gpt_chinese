@@ -36,8 +36,8 @@ flowchart LR
 | 入口 | 你要解决的问题 | 当前状态 |
 |---|---|---|
 | [Core Engineering](docs/02_engineering_foundations/index.md) | 补齐 clock、pipeline、RC、signal integrity 等必要基础 | 框架已建立 |
-| [AI Compute](docs/06_gpu_accelerator/index.md) | GPU、Tensor Core 与 workload 为什么匹配 | 4 篇核心文章已完成 |
-| [AI Workloads](docs/07_ai_workloads/index.md) | Training、Prefill、Decode、MoE 如何改变硬件需求 | 2 篇核心文章已完成 |
+| [AI Compute](docs/06_gpu_accelerator/index.md) | GPU、Tensor Core 与 workload 为什么匹配 | 5 篇核心文章已完成 |
+| [AI Workloads](docs/07_ai_workloads/index.md) | Training、Prefill、Decode、parallelism 如何改变硬件需求 | 3 篇核心文章已完成 |
 | [Memory / HBM](docs/08_memory/index.md) | 为什么 memory hierarchy 必然存在 | Memory Hierarchy、DRAM、HBM 与 Roofline 已完成 |
 | [Networking](docs/13_scale_out_networking/index.md) | collective traffic 如何映射 topology 与 silicon | Scale-up、AI Ethernet/RDMA、Switch/NIC/DPU 已完成 |
 | [Optics](docs/15_optics/index.md) | electrical reach 为什么把系统推向 optics | Datacenter Optics 已完成 |

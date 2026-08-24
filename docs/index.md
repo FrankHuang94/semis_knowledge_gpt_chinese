@@ -61,6 +61,8 @@
 23. [Chiplet 与 3D Integration：Die Partition、D2D Protocol、Coherence 与 Thermal](17_chiplet_3d_integration/chiplet_3d.md)
 24. [Power Delivery：从 Utility 到 Transistor 的 Voltage、Current、Loss 与 Transient](18_power_delivery/power_delivery.md)
 25. [Thermal 与 Cooling：从 Junction 到 Facility 的 Heat、Flow 与 Reliability](19_thermal_cooling/thermal_cooling.md)
+26. [GPU Execution 与 Kernel Performance：Warp、Occupancy、Tiling、Coalescing 与 Stall](06_gpu_accelerator/gpu_execution_kernel_performance.md)
+27. [Distributed Training 与 Collectives：DP、TP、PP、EP 如何变成 Network Traffic](07_ai_workloads/distributed_training_collectives.md)
 
 ## 阅读纪律
 

@@ -53,8 +53,8 @@
 - [x] Chiplet & 3D Integration
 - [x] Power Delivery
 - [x] Thermal & Cooling
-- [ ] Distributed Training & Collectives
-- [ ] GPU Execution & Kernel Performance
+- [x] Distributed Training & Collectives
+- [x] GPU Execution & Kernel Performance
 - [ ] Manufacturing & Supply Chain
 - [ ] Software / Hardware Co-design
 - [ ] 五级 quizzes 与 Fermi exercises

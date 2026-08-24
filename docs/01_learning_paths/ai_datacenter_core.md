@@ -14,13 +14,13 @@
 
 ## 第二圈：芯片内（15–20 小时）
 
-Computer Architecture → GPU → GEMM/Tensor Core → Precision → [Memory Hierarchy](../08_memory/memory_hierarchy.md) → [DRAM](../08_memory/dram.md) → [HBM](../09_hbm/hbm.md) → [Roofline](../08_memory/roofline_model.md)。
+Computer Architecture → GPU → [GPU Execution](../06_gpu_accelerator/gpu_execution_kernel_performance.md) → GEMM/Tensor Core → Precision → [Memory Hierarchy](../08_memory/memory_hierarchy.md) → [DRAM](../08_memory/dram.md) → [HBM](../09_hbm/hbm.md) → [Roofline](../08_memory/roofline_model.md)。
 
 完成后应能判断一个 kernel 何时 compute-bound、memory-bound 或 latency-bound，并解释 HBM 增加为何会牵动 package、power、thermal 与 yield。
 
 ## 第三圈：芯片间（15–20 小时）
 
-[PCIe/CXL](../10_pcie_cxl_io/pcie_vs_cxl.md) → [SerDes](../11_serdes_signal_integrity/serdes.md) → [Scale-up](../12_scale_up/scale_up_vs_scale_out.md) → Parallelism → Collectives → [RDMA/RoCE](../13_scale_out_networking/ai_ethernet_rdma.md) → [Switch/NIC/DPU](../14_switch_nic_dpu/switch_nic_dpu.md) → Scale-out topology。
+[PCIe/CXL](../10_pcie_cxl_io/pcie_vs_cxl.md) → [SerDes](../11_serdes_signal_integrity/serdes.md) → [Scale-up](../12_scale_up/scale_up_vs_scale_out.md) → [Distributed Training & Collectives](../07_ai_workloads/distributed_training_collectives.md) → [RDMA/RoCE](../13_scale_out_networking/ai_ethernet_rdma.md) → [Switch/NIC/DPU](../14_switch_nic_dpu/switch_nic_dpu.md) → Scale-out topology。
 
 完成后应能从 DP/TP/PP/EP 推导 collective pattern，再推导 bandwidth、latency、topology 与 congestion requirement。
 
