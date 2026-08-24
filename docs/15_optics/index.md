@@ -15,3 +15,8 @@
 - 区分 direct detection 与 coherent 的适用 reach；
 - 用 link budget 和 port arithmetic 检验产品主张；
 - 把 optics 变化翻译为 packaging、test、supply chain 与 platform strategy。
+
+
+## Optical architecture comparison
+
+[Pluggable、LPO 与 CPO](pluggable_lpo_cpo.md) 比较 retiming、electrical reach、laser、thermal、yield 与 service boundary，解释为什么三种方案会共存，以及 CPO 如何把瓶颈从 PCB Signal Integrity 移向 photonic packaging 与 fleet repair。

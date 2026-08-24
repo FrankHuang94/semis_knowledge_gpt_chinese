@@ -111,6 +111,7 @@ nav:
       - Optics:
           - 模块入口: 15_optics/index.md
           - Datacenter Optics: 15_optics/datacenter_optics.md
+          - Pluggable vs LPO vs CPO: 15_optics/pluggable_lpo_cpo.md
   - Physical System:
       - Advanced Packaging:
           - 模块入口: 16_advanced_packaging/index.md
