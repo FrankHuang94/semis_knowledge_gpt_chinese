@@ -73,3 +73,12 @@ chiplet,芯粒,Chiplet,packaging,通过标准或定制D2D接口组合成system�
 die_to_die,裸片间互连,Die-to-Die Interconnect,interconnect,跨package内dies传输data clock control和management的interface,phy|protocol,docs/17_chiplet_3d_integration/chiplet_3d.md,curriculum
 ucie,通用芯粒互连,Universal Chiplet Interconnect Express,standard,定义chiplet间PHY和adapter等互操作边界的行业规范,die_to_die|protocol,docs/17_chiplet_3d_integration/chiplet_3d.md,curriculum
 active_base_die,有源基底裸片,Active Base Die,packaging,在stack底层承载fabric cache clock或power logic的active silicon,three_d_integration|base_die,docs/17_chiplet_3d_integration/chiplet_3d.md,curriculum
+power_delivery,电力输送,Power Delivery,power,从facility到transistor逐级转换分配并稳定power的完整链路,voltage|current,docs/18_power_delivery/power_delivery.md,curriculum
+vrm,电压调节模块,Voltage Regulator Module,power,把board DC转换为chip所需低压大电流rails,dc_dc|control_loop,docs/18_power_delivery/power_delivery.md,curriculum
+pdn,电力分配网络,Power Delivery Network,power,由VRM planes vias bumps package和on-die grid构成的供电impedance网络,vrm|impedance,docs/18_power_delivery/power_delivery.md,curriculum
+voltage_droop,电压下陷,Voltage Droop,power,load transient经过PDN impedance造成的短时rail电压降低,pdn|transient,docs/18_power_delivery/power_delivery.md,curriculum
+decoupling,去耦,Decoupling,power,用local capacitance在VRM响应前供应瞬态charge,capacitance|pdn,docs/18_power_delivery/power_delivery.md,curriculum
+thermal_resistance,热阻,Thermal Resistance,thermal,单位heat flow在thermal path上造成的temperature rise,heat|temperature,docs/19_thermal_cooling/thermal_cooling.md,curriculum
+heat_flux,热流密度,Heat Flux,thermal,单位area必须移除的heat flow,power|area,docs/19_thermal_cooling/thermal_cooling.md,curriculum
+technology_cooling_system,技术冷却系统,Technology Cooling System,thermal,位于IT侧并由CDU与facility water隔离的coolant loop,cdu|coolant,docs/19_thermal_cooling/thermal_cooling.md,curriculum
+facility_water_system,设施水系统,Facility Water System,thermal,把CDU热量送到facility heat rejection设备的water loop,heat_exchanger|facility,docs/19_thermal_cooling/thermal_cooling.md,curriculum

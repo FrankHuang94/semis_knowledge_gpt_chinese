@@ -109,8 +109,12 @@ nav:
       - Chiplet & 3D:
           - 模块入口: 17_chiplet_3d_integration/index.md
           - Chiplet & 3D Integration: 17_chiplet_3d_integration/chiplet_3d.md
-      - Power Delivery: 18_power_delivery/index.md
-      - Thermal & Cooling: 19_thermal_cooling/index.md
+      - Power Delivery:
+          - 模块入口: 18_power_delivery/index.md
+          - Power Delivery Architecture: 18_power_delivery/power_delivery.md
+      - Thermal & Cooling:
+          - 模块入口: 19_thermal_cooling/index.md
+          - Thermal & Cooling Architecture: 19_thermal_cooling/thermal_cooling.md
       - Rack / Cluster / Datacenter:
           - 模块入口: 20_rack_cluster_datacenter/index.md
           - 现代 AI 数据中心: 20_rack_cluster_datacenter/modern_ai_datacenter.md

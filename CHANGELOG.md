@@ -6,6 +6,9 @@
 
 ### Added
 
+- 完成 Power Delivery 与 Thermal / Cooling 两篇 Core Curriculum drafts。
+- 扩展 utility-to-transistor power chain、VRM/PDN/droop、junction-to-facility heat path、cold plate/manifold/CDU 与 flow sizing 知识节点。
+
 - 完成 Switch / NIC / DPU 与 Chiplet / 3D Integration 两篇 Core Curriculum drafts。
 - 扩展 packet pipeline、DMA/offload、infrastructure isolation、D2D layer stack、UCIe 与 active base die 知识节点。
 

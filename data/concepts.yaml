@@ -443,3 +443,80 @@ concepts:
     strategic_implications: [advanced_packaging_moat]
     articles:
       - docs/17_chiplet_3d_integration/chiplet_3d.md
+  - id: power_delivery
+    name: 电力输送
+    english_name: Power Delivery
+    category: [power, system]
+    prerequisites: [voltage, current, impedance]
+    solves: [stable_energy_delivery]
+    connected_to: [busbar, vrm, pdn, voltage_droop]
+    tradeoffs: [efficiency, margin, redundancy, cost]
+    strategic_implications: [power_infrastructure, deployment_constraint]
+    articles:
+      - docs/18_power_delivery/power_delivery.md
+  - id: vrm
+    name: 电压调节模块
+    english_name: Voltage Regulator Module
+    category: [power, board]
+    prerequisites: [dc_dc_conversion, control_loop]
+    solves: [low_voltage_high_current_regulation]
+    connected_to: [pdn, busbar, voltage_droop]
+    tradeoffs: [efficiency, area, transient, thermal]
+    strategic_implications: [power_semiconductor_value]
+    articles:
+      - docs/18_power_delivery/power_delivery.md
+  - id: pdn
+    name: 电力分配网络
+    english_name: Power Delivery Network
+    category: [power, package]
+    prerequisites: [resistance, inductance, capacitance]
+    solves: [chip_voltage_stability]
+    connected_to: [vrm, decoupling, voltage_droop, advanced_packaging]
+    tradeoffs: [impedance, area, cost, resonance]
+    strategic_implications: [package_power_codesign]
+    articles:
+      - docs/18_power_delivery/power_delivery.md
+  - id: voltage_droop
+    name: 电压下陷
+    english_name: Voltage Droop
+    category: [power, transient]
+    prerequisites: [pdn, load_transient]
+    solves: []
+    connected_to: [vrm, decoupling, dvfs]
+    tradeoffs: [voltage_margin, frequency, energy]
+    strategic_implications: [usable_silicon_performance]
+    articles:
+      - docs/18_power_delivery/power_delivery.md
+  - id: thermal
+    name: 热管理
+    english_name: Thermal Management
+    category: [thermal, system]
+    prerequisites: [heat, temperature, power]
+    solves: [junction_temperature_control]
+    connected_to: [thermal_resistance, cold_plate, liquid_cooling, cdu]
+    tradeoffs: [energy, water, density, serviceability]
+    strategic_implications: [cooling_infrastructure, site_selection]
+    articles:
+      - docs/19_thermal_cooling/thermal_cooling.md
+  - id: thermal_resistance
+    name: 热阻
+    english_name: Thermal Resistance
+    category: [thermal, modeling]
+    prerequisites: [heat_flow, temperature]
+    solves: [heat_path_quantification]
+    connected_to: [tim, cold_plate, junction_temperature]
+    tradeoffs: [material, thickness, contact, cost]
+    strategic_implications: [sustained_performance]
+    articles:
+      - docs/19_thermal_cooling/thermal_cooling.md
+  - id: heat_flux
+    name: 热流密度
+    english_name: Heat Flux
+    category: [thermal, physical]
+    prerequisites: [power, area]
+    solves: []
+    connected_to: [hotspot, cold_plate, three_d_integration]
+    tradeoffs: [density, temperature, cooling_complexity]
+    strategic_implications: [architecture_limit]
+    articles:
+      - docs/19_thermal_cooling/thermal_cooling.md

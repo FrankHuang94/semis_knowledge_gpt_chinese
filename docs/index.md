@@ -59,6 +59,8 @@
 21. [Modern AI Rack：为什么机柜已经成为计算机](20_rack_cluster_datacenter/modern_ai_rack.md)
 22. [Switch、NIC 与 DPU：Packet、DMA、Offload 与 Infrastructure Isolation](14_switch_nic_dpu/switch_nic_dpu.md)
 23. [Chiplet 与 3D Integration：Die Partition、D2D Protocol、Coherence 与 Thermal](17_chiplet_3d_integration/chiplet_3d.md)
+24. [Power Delivery：从 Utility 到 Transistor 的 Voltage、Current、Loss 与 Transient](18_power_delivery/power_delivery.md)
+25. [Thermal 与 Cooling：从 Junction 到 Facility 的 Heat、Flow 与 Reliability](19_thermal_cooling/thermal_cooling.md)
 
 ## 阅读纪律
 

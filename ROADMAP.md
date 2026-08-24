@@ -51,8 +51,8 @@
 
 - [x] Switch / NIC / DPU
 - [x] Chiplet & 3D Integration
-- [ ] Power Delivery
-- [ ] Thermal & Cooling
+- [x] Power Delivery
+- [x] Thermal & Cooling
 - [ ] Distributed Training & Collectives
 - [ ] GPU Execution & Kernel Performance
 - [ ] Manufacturing & Supply Chain

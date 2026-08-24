@@ -42,7 +42,7 @@ flowchart LR
 | [Networking](docs/13_scale_out_networking/index.md) | collective traffic 如何映射 topology 与 silicon | Scale-up、AI Ethernet/RDMA、Switch/NIC/DPU 已完成 |
 | [Optics](docs/15_optics/index.md) | electrical reach 为什么把系统推向 optics | Datacenter Optics 已完成 |
 | [Packaging](docs/16_advanced_packaging/index.md) | die、HBM、routing、power、thermal 如何互相约束 | Advanced Packaging、Chiplet/3D 已完成 |
-| [Rack / Power / Cooling](docs/20_rack_cluster_datacenter/index.md) | cooling 与 facility 为什么成为 architecture input | Modern AI Rack 已完成；专题待深化 |
+| [Power / Cooling / Rack](docs/18_power_delivery/index.md) | 电如何进入、热如何离开并限制 rack | Power Delivery、Thermal/Cooling、Modern AI Rack 已完成 |
 | [Engineer Language](docs/30_engineer_language/index.md) | 把工程师口语翻译为 metric 与追问 | 框架已建立 |
 | [Technical Diligence](docs/27_technical_diligence/index.md) | 从 physics 到 economics 检验技术主张 | 框架已建立 |
 
@@ -116,7 +116,7 @@ Competitive / Strategic Implication
 
 ## 当前建设阶段
 
-第一阶段聚焦一组高质量 cornerstone articles，而不是铺开数百个浅页面。全栈 mental model、数据流、bottleneck reasoning、architecture presentation decoder、CPU、GPU、Matrix Multiplication、Tensor Core、Training/Inference、Prefill/Decode、Memory Hierarchy、DRAM、HBM、Roofline、Scale-up、AI Ethernet/RDMA、Datacenter Optics 与 Advanced Packaging 已建立与 Modern AI Rack 已建立，Phase 1 主链已闭环；当前进入 60–80 topics 的 Core Curriculum 深化。
+第一阶段聚焦一组高质量 cornerstone articles，而不是铺开数百个浅页面。全栈 mental model、数据流、bottleneck reasoning、architecture presentation decoder、CPU、GPU、Matrix Multiplication、Tensor Core、Training/Inference、Prefill/Decode、Memory Hierarchy、DRAM、HBM、Roofline、Scale-up、AI Ethernet/RDMA、Datacenter Optics 与 Advanced Packaging 已建立与 Modern AI Rack 已建立，Phase 1 主链已闭环；当前进入 60–80 topics 的 Core Curriculum 深化；Switch/NIC/DPU、Chiplet/3D、Power Delivery 与 Thermal/Cooling 已完成。
 
 详细里程碑与完成定义见 [ROADMAP.md](ROADMAP.md)。
 
