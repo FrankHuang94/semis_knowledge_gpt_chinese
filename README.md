@@ -116,7 +116,7 @@ Competitive / Strategic Implication
 
 ## 当前建设阶段
 
-第一阶段聚焦一组高质量 cornerstone articles，而不是铺开数百个浅页面。全栈 mental model、数据流、bottleneck reasoning、architecture presentation decoder、CPU、GPU、Matrix Multiplication、Tensor Core、Training/Inference、Prefill/Decode、Memory Hierarchy、DRAM、HBM 与 Roofline 已建立；下一轮沿 PCIe/CXL、SerDes、Scale-up 与 Networking 深入。
+第一阶段聚焦一组高质量 cornerstone articles，而不是铺开数百个浅页面。全栈 mental model、数据流、bottleneck reasoning、architecture presentation decoder、CPU、GPU、Matrix Multiplication、Tensor Core、Training/Inference、Prefill/Decode、Memory Hierarchy、DRAM、HBM 与 Roofline 已建立；下一轮沿 Scale-up、AI Ethernet/RDMA、Optics 与 Advanced Packaging 深入。
 
 详细里程碑与完成定义见 [ROADMAP.md](ROADMAP.md)。
 

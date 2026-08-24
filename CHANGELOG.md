@@ -6,6 +6,9 @@
 
 ### Added
 
+- 完成 PCIe vs CXL 与 SerDes / Signal Integrity 两篇 cornerstone drafts。
+- 增加 protocol layering、coherence、memory tiering、PAM4、equalization、FEC 与 retimer 的知识节点。
+
 - 完成 HBM 与 Roofline Model 两篇 cornerstone drafts，并补齐 memory/package economics 与 quantitative bound 的交叉链接。
 
 - 完成 Training vs Inference、Prefill vs Decode、Memory Hierarchy 与 DRAM 四篇 cornerstone drafts。

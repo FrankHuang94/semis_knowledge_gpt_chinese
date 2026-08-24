@@ -33,8 +33,8 @@
 - [x] DRAM
 - [x] HBM
 - [x] Roofline Model
-- [ ] PCIe vs CXL
-- [ ] SerDes
+- [x] PCIe vs CXL
+- [x] SerDes
 - [ ] Scale-up vs Scale-out
 - [ ] AI Ethernet / RDMA
 - [ ] Datacenter Optics

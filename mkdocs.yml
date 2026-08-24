@@ -84,8 +84,12 @@ nav:
       - HBM:
           - 模块入口: 09_hbm/index.md
           - HBM Architecture & Economics: 09_hbm/hbm.md
-      - PCIe / CXL / I/O: 10_pcie_cxl_io/index.md
-      - SerDes & SI: 11_serdes_signal_integrity/index.md
+      - PCIe / CXL / I/O:
+          - 模块入口: 10_pcie_cxl_io/index.md
+          - PCIe vs CXL: 10_pcie_cxl_io/pcie_vs_cxl.md
+      - SerDes & SI:
+          - 模块入口: 11_serdes_signal_integrity/index.md
+          - SerDes & Signal Integrity: 11_serdes_signal_integrity/serdes.md
       - Scale-up: 12_scale_up/index.md
       - Scale-out Networking: 13_scale_out_networking/index.md
       - Switch / NIC / DPU: 14_switch_nic_dpu/index.md

@@ -20,7 +20,7 @@ Computer Architecture → GPU → GEMM/Tensor Core → Precision → [Memory Hie
 
 ## 第三圈：芯片间（15–20 小时）
 
-PCIe/CXL → SerDes → Scale-up → Parallelism → Collectives → RDMA/RoCE → Switch/NIC/DPU → Scale-out topology。
+[PCIe/CXL](../10_pcie_cxl_io/pcie_vs_cxl.md) → [SerDes](../11_serdes_signal_integrity/serdes.md) → Scale-up → Parallelism → Collectives → RDMA/RoCE → Switch/NIC/DPU → Scale-out topology。
 
 完成后应能从 DP/TP/PP/EP 推导 collective pattern，再推导 bandwidth、latency、topology 与 congestion requirement。
 

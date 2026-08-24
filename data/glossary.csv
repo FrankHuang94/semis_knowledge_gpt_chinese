@@ -27,3 +27,11 @@ refresh,刷新,Refresh,dram,周期性恢复DRAM cell电荷以保持数据,dram_c
 hbm,高带宽内存,High Bandwidth Memory,memory,通过TSV堆叠DRAM和超宽近封装接口提供高总带宽,dram|tsv,docs/09_hbm/hbm.md,cornerstone
 roofline,屋顶线模型,Roofline Model,performance_modeling,用compute roof和bandwidth乘算术强度的memory roof给出性能上界,arithmetic_intensity|bandwidth,docs/08_memory/roofline_model.md,cornerstone
 ridge_point,屋脊点,Ridge Point,performance_modeling,compute roof与memory roof相交的算术强度阈值,roofline|peak_compute,docs/08_memory/roofline_model.md,cornerstone
+pcie_tlp,事务层数据包,Transaction Layer Packet,io,承载PCIe读写配置和消息语义的packet,pcie|transaction,docs/10_pcie_cxl_io/pcie_vs_cxl.md,cornerstone
+cxl_mem,CXL内存协议,CXL.mem,io,让host以memory语义访问device attached memory的协议路径,cxl|coherence,docs/10_pcie_cxl_io/pcie_vs_cxl.md,cornerstone
+cache_coherence,缓存一致性,Cache Coherence,architecture,定义多个cache对共享地址更新的可观察一致结果,cache|memory_ordering,docs/10_pcie_cxl_io/pcie_vs_cxl.md,cornerstone
+pam4,四电平脉冲幅度调制,PAM4,serdes,每个symbol用四个电平理想承载两个bits,nrz|baud,docs/11_serdes_signal_integrity/serdes.md,cornerstone
+equalization,均衡,Equalization,serdes,在TX或RX补偿channel频率响应和码间干扰,transmission_line|isi,docs/11_serdes_signal_integrity/serdes.md,cornerstone
+cdr,时钟数据恢复,Clock and Data Recovery,serdes,从接收waveform估计正确sampling frequency和phase,jitter|pll,docs/11_serdes_signal_integrity/serdes.md,cornerstone
+fec,前向纠错,Forward Error Correction,serdes,加入冗余使receiver能纠正一定范围内的bit errors,ber|coding,docs/11_serdes_signal_integrity/serdes.md,cornerstone
+retimer,重定时器,Retimer,serdes,恢复clock和data后重新发送以重置electrical channel budget,cdr|serdes,docs/11_serdes_signal_integrity/serdes.md,cornerstone

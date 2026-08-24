@@ -50,6 +50,8 @@
 12. [DRAM：从一个电容到 AI 系统的容量与带宽墙](08_memory/dram.md)
 13. [HBM：为什么 AI 加速器必须把 DRAM 堆到封装旁边](09_hbm/hbm.md)
 14. [Roofline Model：把算力、带宽与 workload 放到同一张图](08_memory/roofline_model.md)
+15. [PCIe vs CXL：I/O、Coherence 与 Memory Semantics](10_pcie_cxl_io/pcie_vs_cxl.md)
+16. [SerDes 与 Signal Integrity：速率、Margin、Power 与 Reach](11_serdes_signal_integrity/serdes.md)
 
 ## 阅读纪律
 

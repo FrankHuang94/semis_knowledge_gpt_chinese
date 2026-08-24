@@ -1,17 +1,19 @@
 # PCIe / CXL / I/O
 
-> 状态：框架已建立，内容将按 [Roadmap](https://github.com/FrankHuang94/semis_knowledge_gpt_chinese/blob/main/ROADMAP.md) 的依赖顺序深化。
+> 从 transaction semantics 一直追到 electrical lane，理解“协议支持”为什么不等于 application performance。
 
-本模块不以术语数量为目标。每个主题将从 problem、constraint 与 dataflow 出发，比较 architecture alternatives，解释 trade-off、second-order effects，并连接到真实 workload、产品、制造与 Strategy Lens。
+## Cornerstone
 
-## 本模块默认问题
+1. [PCIe vs CXL：同一条 PHY 上，I/O、Cache Coherence 与 Memory Semantics 如何分工](pcie_vs_cxl.md)
+2. 后续阅读：[SerDes 与 Signal Integrity](../11_serdes_signal_integrity/serdes.md)、[Memory Hierarchy](../08_memory/memory_hierarchy.md)、Scale-up 与 CXL product cases。
 
-1. 没有这项技术时，系统在哪里失败？
-2. 限制来自 physics、architecture、software 还是 manufacturing？
-3. 有哪些替代方案，为什么它们共存？
-4. 优化一个指标会牺牲什么？
-5. bottleneck 解决后移到哪里？
-6. 哪些 metric 能证伪产品主张？
-7. 谁控制关键 IP、capacity、validation 与 ecosystem？
+~~~mermaid
+flowchart TB
+  A[Software / Driver / OS] --> T[Transaction semantics]
+  T --> D[Data link / flow control]
+  D --> P[PHY / SerDes]
+  P --> C[Electrical channel]
+  T --> X[PCIe I/O or CXL cache/mem]
+~~~
 
-具体内容将优先链接到 cornerstone articles，避免重复建立短定义页面。
+每次看到 GT/s 或 CXL-ready，继续问 negotiated width、payload efficiency、round-trip latency、coherence scope、HDM placement、switch oversubscription 与 OS support。

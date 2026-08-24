@@ -161,3 +161,33 @@ concepts:
     strategic_implications: [benchmark_skepticism, balanced_roadmap]
     articles:
       - docs/08_memory/roofline_model.md
+  - id: pcie
+    name: PCI Express
+    category: [io, interconnect]
+    prerequisites: [transaction, packet, serial_link]
+    solves: [standard_peripheral_io]
+    connected_to: [cxl, serdes, root_complex, switch, dma]
+    tradeoffs: [latency, protocol_overhead, lane_count, reach]
+    strategic_implications: [open_ecosystem, phy_ip, platform_qualification]
+    articles:
+      - docs/10_pcie_cxl_io/pcie_vs_cxl.md
+  - id: cxl
+    name: Compute Express Link
+    category: [io, coherent_memory]
+    prerequisites: [pcie, cache_coherence, memory_hierarchy]
+    solves: [coherent_accelerator_access, memory_expansion, memory_pooling]
+    connected_to: [cxl_io, cxl_cache, cxl_mem, numa, memory_tiering]
+    tradeoffs: [latency, coherence_complexity, security, failure_domain]
+    strategic_implications: [composable_infrastructure, controller_software_value]
+    articles:
+      - docs/10_pcie_cxl_io/pcie_vs_cxl.md
+  - id: serdes
+    name: SerDes
+    category: [io, physical_layer]
+    prerequisites: [transmission_line, impedance, clock]
+    solves: [pin_limited_high_speed_io]
+    connected_to: [nrz, pam4, equalization, cdr, fec, retimer, optics]
+    tradeoffs: [power, latency, reach, signal_margin, test_complexity]
+    strategic_implications: [phy_ip, retimer_demand, optics_transition]
+    articles:
+      - docs/11_serdes_signal_integrity/serdes.md

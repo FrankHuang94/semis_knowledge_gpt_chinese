@@ -1,17 +1,19 @@
 # SerDes & Signal Integrity
 
-> 状态：框架已建立，内容将按 [Roadmap](https://github.com/FrankHuang94/semis_knowledge_gpt_chinese/blob/main/ROADMAP.md) 的依赖顺序深化。
+> 为什么现代 chip 无法只靠增加 parallel wires？本模块从 pin、skew 与 channel loss出发，而不是从缩写定义出发。
 
-本模块不以术语数量为目标。每个主题将从 problem、constraint 与 dataflow 出发，比较 architecture alternatives，解释 trade-off、second-order effects，并连接到真实 workload、产品、制造与 Strategy Lens。
+## Cornerstone
 
-## 本模块默认问题
+1. [SerDes 与 Signal Integrity：为什么更高速率会换来更小 Margin、更高 Power 与更短 Reach](serdes.md)
+2. 前置：[PCIe vs CXL](../10_pcie_cxl_io/pcie_vs_cxl.md)
+3. 后续：Scale-up、Ethernet switch、Datacenter Optics、LPO/CPO 与 Chiplet PHY。
 
-1. 没有这项技术时，系统在哪里失败？
-2. 限制来自 physics、architecture、software 还是 manufacturing？
-3. 有哪些替代方案，为什么它们共存？
-4. 优化一个指标会牺牲什么？
-5. bottleneck 解决后移到哪里？
-6. 哪些 metric 能证伪产品主张？
-7. 谁控制关键 IP、capacity、validation 与 ecosystem？
+~~~mermaid
+flowchart LR
+  TX[Serializer + FFE] --> CH[Package/PCB/Cable Loss]
+  CH --> RX[CTLE + CDR + DFE]
+  RX --> F[FEC]
+  F --> B[Recovered bits]
+~~~
 
-具体内容将优先链接到 cornerstone articles，避免重复建立短定义页面。
+核心纪律：永远同时报告 bit rate、baud、modulation、loss、BER、FEC、energy/bit、reach、PVT margin 与test boundary。
