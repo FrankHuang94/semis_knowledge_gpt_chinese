@@ -90,8 +90,12 @@ nav:
       - SerDes & SI:
           - 模块入口: 11_serdes_signal_integrity/index.md
           - SerDes & Signal Integrity: 11_serdes_signal_integrity/serdes.md
-      - Scale-up: 12_scale_up/index.md
-      - Scale-out Networking: 13_scale_out_networking/index.md
+      - Scale-up:
+          - 模块入口: 12_scale_up/index.md
+          - Scale-up vs Scale-out: 12_scale_up/scale_up_vs_scale_out.md
+      - Scale-out Networking:
+          - 模块入口: 13_scale_out_networking/index.md
+          - AI Ethernet & RDMA: 13_scale_out_networking/ai_ethernet_rdma.md
       - Switch / NIC / DPU: 14_switch_nic_dpu/index.md
       - Optics: 15_optics/index.md
   - Physical System:

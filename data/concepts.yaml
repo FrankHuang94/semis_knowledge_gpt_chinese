@@ -41,6 +41,7 @@ concepts:
     strategic_implications: [platform_control, switching_cost]
     articles:
       - docs/20_rack_cluster_datacenter/modern_ai_datacenter.md
+      - docs/12_scale_up/scale_up_vs_scale_out.md
   - id: bottleneck_shifting
     name: Bottleneck Shifting
     category: [master_framework]
@@ -191,3 +192,34 @@ concepts:
     strategic_implications: [phy_ip, retimer_demand, optics_transition]
     articles:
       - docs/11_serdes_signal_integrity/serdes.md
+  - id: scale_out
+    name: Scale-out
+    category: [networking, system]
+    prerequisites: [packet, routing, topology]
+    solves: [large_cluster_connectivity]
+    connected_to: [scale_up, rdma, ethernet, clos, optics]
+    tradeoffs: [latency, oversubscription, congestion, failure]
+    strategic_implications: [open_ecosystem, switch_optics_value]
+    articles:
+      - docs/12_scale_up/scale_up_vs_scale_out.md
+      - docs/13_scale_out_networking/ai_ethernet_rdma.md
+  - id: rdma
+    name: RDMA
+    category: [networking, transport]
+    prerequisites: [dma, nic, registered_memory]
+    solves: [low_cpu_overhead_remote_memory_transfer]
+    connected_to: [roce, queue_pair, congestion, gpu_direct]
+    tradeoffs: [registration, transport_complexity, failure_recovery]
+    strategic_implications: [nic_offload_value, software_ecosystem]
+    articles:
+      - docs/13_scale_out_networking/ai_ethernet_rdma.md
+  - id: congestion_control
+    name: Congestion Control
+    category: [networking, control]
+    prerequisites: [queue, rtt, buffer]
+    solves: [persistent_network_overload]
+    connected_to: [ecn, pfc, adaptive_routing, incast]
+    tradeoffs: [utilization, latency, stability, fairness]
+    strategic_implications: [telemetry_software_moat, switch_nic_codesign]
+    articles:
+      - docs/13_scale_out_networking/ai_ethernet_rdma.md

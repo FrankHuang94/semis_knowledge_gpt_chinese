@@ -6,6 +6,9 @@
 
 ### Added
 
+- 完成 Scale-up vs Scale-out 与 AI Ethernet / RDMA 两篇 cornerstone drafts。
+- 扩展 collective traffic、topology、bisection、RDMA、ECN、PFC 与 congestion control 知识节点。
+
 - 完成 PCIe vs CXL 与 SerDes / Signal Integrity 两篇 cornerstone drafts。
 - 增加 protocol layering、coherence、memory tiering、PAM4、equalization、FEC 与 retimer 的知识节点。
 

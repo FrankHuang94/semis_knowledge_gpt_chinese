@@ -35,8 +35,8 @@
 - [x] Roofline Model
 - [x] PCIe vs CXL
 - [x] SerDes
-- [ ] Scale-up vs Scale-out
-- [ ] AI Ethernet / RDMA
+- [x] Scale-up vs Scale-out
+- [x] AI Ethernet / RDMA
 - [ ] Datacenter Optics
 - [ ] Advanced Packaging
 - [ ] Modern AI Rack

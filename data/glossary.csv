@@ -35,3 +35,11 @@ equalization,均衡,Equalization,serdes,在TX或RX补偿channel频率响应和�
 cdr,时钟数据恢复,Clock and Data Recovery,serdes,从接收waveform估计正确sampling frequency和phase,jitter|pll,docs/11_serdes_signal_integrity/serdes.md,cornerstone
 fec,前向纠错,Forward Error Correction,serdes,加入冗余使receiver能纠正一定范围内的bit errors,ber|coding,docs/11_serdes_signal_integrity/serdes.md,cornerstone
 retimer,重定时器,Retimer,serdes,恢复clock和data后重新发送以重置electrical channel budget,cdr|serdes,docs/11_serdes_signal_integrity/serdes.md,cornerstone
+bisection_bandwidth,二分带宽,Bisection Bandwidth,networking,把topology切成两半时跨越切面的总可用带宽,topology|link,docs/12_scale_up/scale_up_vs_scale_out.md,cornerstone
+oversubscription,超额订阅,Oversubscription,networking,下行潜在流量总和高于共享上行容量的比例,topology|bandwidth,docs/12_scale_up/scale_up_vs_scale_out.md,cornerstone
+all_reduce,全归约,All-Reduce,collective,把各rank输入归约并把结果返回所有ranks,reduce|distributed,docs/12_scale_up/scale_up_vs_scale_out.md,cornerstone
+rdma,远程直接内存访问,RDMA,networking,由NIC直接在registered memory之间搬运数据以减少CPU数据路径,dma|nic,docs/13_scale_out_networking/ai_ethernet_rdma.md,cornerstone
+roce,基于融合以太网的RDMA,RoCE,networking,在Ethernet上承载RDMA transport语义,rdma|ethernet,docs/13_scale_out_networking/ai_ethernet_rdma.md,cornerstone
+ecn,显式拥塞通知,Explicit Congestion Notification,networking,网络在丢包前标记拥塞并让端点降低发送速率,queue|congestion,docs/13_scale_out_networking/ai_ethernet_rdma.md,cornerstone
+pfc,基于优先级的流量控制,Priority-based Flow Control,networking,按traffic class发送pause以暂时阻止上游继续发送,ethernet|buffer,docs/13_scale_out_networking/ai_ethernet_rdma.md,cornerstone
+incast,汇聚拥塞,Incast,networking,许多senders同步向同一receiver或egress发送造成瞬时过载,congestion|collective,docs/13_scale_out_networking/ai_ethernet_rdma.md,cornerstone
