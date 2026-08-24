@@ -97,9 +97,13 @@ nav:
           - 模块入口: 13_scale_out_networking/index.md
           - AI Ethernet & RDMA: 13_scale_out_networking/ai_ethernet_rdma.md
       - Switch / NIC / DPU: 14_switch_nic_dpu/index.md
-      - Optics:\n          - 模块入口: 15_optics/index.md\n          - Datacenter Optics: 15_optics/datacenter_optics.md
+      - Optics:
+          - 模块入口: 15_optics/index.md
+          - Datacenter Optics: 15_optics/datacenter_optics.md
   - Physical System:
-      - Advanced Packaging:\n          - 模块入口: 16_advanced_packaging/index.md\n          - Advanced Packaging Architecture: 16_advanced_packaging/advanced_packaging.md
+      - Advanced Packaging:
+          - 模块入口: 16_advanced_packaging/index.md
+          - Advanced Packaging Architecture: 16_advanced_packaging/advanced_packaging.md
       - Chiplet & 3D: 17_chiplet_3d_integration/index.md
       - Power Delivery: 18_power_delivery/index.md
       - Thermal & Cooling: 19_thermal_cooling/index.md
