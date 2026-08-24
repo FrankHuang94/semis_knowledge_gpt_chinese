@@ -19,6 +19,7 @@
 
 ## 当前核心文章
 
+- [CPU vs GPU vs NPU：为哪一种不确定性付费](cpu_gpu_npu.md)
 - [CPU Architecture：一条 Instruction 如何穿过现代处理器](../05_cpu/cpu_architecture.md)
 - [GPU Architecture：为什么大量 Thread、Warp、SM 与 Memory Hierarchy 适合 AI](../06_gpu_accelerator/gpu_architecture.md)
 

@@ -4,6 +4,7 @@
 
 ## 核心文章
 
+- [NIC vs SmartNIC vs DPU：Offload、可编程性与 Trust Boundary](nic_smartnic_dpu.md)
 - [Switch、NIC 与 DPU：Packet、DMA、Offload 与 Infrastructure Isolation](switch_nic_dpu.md)
 
 ## 学习结果

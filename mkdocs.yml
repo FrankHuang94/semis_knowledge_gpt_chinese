@@ -67,7 +67,9 @@ nav:
       - Device & Fab:
           - 模块入口: 03_semiconductor_device_fab/index.md
           - Transistor 到 Good Package: 03_semiconductor_device_fab/from_transistor_to_good_package.md
-      - Computer Architecture: 04_computer_architecture/index.md
+      - Computer Architecture:
+          - 模块入口: 04_computer_architecture/index.md
+          - CPU vs GPU vs NPU: 04_computer_architecture/cpu_gpu_npu.md
       - CPU:
           - 模块入口: 05_cpu/index.md
           - CPU Architecture: 05_cpu/cpu_architecture.md
@@ -89,6 +91,7 @@ nav:
           - 模块入口: 08_memory/index.md
           - Memory Hierarchy: 08_memory/memory_hierarchy.md
           - DRAM: 08_memory/dram.md
+          - SRAM vs DRAM vs HBM: 08_memory/sram_dram_hbm.md
           - Roofline Model: 08_memory/roofline_model.md
       - HBM:
           - 模块入口: 09_hbm/index.md
@@ -104,9 +107,11 @@ nav:
           - Scale-up vs Scale-out: 12_scale_up/scale_up_vs_scale_out.md
       - Scale-out Networking:
           - 模块入口: 13_scale_out_networking/index.md
+          - Ethernet vs InfiniBand: 13_scale_out_networking/ethernet_vs_infiniband.md
           - AI Ethernet & RDMA: 13_scale_out_networking/ai_ethernet_rdma.md
       - Switch / NIC / DPU:
           - 模块入口: 14_switch_nic_dpu/index.md
+          - NIC vs SmartNIC vs DPU: 14_switch_nic_dpu/nic_smartnic_dpu.md
           - Switch, NIC & DPU: 14_switch_nic_dpu/switch_nic_dpu.md
       - Optics:
           - 模块入口: 15_optics/index.md
