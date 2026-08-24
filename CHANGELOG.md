@@ -6,6 +6,9 @@
 
 ### Added
 
+- 完成 Switch / NIC / DPU 与 Chiplet / 3D Integration 两篇 Core Curriculum drafts。
+- 扩展 packet pipeline、DMA/offload、infrastructure isolation、D2D layer stack、UCIe 与 active base die 知识节点。
+
 - 完成 Modern AI Rack cornerstone draft，Phase 1 Core Cornerstones 全部闭环。
 - 扩展 rack-scale system、busbar、liquid loop、CDU、availability-adjusted compute 与 commissioning 知识节点。
 

@@ -57,6 +57,8 @@
 19. [Datacenter Optics：为什么高速 SerDes 最终必须把比特变成光](15_optics/datacenter_optics.md)
 20. [Advanced Packaging：为什么 AI 芯片的边界已经超出单颗 Die](16_advanced_packaging/advanced_packaging.md)
 21. [Modern AI Rack：为什么机柜已经成为计算机](20_rack_cluster_datacenter/modern_ai_rack.md)
+22. [Switch、NIC 与 DPU：Packet、DMA、Offload 与 Infrastructure Isolation](14_switch_nic_dpu/switch_nic_dpu.md)
+23. [Chiplet 与 3D Integration：Die Partition、D2D Protocol、Coherence 与 Thermal](17_chiplet_3d_integration/chiplet_3d.md)
 
 ## 阅读纪律
 

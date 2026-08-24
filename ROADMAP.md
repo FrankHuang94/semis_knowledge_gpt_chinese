@@ -47,6 +47,18 @@
 
 目标为 100–150 小时 accelerated curriculum。深化 GPU execution、distributed training、collectives、switch/NIC/DPU、optics、chiplet、power/thermal、manufacturing、software/hardware co-design，并建立五级 quizzes 与 Fermi exercises。
 
+当前进度：
+
+- [x] Switch / NIC / DPU
+- [x] Chiplet & 3D Integration
+- [ ] Power Delivery
+- [ ] Thermal & Cooling
+- [ ] Distributed Training & Collectives
+- [ ] GPU Execution & Kernel Performance
+- [ ] Manufacturing & Supply Chain
+- [ ] Software / Hardware Co-design
+- [ ] 五级 quizzes 与 Fermi exercises
+
 ## Phase 3 — Product and Company Intelligence
 
 建立有 freshness metadata 的 product/company database；优先覆盖 NVIDIA、AMD、Google、AWS、Intel、Arm、Broadcom、Marvell、HBM vendors、foundry 与 packaging ecosystem。所有状态明确标记 Announced、Sampling、Production、Shipping、Deployed、Roadmap 或 Rumored。

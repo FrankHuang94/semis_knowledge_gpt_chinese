@@ -355,3 +355,91 @@ concepts:
     strategic_implications: [tco, fleet_operations, vendor_accountability]
     articles:
       - docs/20_rack_cluster_datacenter/modern_ai_rack.md
+  - id: switch
+    name: 网络交换芯片
+    english_name: Network Switch
+    category: [networking, silicon]
+    prerequisites: [packet, serdes, queue]
+    solves: [many_to_many_packet_forwarding]
+    connected_to: [packet_pipeline, nic, congestion_control]
+    tradeoffs: [radix, buffer, power, programmability]
+    strategic_implications: [fabric_control, switch_silicon_value]
+    articles:
+      - docs/14_switch_nic_dpu/switch_nic_dpu.md
+  - id: nic
+    name: 网络接口卡
+    english_name: Network Interface Card
+    category: [networking, io]
+    prerequisites: [pcie, dma, ethernet]
+    solves: [host_network_connectivity, packet_to_memory]
+    connected_to: [dpu, rdma, switch, iommu]
+    tradeoffs: [offload, power, queueing, software]
+    strategic_implications: [host_attachment, networking_ecosystem]
+    articles:
+      - docs/14_switch_nic_dpu/switch_nic_dpu.md
+  - id: dpu
+    name: 数据处理单元
+    english_name: Data Processing Unit
+    category: [networking, infrastructure]
+    prerequisites: [nic, dma, virtualization]
+    solves: [infrastructure_offload, host_isolation]
+    connected_to: [packet_pipeline, embedded_cpu, security, storage]
+    tradeoffs: [complexity, power, software_lifecycle, failure_domain]
+    strategic_implications: [infrastructure_control, platform_lock_in]
+    articles:
+      - docs/14_switch_nic_dpu/switch_nic_dpu.md
+  - id: packet_pipeline
+    name: 数据包处理流水线
+    english_name: Packet Processing Pipeline
+    category: [networking, architecture]
+    prerequisites: [parser, match_action, queue]
+    solves: [deterministic_packet_processing]
+    connected_to: [switch, dpu, p4, tcam]
+    tradeoffs: [flexibility, table_capacity, latency]
+    strategic_implications: [programmable_networking]
+    articles:
+      - docs/14_switch_nic_dpu/switch_nic_dpu.md
+  - id: chiplet
+    name: 芯粒
+    english_name: Chiplet
+    category: [architecture, packaging]
+    prerequisites: [die, advanced_packaging, die_to_die]
+    solves: [reticle_limit, process_mixing, ip_reuse]
+    connected_to: [ucie, active_base_die, three_d_integration]
+    tradeoffs: [boundary_energy, latency, test, integration]
+    strategic_implications: [ip_ecosystem, modular_roadmap]
+    articles:
+      - docs/17_chiplet_3d_integration/chiplet_3d.md
+  - id: die_to_die
+    name: 裸片间互连
+    english_name: Die-to-Die Interconnect
+    category: [interconnect, packaging]
+    prerequisites: [phy, protocol, bonding]
+    solves: [chiplet_connectivity]
+    connected_to: [ucie, chiplet, coherence]
+    tradeoffs: [energy, latency, area, interoperability]
+    strategic_implications: [interface_ip, ecosystem_control]
+    articles:
+      - docs/17_chiplet_3d_integration/chiplet_3d.md
+  - id: ucie
+    name: 通用芯粒互连
+    english_name: Universal Chiplet Interconnect Express
+    category: [standard, chiplet]
+    prerequisites: [die_to_die, protocol_stack]
+    solves: [chiplet_interface_standardization]
+    connected_to: [chiplet, phy, protocol]
+    tradeoffs: [standardization, optimization, qualification]
+    strategic_implications: [open_chiplet_ecosystem]
+    articles:
+      - docs/17_chiplet_3d_integration/chiplet_3d.md
+  - id: three_d_integration
+    name: 三维集成
+    english_name: 3D Integration
+    category: [packaging, architecture]
+    prerequisites: [hybrid_bonding, tsv, thermal]
+    solves: [interconnect_density, footprint]
+    connected_to: [active_base_die, chiplet, thermal]
+    tradeoffs: [heat, power_delivery, bond_yield, test]
+    strategic_implications: [advanced_packaging_moat]
+    articles:
+      - docs/17_chiplet_3d_integration/chiplet_3d.md

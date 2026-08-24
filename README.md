@@ -39,9 +39,9 @@ flowchart LR
 | [AI Compute](docs/06_gpu_accelerator/index.md) | GPU、Tensor Core 与 workload 为什么匹配 | 4 篇核心文章已完成 |
 | [AI Workloads](docs/07_ai_workloads/index.md) | Training、Prefill、Decode、MoE 如何改变硬件需求 | 2 篇核心文章已完成 |
 | [Memory / HBM](docs/08_memory/index.md) | 为什么 memory hierarchy 必然存在 | Memory Hierarchy、DRAM、HBM 与 Roofline 已完成 |
-| [Networking](docs/13_scale_out_networking/index.md) | collective traffic 如何映射 topology 与 silicon | Scale-up 与 AI Ethernet/RDMA 已完成 |
+| [Networking](docs/13_scale_out_networking/index.md) | collective traffic 如何映射 topology 与 silicon | Scale-up、AI Ethernet/RDMA、Switch/NIC/DPU 已完成 |
 | [Optics](docs/15_optics/index.md) | electrical reach 为什么把系统推向 optics | Datacenter Optics 已完成 |
-| [Packaging](docs/16_advanced_packaging/index.md) | die、HBM、routing、power、thermal 如何互相约束 | Advanced Packaging 已完成 |
+| [Packaging](docs/16_advanced_packaging/index.md) | die、HBM、routing、power、thermal 如何互相约束 | Advanced Packaging、Chiplet/3D 已完成 |
 | [Rack / Power / Cooling](docs/20_rack_cluster_datacenter/index.md) | cooling 与 facility 为什么成为 architecture input | Modern AI Rack 已完成；专题待深化 |
 | [Engineer Language](docs/30_engineer_language/index.md) | 把工程师口语翻译为 metric 与追问 | 框架已建立 |
 | [Technical Diligence](docs/27_technical_diligence/index.md) | 从 physics 到 economics 检验技术主张 | 框架已建立 |

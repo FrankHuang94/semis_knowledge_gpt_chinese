@@ -64,3 +64,12 @@ manifold,分配歧管,Manifold,thermal,在rack内向多条tray cooling branches�
 cdu,冷却液分配单元,Coolant Distribution Unit,thermal,在technology loop与facility loop之间换热泵送过滤和控制,heat_exchanger|pump,docs/20_rack_cluster_datacenter/modern_ai_rack.md,cornerstone
 failure_domain,故障域,Failure Domain,reliability,单一failure可能同时影响的一组components或workloads,redundancy|availability,docs/20_rack_cluster_datacenter/modern_ai_rack.md,cornerstone
 commissioning,投运调试,Commissioning,operations,在site验证power cooling network firmware和workload acceptance的过程,installation|validation,docs/20_rack_cluster_datacenter/modern_ai_rack.md,cornerstone
+packet_pipeline,数据包处理流水线,Packet Processing Pipeline,networking,按parse match action queue schedule顺序处理packet,packet|switch,docs/14_switch_nic_dpu/switch_nic_dpu.md,curriculum
+nic,网络接口卡,Network Interface Card,networking,把network link连接到host queues和memory DMA,pcie|dma,docs/14_switch_nic_dpu/switch_nic_dpu.md,curriculum
+dpu,数据处理单元,Data Processing Unit,infrastructure,在host之外运行network storage security和management data plane,nic|embedded_cpu,docs/14_switch_nic_dpu/switch_nic_dpu.md,curriculum
+offload,卸载,Offload,architecture,把host software工作迁移到专用pipeline engine或embedded cores,cpu|accelerator,docs/14_switch_nic_dpu/switch_nic_dpu.md,curriculum
+slow_path,慢速路径,Slow Path,networking,处理table miss exception或复杂control packet的通用处理路径,fast_path|control_plane,docs/14_switch_nic_dpu/switch_nic_dpu.md,curriculum
+chiplet,芯粒,Chiplet,packaging,通过标准或定制D2D接口组合成system的功能die,die|advanced_packaging,docs/17_chiplet_3d_integration/chiplet_3d.md,curriculum
+die_to_die,裸片间互连,Die-to-Die Interconnect,interconnect,跨package内dies传输data clock control和management的interface,phy|protocol,docs/17_chiplet_3d_integration/chiplet_3d.md,curriculum
+ucie,通用芯粒互连,Universal Chiplet Interconnect Express,standard,定义chiplet间PHY和adapter等互操作边界的行业规范,die_to_die|protocol,docs/17_chiplet_3d_integration/chiplet_3d.md,curriculum
+active_base_die,有源基底裸片,Active Base Die,packaging,在stack底层承载fabric cache clock或power logic的active silicon,three_d_integration|base_die,docs/17_chiplet_3d_integration/chiplet_3d.md,curriculum
