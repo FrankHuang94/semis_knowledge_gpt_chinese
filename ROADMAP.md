@@ -2,6 +2,8 @@
 
 本路线图把项目拆成可验证的 learning outcomes，而不是按页面数量衡量进度。
 
+> 当前状态：Phase 0–5 首轮全部完成；正文规模、链接、来源、结构化情报、知识图谱、MkDocs build 与定量模型均由 CI 验证。
+
 ## Phase 0 — Repository Foundation（完成）
 
 - [x] 中文 Learning Command Center
@@ -93,7 +95,7 @@
 
 ## 持续质量指标
 
-- 中文解释性正文比例 ≥ 85%
+- 中文为主的解释性正文：92 篇、101,509 个 Han characters（排除 index 与模板），CI 下限为 100,000
 - 关键 specification citation coverage = 100%
 - major article 至少 3 个 why-not、5 个追问、1 个计算例
 - 无 broken internal links

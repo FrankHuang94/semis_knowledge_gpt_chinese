@@ -36,8 +36,8 @@ flowchart LR
 | 入口 | 你要解决的问题 | 当前状态 |
 |---|---|---|
 | [Core Engineering](docs/02_engineering_foundations/index.md) | 补齐 clock、pipeline、RC、signal integrity 等必要基础 | 框架已建立 |
-| [AI Compute](docs/06_gpu_accelerator/index.md) | GPU、Tensor Core 与 workload 为什么匹配 | 5 篇核心文章已完成 |
-| [AI Workloads](docs/07_ai_workloads/index.md) | Training、Prefill、Decode、parallelism 如何改变硬件需求 | 3 篇核心文章已完成 |
+| [AI Compute](docs/06_gpu_accelerator/index.md) | GPU、Tensor Core 与 workload 为什么匹配 | 6 篇核心文章已完成 |
+| [AI Workloads](docs/07_ai_workloads/index.md) | Training、Prefill、Decode、parallelism 如何改变硬件需求 | 8 篇核心文章已完成 |
 | [Memory / HBM](docs/08_memory/index.md) | 为什么 memory hierarchy 必然存在 | Memory Hierarchy、DRAM、HBM 与 Roofline 已完成 |
 | [Networking](docs/13_scale_out_networking/index.md) | collective traffic 如何映射 topology 与 silicon | Scale-up、AI Ethernet/RDMA、Switch/NIC/DPU 已完成 |
 | [Optics](docs/15_optics/index.md) | electrical reach 为什么把系统推向 optics | Datacenter Optics 已完成 |
@@ -104,6 +104,12 @@ Competitive / Strategic Implication
 - `[Estimate]`：基于公开输入的估算；
 - `[Inference]`：由公开信息推导出的判断。
 
+## 内容规模与验证
+
+截至本轮完成，知识库包含 **92 篇解释性正文**，正文内共有 **101,509 个 Han characters**；该统计排除模块 index 与写作模板，避免用导航文本满足内容门槛。完整 docs Markdown 的中文字符数更高。
+
+CI 通过 `scripts/validate_content_metrics.py` 强制正文不少于 100,000 个中文字符且不少于 90 篇，并继续执行 relative links、source/freshness、structured intelligence、knowledge graph、MkDocs strict build、quantitative self-test 与 generator checks。
+
 ## Repository 导航
 
 - [项目路线图](ROADMAP.md)
@@ -123,7 +129,7 @@ Competitive / Strategic Implication
 
 ## 当前建设阶段
 
-第一阶段聚焦一组高质量 cornerstone articles，而不是铺开数百个浅页面。全栈 mental model、数据流、bottleneck reasoning、architecture presentation decoder、CPU、GPU、Matrix Multiplication、Tensor Core、Training/Inference、Prefill/Decode、Memory Hierarchy、DRAM、HBM、Roofline、Scale-up、AI Ethernet/RDMA、Datacenter Optics 与 Advanced Packaging 已建立与 Modern AI Rack 已建立，Phase 1 主链已闭环；Phase 1 主链与 Phase 2 首轮 Core Curriculum 已闭环，并补齐五级测验、Fermi exercises 与透明估算脚本；当前进入产品、公司、标准与案例数据库；首批 10 家公司、8 个产品/平台、6 个标准与 8 个接口已结构化并由 CI 校验。
+Phase 0–5 已完成首轮闭环：repository foundation、core cornerstones、core curriculum、product/company intelligence、conference learning loop 与 quantitative strategy toolkit 均已落地。当前数据库包含 16 家公司 architecture-control records、14 个已核验产品/平台 records、9 个 standards 与 12 个 interfaces；会议材料可经 conference inbox 进入证据分级、backlink、产品状态、strategy implication 与 open-question 工作流。后续维护转为 source freshness、产品状态更新、重大架构变化与案例迭代，而不是继续铺设浅层术语页。
 
 详细里程碑与完成定义见 [ROADMAP.md](ROADMAP.md)。
 

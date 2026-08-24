@@ -6,6 +6,14 @@
 
 ### Added
 
+- 正文规模达到 92 篇、101,509 个 Han characters，并新增 CI content-floor validator，排除 index 与模板后强制不少于 100,000。
+- 完成 Conference Learning Loop、Architecture Claim Evidence Matrix、conference inbox、工程会谈准备、技术访谈与结构化 Open Questions 队列。
+- 新增 sparsity/compression、recommendation/multimodal、CXL tiered memory、topology-aware collectives、compiler lowering/fusion、RAS、qualification-to-volume-ramp 等系统主题。
+- 新增 HBM scaling、scale-up topology/coherence、queue/buffer telemetry、optical operations、先进封装 test/repair、process-control learning、commissioning 与 performance-regression operations 等深化文章。
+- 新增 AI Ethernet、先进封装供应商、液冷改造与 software–accelerator platform 四个 diligence cases。
+- 完成 Phase 4 Conference Learning Loop 与 Phase 5 Quantitative Strategy Toolkit 首轮闭环。
+
+
 - 建立首批 company/product/standard/interface intelligence records，并加入 freshness/status/source 元数据。
 - 新增结构化情报 CI validator，检查 required fields、唯一 ID、产品到公司引用、状态、日期与 source URL。
 
