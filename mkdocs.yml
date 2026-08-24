@@ -101,6 +101,7 @@ nav:
           - HBM Architecture & Economics: 09_hbm/hbm.md
       - PCIe / CXL / I/O:
           - 模块入口: 10_pcie_cxl_io/index.md
+          - CXL & Tiered Memory: 10_pcie_cxl_io/cxl_tiered_memory.md
           - PCIe vs CXL: 10_pcie_cxl_io/pcie_vs_cxl.md
       - SerDes & SI:
           - 模块入口: 11_serdes_signal_integrity/index.md
@@ -112,6 +113,7 @@ nav:
           - Scale-up vs Scale-out: 12_scale_up/scale_up_vs_scale_out.md
       - Scale-out Networking:
           - 模块入口: 13_scale_out_networking/index.md
+          - Topology-Aware Collectives: 13_scale_out_networking/topology_aware_collectives.md
           - Ethernet vs InfiniBand: 13_scale_out_networking/ethernet_vs_infiniband.md
           - AI Ethernet & RDMA: 13_scale_out_networking/ai_ethernet_rdma.md
       - Switch / NIC / DPU:
@@ -141,14 +143,17 @@ nav:
       - Rack / Cluster / Datacenter:
           - 模块入口: 20_rack_cluster_datacenter/index.md
           - 现代 AI 数据中心: 20_rack_cluster_datacenter/modern_ai_datacenter.md
+          - Reliability, Availability & Serviceability: 20_rack_cluster_datacenter/reliability_availability_serviceability.md
           - Power & Cooling Capacity Planning: 20_rack_cluster_datacenter/power_cooling_capacity_planning.md
           - Modern AI Rack: 20_rack_cluster_datacenter/modern_ai_rack.md
   - Software & Supply:
       - Software / Hardware Co-design:
           - 模块入口: 21_software_hardware_codesign/index.md
+          - Compiler, Graph Lowering & Fusion: 21_software_hardware_codesign/compiler_graph_lowering_fusion.md
           - Co-design Architecture: 21_software_hardware_codesign/software_hardware_codesign.md
       - Manufacturing & Supply Chain:
           - 模块入口: 22_manufacturing_supply_chain/index.md
+          - Qualification to Volume Ramp: 22_manufacturing_supply_chain/qualification_to_volume_ramp.md
           - Yield Economics: 22_manufacturing_supply_chain/yield_economics.md
           - Manufacturing & Supply Chain: 22_manufacturing_supply_chain/manufacturing_supply_chain.md
   - Products & Standards:

@@ -4,10 +4,11 @@
 
 ## Cornerstone
 
-1. [Ethernet vs InfiniBand：Fabric Operating Model](ethernet_vs_infiniband.md)
-2. [AI Ethernet 与 RDMA：为什么高带宽网络仍会被 Congestion、Loss 与 Tail Latency 击败](ai_ethernet_rdma.md)
-3. 前置：[Scale-up vs Scale-out](../12_scale_up/scale_up_vs_scale_out.md)、[SerDes](../11_serdes_signal_integrity/serdes.md)
-4. 后续：Collectives、Leaf-Spine/Clos、Switch ASIC、NIC/DPU、Datacenter Optics。
+1. [Topology-Aware Collectives](topology_aware_collectives.md)
+2. [Ethernet vs InfiniBand：Fabric Operating Model](ethernet_vs_infiniband.md)
+3. [AI Ethernet 与 RDMA：为什么高带宽网络仍会被 Congestion、Loss 与 Tail Latency 击败](ai_ethernet_rdma.md)
+4. 前置：[Scale-up vs Scale-out](../12_scale_up/scale_up_vs_scale_out.md)、[SerDes](../11_serdes_signal_integrity/serdes.md)
+5. 后续：Collectives、Leaf-Spine/Clos、Switch ASIC、NIC/DPU、Datacenter Optics。
 
 ~~~mermaid
 flowchart LR

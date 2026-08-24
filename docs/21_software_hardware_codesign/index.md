@@ -4,6 +4,7 @@
 
 ## 核心文章
 
+- [Compiler、Graph Lowering 与 Kernel Fusion](compiler_graph_lowering_fusion.md)
 - [Software / Hardware Co-design：Graph、Compiler、Kernel、Runtime 与 Silicon 如何闭环](software_hardware_codesign.md)
 
 ## 学习结果

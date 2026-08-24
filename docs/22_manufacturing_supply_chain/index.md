@@ -4,6 +4,7 @@
 
 ## 核心文章
 
+- [Qualification 到 Volume Ramp](qualification_to_volume_ramp.md)
 - [Semiconductor Manufacturing 与 Supply Chain：从 Wafer Start 到 Good AI System](manufacturing_supply_chain.md)
 
 ## 学习结果

@@ -4,8 +4,9 @@
 
 ## Cornerstone
 
-1. [PCIe vs CXL：同一条 PHY 上，I/O、Cache Coherence 与 Memory Semantics 如何分工](pcie_vs_cxl.md)
-2. 后续阅读：[SerDes 与 Signal Integrity](../11_serdes_signal_integrity/serdes.md)、[Memory Hierarchy](../08_memory/memory_hierarchy.md)、Scale-up 与 CXL product cases。
+1. [CXL 与 Tiered Memory：Pool 不等于 Local](cxl_tiered_memory.md)
+2. [PCIe vs CXL：同一条 PHY 上，I/O、Cache Coherence 与 Memory Semantics 如何分工](pcie_vs_cxl.md)
+3. 后续阅读：[SerDes 与 Signal Integrity](../11_serdes_signal_integrity/serdes.md)、[Memory Hierarchy](../08_memory/memory_hierarchy.md)、Scale-up 与 CXL product cases。
 
 ~~~mermaid
 flowchart TB
