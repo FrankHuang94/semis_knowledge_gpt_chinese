@@ -15,3 +15,11 @@
 7. 谁控制关键 IP、capacity、validation 与 ecosystem？
 
 具体内容将优先链接到 cornerstone articles，避免重复建立短定义页面。
+
+
+## 当前核心文章
+
+- [CPU Architecture：一条 Instruction 如何穿过现代处理器](../05_cpu/cpu_architecture.md)
+- [GPU Architecture：为什么大量 Thread、Warp、SM 与 Memory Hierarchy 适合 AI](../06_gpu_accelerator/gpu_architecture.md)
+
+建议先用 CPU 理解 latency hiding、OoO 与 cache，再用 GPU 理解另一种以 massive threading、SIMT 和 high bandwidth 为核心的选择。

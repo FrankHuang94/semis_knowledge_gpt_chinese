@@ -40,6 +40,10 @@
 2. [Follow the Data：一个 Token 的完整旅程](00_start_here/follow_the_data.md)
 3. [AI 芯片 Bottleneck Map](00_start_here/follow_the_bottleneck.md)
 4. [如何读懂一场 Hot Chips 芯片架构演讲](29_hot_chips/how_to_read_architecture_presentation.md)
+5. [CPU Architecture：一条 Instruction 如何穿过现代处理器](05_cpu/cpu_architecture.md)
+6. [GPU Architecture：为什么大量并行适合 AI](06_gpu_accelerator/gpu_architecture.md)
+7. [为什么 Matrix Multiplication 主导 AI](06_gpu_accelerator/why_matrix_multiplication.md)
+8. [Tensor Core：小矩阵单元如何成为 AI Engine](06_gpu_accelerator/tensor_core.md)
 
 ## 阅读纪律
 

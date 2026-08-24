@@ -63,8 +63,14 @@ nav:
       - Foundations: 02_engineering_foundations/index.md
       - Device & Fab: 03_semiconductor_device_fab/index.md
       - Computer Architecture: 04_computer_architecture/index.md
-      - CPU: 05_cpu/index.md
-      - GPU & Accelerator: 06_gpu_accelerator/index.md
+      - CPU:
+          - 模块入口: 05_cpu/index.md
+          - CPU Architecture: 05_cpu/cpu_architecture.md
+      - GPU & Accelerator:
+          - 模块入口: 06_gpu_accelerator/index.md
+          - GPU Architecture: 06_gpu_accelerator/gpu_architecture.md
+          - 为什么 Matrix Multiplication 主导 AI: 06_gpu_accelerator/why_matrix_multiplication.md
+          - Tensor Core: 06_gpu_accelerator/tensor_core.md
       - AI Workloads: 07_ai_workloads/index.md
   - Data Movement:
       - Memory: 08_memory/index.md

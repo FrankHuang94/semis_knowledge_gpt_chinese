@@ -4,3 +4,13 @@ bandwidth,带宽,Bandwidth,system,单位时间能够通过边界的数据量,uni
 latency,延迟,Latency,system,一个请求从发出到可用结果返回所经历的时间,time|queueing,docs/00_start_here/follow_the_data.md,seed
 utilization,利用率,Utilization,performance,峰值资源中真正被有效工作占用的比例,throughput|stall,docs/00_start_here/follow_the_bottleneck.md,seed
 bottleneck,瓶颈,Bottleneck,master_framework,在给定 workload 与 system boundary 下最先限制目标函数的资源,system_boundary|workload,docs/00_start_here/follow_the_bottleneck.md,seed
+pipeline,流水线,Pipeline,cpu_architecture,把instruction处理拆成可重叠阶段以提高吞吐,clock|register,docs/05_cpu/cpu_architecture.md,cornerstone
+out_of_order,乱序执行,Out-of-Order Execution,cpu_architecture,在保持程序语义的前提下让已准备好的后续操作先执行,dependency|rob,docs/05_cpu/cpu_architecture.md,cornerstone
+rob,重排序缓冲区,Reorder Buffer,cpu_architecture,追踪in-flight instructions并按程序顺序retire,rename|exception,docs/05_cpu/cpu_architecture.md,cornerstone
+simt,单指令多线程,SIMT,gpu_architecture,软件写独立threads而hardware按warp共同执行,thread|warp,docs/06_gpu_accelerator/gpu_architecture.md,cornerstone
+warp,线程束,Warp,gpu_architecture,GPU共同调度执行的一组threads,thread|simt,docs/06_gpu_accelerator/gpu_architecture.md,cornerstone
+occupancy,占用率,Occupancy,gpu_architecture,SM上resident warps相对hardware上限的比例,register|shared_memory,docs/06_gpu_accelerator/gpu_architecture.md,cornerstone
+gemm,通用矩阵乘,GEMM,ai_compute,将大量dot products组织为可复用和并行的矩阵运算,matrix|tensor,docs/06_gpu_accelerator/why_matrix_multiplication.md,cornerstone
+tiling,分块,Tiling,performance,把大problem切成适配memory hierarchy和parallel hardware的小块,cache|shared_memory,docs/06_gpu_accelerator/why_matrix_multiplication.md,cornerstone
+tensor_core,张量核心,Tensor Core,ai_compute,协同执行小矩阵multiply-accumulate tile的专用datapath,gemm|warp,docs/06_gpu_accelerator/tensor_core.md,cornerstone
+mma,矩阵乘加,MMA,ai_compute,执行D等于A乘B加C的小矩阵primitive,matrix_fragment|accumulator,docs/06_gpu_accelerator/tensor_core.md,cornerstone

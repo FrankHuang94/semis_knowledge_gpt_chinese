@@ -6,6 +6,9 @@
 
 ### Added
 
+- 完成 CPU Architecture、GPU Architecture、Matrix Multiplication 与 Tensor Core 四篇 cornerstone drafts。
+- 扩展 CPU/GPU execution、GEMM dataflow、MMA、precision 与 software pipeline 的知识图谱和 glossary。
+
 - 初始化 Learning Command Center、taxonomy、MkDocs 与 Mermaid。
 - 建立 Follow the Data / Power / Heat / Bottleneck 四个 master frameworks。
 - 建立 knowledge graph、glossary、citation 与 product freshness 框架。

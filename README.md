@@ -36,7 +36,7 @@ flowchart LR
 | 入口 | 你要解决的问题 | 当前状态 |
 |---|---|---|
 | [Core Engineering](docs/02_engineering_foundations/index.md) | 补齐 clock、pipeline、RC、signal integrity 等必要基础 | 框架已建立 |
-| [AI Compute](docs/06_gpu_accelerator/index.md) | GPU、Tensor Core 与 workload 为什么匹配 | 规划中 |
+| [AI Compute](docs/06_gpu_accelerator/index.md) | GPU、Tensor Core 与 workload 为什么匹配 | 4 篇核心文章已完成 |
 | [AI Workloads](docs/07_ai_workloads/index.md) | Training、Prefill、Decode、MoE 如何改变硬件需求 | 规划中 |
 | [Memory / HBM](docs/08_memory/index.md) | 为什么 memory hierarchy 必然存在 | 规划中 |
 | [Networking](docs/13_scale_out_networking/index.md) | collective traffic 如何映射 topology 与 silicon | 规划中 |
@@ -116,7 +116,7 @@ Competitive / Strategic Implication
 
 ## 当前建设阶段
 
-第一阶段聚焦 20 篇 cornerstone articles，而不是铺开数百个浅页面。首批四篇负责建立全栈 mental model、数据流、bottleneck reasoning 与 architecture presentation decoder；后续沿 GPU、workload、memory、HBM、SerDes、networking、optics、packaging、power、thermal 深入。
+第一阶段聚焦一组高质量 cornerstone articles，而不是铺开数百个浅页面。全栈 mental model、数据流、bottleneck reasoning、architecture presentation decoder、CPU、GPU、Matrix Multiplication 与 Tensor Core 已建立；下一轮沿 Training/Inference、Prefill/Decode、Memory Hierarchy 与 HBM 深入。
 
 详细里程碑与完成定义见 [ROADMAP.md](ROADMAP.md)。
 

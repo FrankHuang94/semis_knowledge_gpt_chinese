@@ -15,3 +15,11 @@
 7. 谁控制关键 IP、capacity、validation 与 ecosystem？
 
 具体内容将优先链接到 cornerstone articles，避免重复建立短定义页面。
+
+
+## 阅读顺序
+
+1. [CPU Architecture：一条 Instruction 如何穿过现代处理器](cpu_architecture.md)
+2. 回到 [GPU Architecture](../06_gpu_accelerator/gpu_architecture.md) 比较两种 latency-hiding philosophy。
+
+完成后应能从 frontend、branch、rename、OoO、ROB、cache、NUMA、power 与 I/O 判断真实 CPU bottleneck。

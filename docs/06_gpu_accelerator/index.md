@@ -15,3 +15,12 @@
 7. 谁控制关键 IP、capacity、validation 与 ecosystem？
 
 具体内容将优先链接到 cornerstone articles，避免重复建立短定义页面。
+
+
+## Cornerstone sequence
+
+1. [GPU Architecture：Thread、Warp、SM 与 Memory Hierarchy](gpu_architecture.md)
+2. [为什么 Matrix Multiplication 主导 AI](why_matrix_multiplication.md)
+3. [Tensor Core：小矩阵乘法单元如何变成 AI Compute Engine](tensor_core.md)
+
+三篇共同回答：workload为何产生规则matrix operations；GPU如何组织parallel threads与data；专用MMA datapath为什么仍依赖register、shared memory、HBM、compiler和kernel library。

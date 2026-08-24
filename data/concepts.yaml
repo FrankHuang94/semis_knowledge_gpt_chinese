@@ -50,3 +50,43 @@ concepts:
     strategic_implications: [roadmap_risk, value_migration]
     articles:
       - docs/00_start_here/follow_the_bottleneck.md
+  - id: cpu
+    name: CPU
+    category: [compute, architecture]
+    prerequisites: [clock, register, instruction]
+    solves: [serial_latency, control_flow, general_purpose_compute]
+    connected_to: [pipeline, branch_prediction, out_of_order, cache, numa, gpu]
+    tradeoffs: [area, power, complexity, speculation_cost]
+    strategic_implications: [system_root_control, software_ecosystem, accelerator_feeding]
+    articles:
+      - docs/05_cpu/cpu_architecture.md
+  - id: gpu
+    name: GPU
+    category: [compute, accelerator]
+    prerequisites: [parallelism, memory_hierarchy]
+    solves: [massively_parallel_throughput]
+    connected_to: [simt, warp, hbm, tensor_core, scale_up]
+    tradeoffs: [programmability, divergence, data_movement, power]
+    strategic_implications: [accelerator_platform, software_ecosystem, advanced_packaging]
+    articles:
+      - docs/06_gpu_accelerator/gpu_architecture.md
+  - id: matrix_multiplication
+    name: Matrix Multiplication
+    category: [ai_compute, algorithm]
+    prerequisites: [linear_algebra, tensor]
+    solves: [batched_linear_transformation]
+    connected_to: [gemm, tiling, arithmetic_intensity, tensor_core, transformer]
+    tradeoffs: [shape_sensitivity, padding, memory_traffic]
+    strategic_implications: [matrix_accelerator_value, kernel_library_moat]
+    articles:
+      - docs/06_gpu_accelerator/why_matrix_multiplication.md
+  - id: tensor_core
+    name: Tensor Core
+    category: [ai_compute, microarchitecture]
+    prerequisites: [matrix_multiplication, simt, tiling]
+    solves: [matrix_multiply_throughput, energy_per_mac]
+    connected_to: [mma, mixed_precision, shared_memory, register_file, hbm]
+    tradeoffs: [fixed_shapes, precision, software_complexity, feeding_bandwidth]
+    strategic_implications: [accelerator_differentiation, compiler_library_moat]
+    articles:
+      - docs/06_gpu_accelerator/tensor_core.md

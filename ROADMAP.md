@@ -2,7 +2,7 @@
 
 本路线图把项目拆成可验证的 learning outcomes，而不是按页面数量衡量进度。
 
-## Phase 0 — Repository Foundation（当前）
+## Phase 0 — Repository Foundation（完成）
 
 - [x] 中文 Learning Command Center
 - [x] MkDocs Material、Mermaid、中文搜索配置
@@ -10,35 +10,36 @@
 - [x] knowledge graph、product、company、standard、interface schema
 - [x] major article、citation、glossary 模板
 - [x] validation 与 index-generation 脚本骨架
-- [ ] 首批四篇 cornerstone articles 达到质量门槛
-- [ ] CI 执行 build、link、metadata validation
+- [x] 首批四篇 cornerstone articles 达到质量门槛
+- [x] CI 执行 build、link、metadata validation
 
 完成定义：新内容有明确归属、可导航、可引用、可进入图谱，且 MkDocs strict build 通过。
 
-## Phase 1 — Twenty Cornerstones
+## Phase 1 — Core Cornerstones（当前）
 
 按依赖顺序完成：
 
-1. 现代 AI 数据中心
-2. Follow the Data：一个 Token 的旅程
-3. Bottleneck Map
-4. 如何读 Hot Chips 架构演讲
-5. CPU Architecture
-6. GPU Architecture
-7. Matrix Multiplication 与 Tensor Core
-8. Training vs Inference
-9. Prefill vs Decode
-10. Memory Hierarchy
-11. DRAM
-12. HBM
-13. Roofline Model
-14. PCIe vs CXL
-15. SerDes
-16. Scale-up vs Scale-out
-17. AI Ethernet / RDMA
-18. Datacenter Optics
-19. Advanced Packaging
-20. Modern AI Rack
+- [x] 现代 AI 数据中心
+- [x] Follow the Data：一个 Token 的旅程
+- [x] Bottleneck Map
+- [x] 如何读 Hot Chips 架构演讲
+- [x] CPU Architecture
+- [x] GPU Architecture
+- [x] 为什么 Matrix Multiplication 主导 AI
+- [x] Tensor Core
+- [ ] Training vs Inference
+- [ ] Prefill vs Decode
+- [ ] Memory Hierarchy
+- [ ] DRAM
+- [ ] HBM
+- [ ] Roofline Model
+- [ ] PCIe vs CXL
+- [ ] SerDes
+- [ ] Scale-up vs Scale-out
+- [ ] AI Ethernet / RDMA
+- [ ] Datacenter Optics
+- [ ] Advanced Packaging
+- [ ] Modern AI Rack
 
 质量门槛：每篇能够支撑 30–60 分钟工程对话；包含 mechanism、design space、why-not、quantitative example、second-order effects、strategy lens、diligence questions 与 primary sources。
 
