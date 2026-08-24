@@ -76,6 +76,7 @@ nav:
           - GPU Architecture: 06_gpu_accelerator/gpu_architecture.md
           - 为什么 Matrix Multiplication 主导 AI: 06_gpu_accelerator/why_matrix_multiplication.md
           - Tensor Core: 06_gpu_accelerator/tensor_core.md
+          - Precision 与量化: 06_gpu_accelerator/precision_numeric_formats.md
           - GPU Execution & Kernel Performance: 06_gpu_accelerator/gpu_execution_kernel_performance.md
       - AI Workloads:
           - 模块入口: 07_ai_workloads/index.md

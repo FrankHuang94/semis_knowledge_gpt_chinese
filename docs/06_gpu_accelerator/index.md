@@ -25,3 +25,8 @@
 4. [GPU Execution 与 Kernel Performance：Warp、Occupancy、Tiling、Coalescing 与 Stall](gpu_execution_kernel_performance.md)
 
 四篇共同回答：workload为何产生规则matrix operations；GPU如何组织parallel threads与data；专用MMA datapath为什么仍依赖register、shared memory、HBM、compiler和kernel library。
+
+
+## Precision 与数值格式
+
+[Precision：FP32、BF16、FP8、FP4 与 INT 为什么共存](precision_numeric_formats.md) 从 sign/exponent/mantissa、quantization scale、accumulation 与 mixed precision 出发，解释低 bit 如何同时改变 compute、memory、collective 与 model quality。阅读任何 TOPS/FLOPS 比较前，先核对 input、accumulator、sparsity、software recipe 与实际 bytes。
