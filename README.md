@@ -39,9 +39,9 @@ flowchart LR
 | [AI Compute](docs/06_gpu_accelerator/index.md) | GPU、Tensor Core 与 workload 为什么匹配 | 4 篇核心文章已完成 |
 | [AI Workloads](docs/07_ai_workloads/index.md) | Training、Prefill、Decode、MoE 如何改变硬件需求 | 2 篇核心文章已完成 |
 | [Memory / HBM](docs/08_memory/index.md) | 为什么 memory hierarchy 必然存在 | Memory Hierarchy、DRAM、HBM 与 Roofline 已完成 |
-| [Networking](docs/13_scale_out_networking/index.md) | collective traffic 如何映射 topology 与 silicon | 规划中 |
-| [Optics](docs/15_optics/index.md) | electrical reach 为什么把系统推向 optics | 规划中 |
-| [Packaging](docs/16_advanced_packaging/index.md) | die、HBM、routing、power、thermal 如何互相约束 | 规划中 |
+| [Networking](docs/13_scale_out_networking/index.md) | collective traffic 如何映射 topology 与 silicon | Scale-up 与 AI Ethernet/RDMA 已完成 |
+| [Optics](docs/15_optics/index.md) | electrical reach 为什么把系统推向 optics | Datacenter Optics 已完成 |
+| [Packaging](docs/16_advanced_packaging/index.md) | die、HBM、routing、power、thermal 如何互相约束 | Advanced Packaging 已完成 |
 | [Power / Cooling](docs/18_power_delivery/index.md) | cooling 为什么成为 architecture input | 规划中 |
 | [Engineer Language](docs/30_engineer_language/index.md) | 把工程师口语翻译为 metric 与追问 | 框架已建立 |
 | [Technical Diligence](docs/27_technical_diligence/index.md) | 从 physics 到 economics 检验技术主张 | 框架已建立 |
@@ -116,7 +116,7 @@ Competitive / Strategic Implication
 
 ## 当前建设阶段
 
-第一阶段聚焦一组高质量 cornerstone articles，而不是铺开数百个浅页面。全栈 mental model、数据流、bottleneck reasoning、architecture presentation decoder、CPU、GPU、Matrix Multiplication、Tensor Core、Training/Inference、Prefill/Decode、Memory Hierarchy、DRAM、HBM 与 Roofline 已建立；下一轮沿 Datacenter Optics、Advanced Packaging 与 Modern AI Rack 深入。
+第一阶段聚焦一组高质量 cornerstone articles，而不是铺开数百个浅页面。全栈 mental model、数据流、bottleneck reasoning、architecture presentation decoder、CPU、GPU、Matrix Multiplication、Tensor Core、Training/Inference、Prefill/Decode、Memory Hierarchy、DRAM、HBM、Roofline、Scale-up、AI Ethernet/RDMA、Datacenter Optics 与 Advanced Packaging 已建立；下一轮完成 Modern AI Rack，并进入 Core Curriculum。
 
 详细里程碑与完成定义见 [ROADMAP.md](ROADMAP.md)。
 

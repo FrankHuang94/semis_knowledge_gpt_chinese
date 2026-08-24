@@ -37,8 +37,8 @@
 - [x] SerDes
 - [x] Scale-up vs Scale-out
 - [x] AI Ethernet / RDMA
-- [ ] Datacenter Optics
-- [ ] Advanced Packaging
+- [x] Datacenter Optics
+- [x] Advanced Packaging
 - [ ] Modern AI Rack
 
 质量门槛：每篇能够支撑 30–60 分钟工程对话；包含 mechanism、design space、why-not、quantitative example、second-order effects、strategy lens、diligence questions 与 primary sources。

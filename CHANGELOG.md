@@ -6,6 +6,7 @@
 
 ### Added
 
+- 完成 Datacenter Optics 与 Advanced Packaging 两篇 cornerstone drafts。\n- 扩展 pluggable/LPO/CPO、optical transceiver、interposer/RDL、microbump/hybrid bonding、KGD 与 package yield 知识节点。\n
 - 完成 Scale-up vs Scale-out 与 AI Ethernet / RDMA 两篇 cornerstone drafts。
 - 扩展 collective traffic、topology、bisection、RDMA、ECN、PFC 与 congestion control 知识节点。
 

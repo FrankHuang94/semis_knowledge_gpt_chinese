@@ -26,7 +26,7 @@ Computer Architecture → GPU → GEMM/Tensor Core → Precision → [Memory Hie
 
 ## 第四圈：物理系统（12–16 小时）
 
-Optics → Advanced Packaging → Chiplet/3D → Power Delivery → Thermal/Cooling → Modern AI Rack。
+[Datacenter Optics](../15_optics/datacenter_optics.md) → [Advanced Packaging](../16_advanced_packaging/advanced_packaging.md) → Chiplet/3D → Power Delivery → Thermal/Cooling → Modern AI Rack。
 
 完成后应能解释 electrical reach、package routing、rack power density 与 liquid cooling 如何反向决定 silicon roadmap。
 

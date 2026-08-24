@@ -53,7 +53,7 @@
 15. [PCIe vs CXL：I/O、Coherence 与 Memory Semantics](10_pcie_cxl_io/pcie_vs_cxl.md)
 16. [SerDes 与 Signal Integrity：速率、Margin、Power 与 Reach](11_serdes_signal_integrity/serdes.md)
 17. [Scale-up vs Scale-out：为什么 AI 集群需要两张网络](12_scale_up/scale_up_vs_scale_out.md)
-18. [AI Ethernet 与 RDMA：Congestion、Loss 与 Tail Latency](13_scale_out_networking/ai_ethernet_rdma.md)
+18. [AI Ethernet 与 RDMA：Congestion、Loss 与 Tail Latency](13_scale_out_networking/ai_ethernet_rdma.md)\n19. [Datacenter Optics：为什么高速 SerDes 最终必须把比特变成光](15_optics/datacenter_optics.md)\n20. [Advanced Packaging：为什么 AI 芯片的边界已经超出单颗 Die](16_advanced_packaging/advanced_packaging.md)
 
 ## 阅读纪律
 

@@ -43,3 +43,16 @@ roce,基于融合以太网的RDMA,RoCE,networking,在Ethernet上承载RDMA trans
 ecn,显式拥塞通知,Explicit Congestion Notification,networking,网络在丢包前标记拥塞并让端点降低发送速率,queue|congestion,docs/13_scale_out_networking/ai_ethernet_rdma.md,cornerstone
 pfc,基于优先级的流量控制,Priority-based Flow Control,networking,按traffic class发送pause以暂时阻止上游继续发送,ethernet|buffer,docs/13_scale_out_networking/ai_ethernet_rdma.md,cornerstone
 incast,汇聚拥塞,Incast,networking,许多senders同步向同一receiver或egress发送造成瞬时过载,congestion|collective,docs/13_scale_out_networking/ai_ethernet_rdma.md,cornerstone
+optical_transceiver,光收发模块,Optical Transceiver,optics,在electrical bits与optical signal之间完成双向转换,serdes|fiber,docs/15_optics/datacenter_optics.md,cornerstone
+modulator,光调制器,Optical Modulator,optics,把electrical data映射到optical carrier的强度或相位,laser|driver,docs/15_optics/datacenter_optics.md,cornerstone
+photodiode,光电二极管,Photodiode,optics,把接收光功率转换为电流,photon|semiconductor,docs/15_optics/datacenter_optics.md,cornerstone
+tia,跨阻放大器,Transimpedance Amplifier,optics,把photodiode微弱电流转换并放大为电压信号,photodiode|noise,docs/15_optics/datacenter_optics.md,cornerstone
+optical_dsp,光模块数字信号处理器,Optical DSP,optics,完成equalization retiming CDR和link monitoring,dsp|serdes,docs/15_optics/datacenter_optics.md,cornerstone
+lpo,线性可插拔光学,Linear Pluggable Optics,optics,用线性analog path减少模块内完整retiming DSP,pluggable_optics|serdes,docs/15_optics/datacenter_optics.md,cornerstone
+cpo,共封装光学,Co-Packaged Optics,optics,把optical engines放到switch package附近以缩短高速electrical reach,optics|advanced_packaging,docs/15_optics/datacenter_optics.md,cornerstone
+interposer,中介层,Interposer,packaging,在多个dies与HBM之间提供高密度signal和power routing,substrate|routing,docs/16_advanced_packaging/advanced_packaging.md,cornerstone
+rdl,重布线层,Redistribution Layer,packaging,把die pads重新扇出并连接到更大pitch或其他dies,metal_routing|package,docs/16_advanced_packaging/advanced_packaging.md,cornerstone
+microbump,微凸点,Microbump,packaging,用细间距solder joints连接die与interposer或stack,bump|bonding,docs/16_advanced_packaging/advanced_packaging.md,cornerstone
+hybrid_bonding,混合键合,Hybrid Bonding,packaging,同时接合dielectric与metal以形成细间距低parasitic连接,bonding|alignment,docs/16_advanced_packaging/advanced_packaging.md,cornerstone
+known_good_die,已知良品裸片,Known-Good-Die,packaging,在昂贵assembly前通过测试筛选出的合格die,wafer_test|yield,docs/16_advanced_packaging/advanced_packaging.md,cornerstone
+package_yield,封装良率,Package Yield,manufacturing,投入assembly后最终通过封装和系统测试的good assemblies比例,die_yield|assembly,docs/16_advanced_packaging/advanced_packaging.md,cornerstone

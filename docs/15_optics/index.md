@@ -1,17 +1,17 @@
 # Datacenter Optics
 
-> 状态：框架已建立，内容将按 [Roadmap](https://github.com/FrankHuang94/semis_knowledge_gpt_chinese/blob/main/ROADMAP.md) 的依赖顺序深化。
+本模块回答一个核心问题：当高速 electrical links 的 reach、power 与 density 不再可持续时，系统怎样把比特变成光，同时保留可制造性、互操作性与可维护性？
 
-本模块不以术语数量为目标。每个主题将从 problem、constraint 与 dataflow 出发，比较 architecture alternatives，解释 trade-off、second-order effects，并连接到真实 workload、产品、制造与 Strategy Lens。
+## 核心文章
 
-## 本模块默认问题
+- [Datacenter Optics：为什么高速 SerDes 最终必须把比特变成光](datacenter_optics.md)
 
-1. 没有这项技术时，系统在哪里失败？
-2. 限制来自 physics、architecture、software 还是 manufacturing？
-3. 有哪些替代方案，为什么它们共存？
-4. 优化一个指标会牺牲什么？
-5. bottleneck 解决后移到哪里？
-6. 哪些 metric 能证伪产品主张？
-7. 谁控制关键 IP、capacity、validation 与 ecosystem？
+## 学习结果
 
-具体内容将优先链接到 cornerstone articles，避免重复建立短定义页面。
+完成后应能：
+
+- 画出 switch ASIC、SerDes、DSP、laser、modulator、fiber、photodiode 与 TIA 的 data path；
+- 比较 retimed pluggable、LPO 与 CPO 的 power、margin、service 和 yield；
+- 区分 direct detection 与 coherent 的适用 reach；
+- 用 link budget 和 port arithmetic 检验产品主张；
+- 把 optics 变化翻译为 packaging、test、supply chain 与 platform strategy。

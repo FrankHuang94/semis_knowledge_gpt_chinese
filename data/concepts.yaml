@@ -223,3 +223,80 @@ concepts:
     strategic_implications: [telemetry_software_moat, switch_nic_codesign]
     articles:
       - docs/13_scale_out_networking/ai_ethernet_rdma.md
+  - id: optics
+    name: 数据中心光互连
+    english_name: Datacenter Optics
+    category: [optics, interconnect]
+    prerequisites: [serdes, signal_integrity, switch]
+    solves: [electrical_reach_wall, cable_density]
+    connected_to: [optical_transceiver, pluggable_optics, lpo, cpo]
+    tradeoffs: [power, reach, cost, serviceability, yield]
+    strategic_implications: [optics_value_migration, supply_chain_integration]
+    articles:
+      - docs/15_optics/datacenter_optics.md
+  - id: pluggable_optics
+    name: 可插拔光模块
+    english_name: Pluggable Optics
+    category: [optics, system]
+    prerequisites: [optics, serdes]
+    solves: [field_replaceable_optical_conversion]
+    connected_to: [lpo, cpo, optical_transceiver]
+    tradeoffs: [electrical_reach, front_panel_density, thermal]
+    strategic_implications: [open_ecosystem, module_inventory]
+    articles:
+      - docs/15_optics/datacenter_optics.md
+  - id: lpo
+    name: 线性可插拔光学
+    english_name: Linear Pluggable Optics
+    category: [optics, architecture]
+    prerequisites: [pluggable_optics, serdes, equalization]
+    solves: [optical_dsp_power]
+    connected_to: [cpo, fec, host_serdes]
+    tradeoffs: [margin, interoperability, qualification]
+    strategic_implications: [system_vendor_control, qualification_moat]
+    articles:
+      - docs/15_optics/datacenter_optics.md
+  - id: cpo
+    name: 共封装光学
+    english_name: Co-Packaged Optics
+    category: [optics, packaging]
+    prerequisites: [optics, advanced_packaging]
+    solves: [high_speed_electrical_reach, front_panel_density]
+    connected_to: [laser, optical_engine, switch, pluggable_optics]
+    tradeoffs: [serviceability, package_yield, thermal, test]
+    strategic_implications: [platform_integration, supply_chain_convergence]
+    articles:
+      - docs/15_optics/datacenter_optics.md
+  - id: advanced_packaging
+    name: 先进封装
+    english_name: Advanced Packaging
+    category: [packaging, system]
+    prerequisites: [die, yield, signal_integrity, thermal]
+    solves: [reticle_limit, heterogeneous_integration, memory_bandwidth_wall]
+    connected_to: [hbm, interposer, rdl, hybrid_bonding, chiplet]
+    tradeoffs: [cost, yield, thermal, warpage, test]
+    strategic_implications: [packaging_capacity, ecosystem_orchestration]
+    articles:
+      - docs/16_advanced_packaging/advanced_packaging.md
+  - id: interposer
+    name: 中介层
+    english_name: Interposer
+    category: [packaging, interconnect]
+    prerequisites: [routing, substrate]
+    solves: [fine_pitch_die_to_die_routing]
+    connected_to: [hbm, rdl, tsv, advanced_packaging]
+    tradeoffs: [cost, area, yield, capacity]
+    strategic_implications: [foundry_packaging_leverage]
+    articles:
+      - docs/16_advanced_packaging/advanced_packaging.md
+  - id: hybrid_bonding
+    name: 混合键合
+    english_name: Hybrid Bonding
+    category: [packaging, process]
+    prerequisites: [bonding, surface_planarity, alignment]
+    solves: [fine_pitch_vertical_interconnect]
+    connected_to: [microbump, three_d_integration, known_good_die]
+    tradeoffs: [defect_sensitivity, inspection, repairability]
+    strategic_implications: [equipment_process_moat, yield_learning]
+    articles:
+      - docs/16_advanced_packaging/advanced_packaging.md

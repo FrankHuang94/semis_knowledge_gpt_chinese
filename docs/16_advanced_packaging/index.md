@@ -1,17 +1,17 @@
 # Advanced Packaging
 
-> 状态：框架已建立，内容将按 [Roadmap](https://github.com/FrankHuang94/semis_knowledge_gpt_chinese/blob/main/ROADMAP.md) 的依赖顺序深化。
+本模块把 package 当作 architecture：它共同决定 die partition、HBM、die-to-die bandwidth、power delivery、thermal、yield、test 与 capacity。
 
-本模块不以术语数量为目标。每个主题将从 problem、constraint 与 dataflow 出发，比较 architecture alternatives，解释 trade-off、second-order effects，并连接到真实 workload、产品、制造与 Strategy Lens。
+## 核心文章
 
-## 本模块默认问题
+- [Advanced Packaging：为什么 AI 芯片的边界已经超出单颗 Die](advanced_packaging.md)
 
-1. 没有这项技术时，系统在哪里失败？
-2. 限制来自 physics、architecture、software 还是 manufacturing？
-3. 有哪些替代方案，为什么它们共存？
-4. 优化一个指标会牺牲什么？
-5. bottleneck 解决后移到哪里？
-6. 哪些 metric 能证伪产品主张？
-7. 谁控制关键 IP、capacity、validation 与 ecosystem？
+## 学习结果
 
-具体内容将优先链接到 cornerstone articles，避免重复建立短定义页面。
+完成后应能：
+
+- 比较 monolithic、organic MCM、silicon interposer、embedded bridge、RDL、2.5D 与 3D；
+- 解释 microbump、hybrid bonding、TSV 与 known-good-die；
+- 从 die yield 推导 final package yield，而不是只看单颗 die；
+- 定位 power、thermal、warpage、test 与 supply bottleneck；
+- 把先进封装翻译为 good-package economics 与 ecosystem control。
