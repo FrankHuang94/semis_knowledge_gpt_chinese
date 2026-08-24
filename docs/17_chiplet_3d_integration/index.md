@@ -4,6 +4,8 @@
 
 ## 核心文章
 
+- [Monolithic vs Chiplet：Die Partition 与 Good-Package Economics](monolithic_vs_chiplet.md)
+- [2.5D vs 3D Integration：距离、热与良率](two_point_five_d_vs_3d.md)
 - [Chiplet 与 3D Integration：Die Partition、D2D Protocol、Coherence 与 Thermal](chiplet_3d.md)
 
 ## 学习结果

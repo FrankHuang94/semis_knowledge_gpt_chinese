@@ -4,9 +4,11 @@
 
 ## Cornerstone
 
-1. [SerDes 与 Signal Integrity：为什么更高速率会换来更小 Margin、更高 Power 与更短 Reach](serdes.md)
-2. 前置：[PCIe vs CXL](../10_pcie_cxl_io/pcie_vs_cxl.md)
-3. 后续：Scale-up、Ethernet switch、Datacenter Optics、LPO/CPO 与 Chiplet PHY。
+1. [NRZ vs PAM4：Symbol Rate 与 Margin](nrz_vs_pam4.md)
+2. [Retimer vs Redriver：重整形还是重新计时](retimer_vs_redriver.md)
+3. [SerDes 与 Signal Integrity：为什么更高速率会换来更小 Margin、更高 Power 与更短 Reach](serdes.md)
+4. 前置：[PCIe vs CXL](../10_pcie_cxl_io/pcie_vs_cxl.md)
+5. 后续：Scale-up、Ethernet switch、Datacenter Optics、LPO/CPO 与 Chiplet PHY。
 
 ~~~mermaid
 flowchart LR

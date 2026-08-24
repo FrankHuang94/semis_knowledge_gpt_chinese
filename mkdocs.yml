@@ -101,6 +101,8 @@ nav:
           - PCIe vs CXL: 10_pcie_cxl_io/pcie_vs_cxl.md
       - SerDes & SI:
           - 模块入口: 11_serdes_signal_integrity/index.md
+          - NRZ vs PAM4: 11_serdes_signal_integrity/nrz_vs_pam4.md
+          - Retimer vs Redriver: 11_serdes_signal_integrity/retimer_vs_redriver.md
           - SerDes & Signal Integrity: 11_serdes_signal_integrity/serdes.md
       - Scale-up:
           - 模块入口: 12_scale_up/index.md
@@ -123,6 +125,8 @@ nav:
           - Advanced Packaging Architecture: 16_advanced_packaging/advanced_packaging.md
       - Chiplet & 3D:
           - 模块入口: 17_chiplet_3d_integration/index.md
+          - Monolithic vs Chiplet: 17_chiplet_3d_integration/monolithic_vs_chiplet.md
+          - 2.5D vs 3D Integration: 17_chiplet_3d_integration/two_point_five_d_vs_3d.md
           - Chiplet & 3D Integration: 17_chiplet_3d_integration/chiplet_3d.md
       - Power Delivery:
           - 模块入口: 18_power_delivery/index.md
