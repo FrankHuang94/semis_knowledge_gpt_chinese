@@ -179,6 +179,10 @@ nav:
           - CPO Manufacturability: 28_case_studies/cpo_startup_manufacturability.md
           - HBM & Packaging Capacity Investment: 28_case_studies/hbm_packaging_capacity_investment.md
           - Accelerator Generation Evolution: 28_case_studies/accelerator_generation_evolution.md
+          - AI Ethernet Fabric Procurement: 28_case_studies/ai_ethernet_fabric_procurement.md
+          - Advanced Packaging Supplier Diligence: 28_case_studies/advanced_packaging_supplier_diligence.md
+          - Liquid Cooling Datacenter Retrofit: 28_case_studies/liquid_cooling_datacenter_retrofit.md
+          - Software–Accelerator Platform Diligence: 28_case_studies/software_accelerator_platform_diligence.md
           - End-to-End AI Rack Case: 28_case_studies/end_to_end_ai_system_case.md
       - Hot Chips:
           - 模块入口: 29_hot_chips/index.md
