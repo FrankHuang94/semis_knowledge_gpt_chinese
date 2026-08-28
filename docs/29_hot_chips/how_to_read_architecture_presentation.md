@@ -522,3 +522,10 @@ flowchart TB
 演讲材料同时包含机制、规格、路线图和营销，四者证据门槛不同。记录页码、时间戳、status 与 as-of date；把 claim 拆成原子命题，更新 prerequisites、backlinks、product lineage、strategy implication 和 open questions。
 
 延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。
+
+
+## 进阶工程术语桥接
+
+本篇进一步需要掌握：profile、compliance、certification、sampling、production、shipping、design win、attach rate 与 value migration。阅读这些术语时，不只记中英文对应，还要补齐系统位置、正常路径、饱和或失败路径、直接 counter、端到端结果、产品状态和证据等级。若工程会议出现“已解决”“无开销”“已量产”，应立即追问 workload、boundary、configuration、status/date、failure mode 与 falsifier。
+
+延伸阅读：[进阶工程术语手册](../31_glossary/advanced_engineering_terms_handbook.md)。

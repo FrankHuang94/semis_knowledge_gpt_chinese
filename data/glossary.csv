@@ -113,3 +113,122 @@ fermi_estimation,费米估算,Fermi Estimation,quantitative_reasoning,用透明�
 sensitivity_analysis,敏感性分析,Sensitivity Analysis,quantitative_reasoning,改变关键输入观察结论何时翻转以识别决策边界,model|assumption,docs/32_quizzes/fermi_exercises.md,practice
 engineer_language_decoder,工程师语言解码,Engineer Language Decoder,communication,把compressed engineering claim还原为boundary metric condition和follow-up,claim|metric,docs/30_engineer_language/engineer_language_decoder.md,practice
 decision_gate,决策关卡,Decision Gate,strategy,用预先定义的evidence threshold决定项目是否进入下一阶段,evidence|threshold,docs/28_case_studies/end_to_end_ai_system_case.md,practice
+micro_op,微操作,Micro-operation,architecture,复杂指令在微架构内部拆成的更小执行动作,instruction|pipeline|parallelism,docs/04_computer_architecture/cpu_gpu_npu.md,seed
+reorder_buffer,重排序缓冲区,Reorder Buffer,architecture,保存未退休操作并维持精确异常和程序可见顺序,instruction|pipeline|parallelism,docs/04_computer_architecture/cpu_gpu_npu.md,seed
+branch_target_buffer,分支目标缓冲区,Branch Target Buffer,architecture,缓存分支目标以缩短取指控制转移,instruction|pipeline|parallelism,docs/04_computer_architecture/cpu_gpu_npu.md,seed
+load_store_queue,加载存储队列,Load Store Queue,architecture,跟踪未完成内存操作并处理地址依赖,instruction|pipeline|parallelism,docs/04_computer_architecture/cpu_gpu_npu.md,seed
+store_buffer,存储缓冲区,Store Buffer,architecture,暂存尚未写入缓存或内存的 store,instruction|pipeline|parallelism,docs/04_computer_architecture/cpu_gpu_npu.md,seed
+instruction_level_parallelism,指令级并行,Instruction-level Parallelism,architecture,同一线程中可同时执行的独立操作数量,instruction|pipeline|parallelism,docs/04_computer_architecture/cpu_gpu_npu.md,seed
+thread_level_parallelism,线程级并行,Thread-level Parallelism,architecture,通过多个线程隐藏等待并扩大执行供给,instruction|pipeline|parallelism,docs/04_computer_architecture/cpu_gpu_npu.md,seed
+control_hazard,控制冒险,Control Hazard,architecture,未知控制流对流水线供给和回滚造成的风险,instruction|pipeline|parallelism,docs/04_computer_architecture/cpu_gpu_npu.md,seed
+data_hazard,数据冒险,Data Hazard,architecture,操作之间的读写依赖限制调度和重排,instruction|pipeline|parallelism,docs/04_computer_architecture/cpu_gpu_npu.md,seed
+structural_hazard,结构冒险,Structural Hazard,architecture,多个操作竞争同一硬件资源产生的冲突,instruction|pipeline|parallelism,docs/04_computer_architecture/cpu_gpu_npu.md,seed
+warp_divergence,Warp 分歧,Warp Divergence,gpu_architecture,同组线程选择不同控制路径导致执行串行化,warp|kernel|memory_hierarchy,docs/06_gpu_accelerator/gpu_execution_kernel_performance.md,seed
+memory_coalescing,访存合并,Memory Coalescing,gpu_architecture,把相邻线程请求合并成较少内存事务,warp|kernel|memory_hierarchy,docs/06_gpu_accelerator/gpu_execution_kernel_performance.md,seed
+launch_overhead,Kernel 启动开销,Kernel Launch Overhead,gpu_architecture,提交和调度短 kernel 的固定时间成本,warp|kernel|memory_hierarchy,docs/06_gpu_accelerator/gpu_execution_kernel_performance.md,seed
+shared_memory_bank_conflict,共享存储 Bank 冲突,Shared-memory Bank Conflict,gpu_architecture,多个线程同周期访问冲突 bank 造成串行,warp|kernel|memory_hierarchy,docs/06_gpu_accelerator/gpu_execution_kernel_performance.md,seed
+persistent_kernel,常驻 Kernel,Persistent Kernel,gpu_architecture,长时间驻留设备并自行取得任务的执行模式,warp|kernel|memory_hierarchy,docs/06_gpu_accelerator/gpu_execution_kernel_performance.md,seed
+sequence_parallelism,序列并行,Sequence Parallelism,gpu_architecture,沿 sequence 维度切分状态和计算,warp|kernel|memory_hierarchy,docs/06_gpu_accelerator/gpu_execution_kernel_performance.md,seed
+expert_parallelism,专家并行,Expert Parallelism,gpu_architecture,把 MoE experts 分布到不同设备并交换 token,warp|kernel|memory_hierarchy,docs/06_gpu_accelerator/gpu_execution_kernel_performance.md,seed
+activation_recomputation,激活重计算,Activation Recomputation,gpu_architecture,少存中间激活并在反向阶段重新计算,warp|kernel|memory_hierarchy,docs/06_gpu_accelerator/gpu_execution_kernel_performance.md,seed
+dynamic_batching,动态批处理,Dynamic Batching,gpu_architecture,运行时按到达和形状组合请求以提高利用率,warp|kernel|memory_hierarchy,docs/06_gpu_accelerator/gpu_execution_kernel_performance.md,seed
+row_hit,行命中,Row Hit,dram,请求访问当前已打开 row 从而避免重新激活,latency|bandwidth|memory_hierarchy,docs/08_memory/dram.md,seed
+bank_group,Bank Group,一组共享部分时序或数据路径的 DRAM banks,dram,undefined,latency|bandwidth|memory_hierarchy,docs/08_memory/dram.md,seed
+burst_length,突发长度,Burst Length,dram,一次命令连续传输的数据拍数,latency|bandwidth|memory_hierarchy,docs/08_memory/dram.md,seed
+refresh_interval,刷新间隔,Refresh Interval,dram,为维持电荷而重新写回 DRAM cell 的时间节奏,latency|bandwidth|memory_hierarchy,docs/08_memory/dram.md,seed
+memory_controller,内存控制器,Memory Controller,dram,调度命令并管理 timing refresh ECC 和地址映射,latency|bandwidth|memory_hierarchy,docs/08_memory/dram.md,seed
+address_interleaving,地址交织,Address Interleaving,dram,把连续地址分散到 channel bank 或 rank,latency|bandwidth|memory_hierarchy,docs/08_memory/dram.md,seed
+write_recovery,写恢复时间,Write Recovery Time,dram,写入后允许 precharge 前需要等待的时序,latency|bandwidth|memory_hierarchy,docs/08_memory/dram.md,seed
+scrubbing,内存巡检,Memory Scrubbing,dram,后台读取纠错并回写以减少潜伏错误累积,latency|bandwidth|memory_hierarchy,docs/08_memory/dram.md,seed
+poisoned_data,毒化数据,Poisoned Data,dram,携带不可纠正错误标记并阻止静默使用的数据,latency|bandwidth|memory_hierarchy,docs/08_memory/dram.md,seed
+dma,直接内存访问,Direct Memory Access,io,设备无需 CPU 搬运每个 byte 即可访问内存,memory|io|coherence,docs/10_pcie_cxl_io/cxl_tiered_memory.md,seed
+iommu,输入输出内存管理单元,IOMMU,io,转换和保护设备发起的内存地址,memory|io|coherence,docs/10_pcie_cxl_io/cxl_tiered_memory.md,seed
+address_translation_service,地址转换服务,Address Translation Service,io,让设备请求并缓存主机地址转换,memory|io|coherence,docs/10_pcie_cxl_io/cxl_tiered_memory.md,seed
+page_fault,缺页异常,Page Fault,io,访问页尚未映射或驻留时触发的软件处理,memory|io|coherence,docs/10_pcie_cxl_io/cxl_tiered_memory.md,seed
+pinned_memory,固定页内存,Pinned Memory,io,禁止换出的主机页以提供可预测 DMA,memory|io|coherence,docs/10_pcie_cxl_io/cxl_tiered_memory.md,seed
+page_migration,页面迁移,Page Migration,io,在不同 memory tiers 或 NUMA nodes 间移动页,memory|io|coherence,docs/10_pcie_cxl_io/cxl_tiered_memory.md,seed
+memory_pooling,内存池化,Memory Pooling,io,多个 host 或 device 按策略共享容量资源,memory|io|coherence,docs/10_pcie_cxl_io/cxl_tiered_memory.md,seed
+memory_ordering,内存顺序,Memory Ordering,io,规定操作对不同观察者可见的先后约束,memory|io|coherence,docs/10_pcie_cxl_io/cxl_tiered_memory.md,seed
+hot_plug,热插拔,Hot Plug,io,系统运行时增加或移除设备并处理状态变化,memory|io|coherence,docs/10_pcie_cxl_io/cxl_tiered_memory.md,seed
+serialization_latency,序列化延迟,Serialization Latency,serdes,把并行数据按链路速率发送所需时间,signal_integrity|channel|ber,docs/11_serdes_signal_integrity/serdes.md,seed
+propagation_delay,传播延迟,Propagation Delay,serdes,信号穿过介质和物理距离所需时间,signal_integrity|channel|ber,docs/11_serdes_signal_integrity/serdes.md,seed
+insertion_loss,插入损耗,Insertion Loss,serdes,channel 对前向信号幅度造成的衰减,signal_integrity|channel|ber,docs/11_serdes_signal_integrity/serdes.md,seed
+return_loss,回波损耗,Return Loss,serdes,阻抗不连续产生反射的量化指标,signal_integrity|channel|ber,docs/11_serdes_signal_integrity/serdes.md,seed
+crosstalk,串扰,Crosstalk,serdes,相邻 aggressor 对 victim channel 注入干扰,signal_integrity|channel|ber,docs/11_serdes_signal_integrity/serdes.md,seed
+eye_opening,眼图开口,Eye Opening,serdes,采样点附近电压和时间余量的可视化,signal_integrity|channel|ber,docs/11_serdes_signal_integrity/serdes.md,seed
+clock_data_recovery,时钟数据恢复,Clock and Data Recovery,serdes,从接收数据中恢复采样时钟和相位,signal_integrity|channel|ber,docs/11_serdes_signal_integrity/serdes.md,seed
+forward_error_correction,前向纠错,Forward Error Correction,serdes,用冗余编码在不重传时纠正部分错误,signal_integrity|channel|ber,docs/11_serdes_signal_integrity/serdes.md,seed
+bit_error_rate,误码率,Bit Error Rate,serdes,错误 bit 相对传输 bit 的比例,signal_integrity|channel|ber,docs/11_serdes_signal_integrity/serdes.md,seed
+head_of_line_blocking,队头阻塞,Head-of-line Blocking,networking,前方受阻工作阻止后续可服务工作前进,packet|queue|topology,docs/13_scale_out_networking/ai_ethernet_rdma.md,seed
+cut_through_switching,直通交换,Cut-through Switching,networking,收到部分 frame 后即开始转发以降低延迟,packet|queue|topology,docs/13_scale_out_networking/ai_ethernet_rdma.md,seed
+store_and_forward,存储转发,Store-and-forward,networking,完整接收并校验 frame 后再转发,packet|queue|topology,docs/13_scale_out_networking/ai_ethernet_rdma.md,seed
+ecn_marking,显式拥塞标记,ECN Marking,networking,在丢包前标记 queue pressure 通知发送端减速,packet|queue|topology,docs/13_scale_out_networking/ai_ethernet_rdma.md,seed
+pfc_pause,优先级流控暂停,Priority Flow Control Pause,networking,按 priority 暂停上游发送以避免 buffer 溢出,packet|queue|topology,docs/13_scale_out_networking/ai_ethernet_rdma.md,seed
+packet_reordering,数据包乱序,Packet Reordering,networking,不同路径或恢复导致 packet 到达顺序改变,packet|queue|topology,docs/13_scale_out_networking/ai_ethernet_rdma.md,seed
+retransmission,重传,Retransmission,networking,检测丢失或错误后再次发送数据,packet|queue|topology,docs/13_scale_out_networking/ai_ethernet_rdma.md,seed
+optical_link_budget,光链路预算,Optical Link Budget,networking,发射功率扣除路径损耗和接收要求后的余量,packet|queue|topology,docs/13_scale_out_networking/ai_ethernet_rdma.md,seed
+fec_margin,FEC 余量,FEC Margin,networking,相对纠错能力边界仍保留的错误裕量,packet|queue|topology,docs/13_scale_out_networking/ai_ethernet_rdma.md,seed
+ir_drop,电阻压降,IR Drop,power,电流经过有限电阻产生的稳态电压损失,voltage|current|power,docs/18_power_delivery/power_delivery.md,seed
+inductive_droop,电感性压降,Inductive Droop,power,电流快速变化通过寄生电感产生的瞬态压降,voltage|current|power,docs/18_power_delivery/power_delivery.md,seed
+target_impedance,目标阻抗,Target Impedance,power,为限制电压波动而设定的 PDN 阻抗上限,voltage|current|power,docs/18_power_delivery/power_delivery.md,seed
+decoupling_capacitor,去耦电容,Decoupling Capacitor,power,在负载附近暂时供能并抑制电压变化,voltage|current|power,docs/18_power_delivery/power_delivery.md,seed
+load_line,负载线,Load Line,power,输出电压随负载电流变化的设计关系,voltage|current|power,docs/18_power_delivery/power_delivery.md,seed
+phase_shedding,相位关闭,Phase Shedding,power,低负载时关闭部分 VRM phases 提高效率,voltage|current|power,docs/18_power_delivery/power_delivery.md,seed
+power_cap,功率上限,Power Cap,power,限制设备允许消耗功率的控制约束,voltage|current|power,docs/18_power_delivery/power_delivery.md,seed
+dvfs,动态电压频率调整,Dynamic Voltage and Frequency Scaling,power,按负载和 margin 联合改变电压与频率,voltage|current|power,docs/18_power_delivery/power_delivery.md,seed
+brownout,欠压事件,Brownout,power,供电低于安全范围但未完全断电的状态,voltage|current|power,docs/18_power_delivery/power_delivery.md,seed
+power_good,电源正常信号,Power Good,power,表示 rail 已进入可接受范围的控制信号,voltage|current|power,docs/18_power_delivery/power_delivery.md,seed
+thermal_capacitance,热容,Thermal Capacitance,thermal,系统储存热量并延缓温度变化的能力,heat|temperature|reliability,docs/19_thermal_cooling/thermal_cooling.md,seed
+junction_temperature,结温,Junction Temperature,thermal,半导体有源区的工作温度,heat|temperature|reliability,docs/19_thermal_cooling/thermal_cooling.md,seed
+thermal_interface_material,热界面材料,Thermal Interface Material,thermal,填充接触微空隙以降低界面热阻,heat|temperature|reliability,docs/19_thermal_cooling/thermal_cooling.md,seed
+coolant_flow_rate,冷却液流量,Coolant Flow Rate,thermal,单位时间通过冷却回路的流体量,heat|temperature|reliability,docs/19_thermal_cooling/thermal_cooling.md,seed
+pressure_drop,压降,Pressure Drop,thermal,流体经过管路和冷板时损失的压力,heat|temperature|reliability,docs/19_thermal_cooling/thermal_cooling.md,seed
+dew_point,露点,Dew Point,thermal,空气水汽开始凝结的温度边界,heat|temperature|reliability,docs/19_thermal_cooling/thermal_cooling.md,seed
+flow_imbalance,流量不均,Flow Imbalance,thermal,并联支路因阻抗差获得不同流量,heat|temperature|reliability,docs/19_thermal_cooling/thermal_cooling.md,seed
+thermal_throttling,热降频,Thermal Throttling,thermal,温度或热 margin 不足时降低性能,heat|temperature|reliability,docs/19_thermal_cooling/thermal_cooling.md,seed
+heat_rejection,排热,Heat Rejection,thermal,把设施吸收的热最终释放到外部环境,heat|temperature|reliability,docs/19_thermal_cooling/thermal_cooling.md,seed
+coefficient_thermal_expansion,热膨胀系数,Coefficient of Thermal Expansion,packaging,材料温度变化时尺寸变化的比例,package|yield|test,docs/16_advanced_packaging/advanced_packaging.md,seed
+warpage,翘曲,Warpage,packaging,封装或基板因应力产生的非平面变形,package|yield|test,docs/16_advanced_packaging/advanced_packaging.md,seed
+underfill,底部填充材料,Underfill,packaging,填充 die 与基板间隙以分散机械应力,package|yield|test,docs/16_advanced_packaging/advanced_packaging.md,seed
+bump_pitch,凸点间距,Bump Pitch,packaging,相邻互连 bumps 中心间距离,package|yield|test,docs/16_advanced_packaging/advanced_packaging.md,seed
+wafer_sort,晶圆分选,Wafer Sort,packaging,封装前在 wafer 上测试并分类 dies,package|yield|test,docs/16_advanced_packaging/advanced_packaging.md,seed
+burn_in,老化筛选,Burn-in,packaging,施加应力以暴露早期失效的测试过程,package|yield|test,docs/16_advanced_packaging/advanced_packaging.md,seed
+defect_density,缺陷密度,Defect Density,packaging,单位制造面积中可能导致失效的缺陷水平,package|yield|test,docs/16_advanced_packaging/advanced_packaging.md,seed
+process_window,工艺窗口,Process Window,packaging,仍能满足质量要求的参数组合范围,package|yield|test,docs/16_advanced_packaging/advanced_packaging.md,seed
+graph_capture,计算图捕获,Graph Capture,compiler,记录运行操作和依赖以便整体优化或重放,graph|compiler|runtime,docs/21_software_hardware_codesign/software_hardware_codesign.md,seed
+operator_lowering,算子降级,Operator Lowering,compiler,把高层语义逐步转换为低层实现,graph|compiler|runtime,docs/21_software_hardware_codesign/software_hardware_codesign.md,seed
+ir_dialect,中间表示方言,IR Dialect,compiler,为特定抽象层定义操作和类型的 IR 集合,graph|compiler|runtime,docs/21_software_hardware_codesign/software_hardware_codesign.md,seed
+shape_specialization,形状特化,Shape Specialization,compiler,针对特定 tensor shape 生成优化代码,graph|compiler|runtime,docs/21_software_hardware_codesign/software_hardware_codesign.md,seed
+kernel_cache,Kernel 缓存,Kernel Cache,compiler,保存已编译或已调优 kernel 避免重复成本,graph|compiler|runtime,docs/21_software_hardware_codesign/software_hardware_codesign.md,seed
+runtime_scheduler,运行时调度器,Runtime Scheduler,compiler,在设备 stream 和资源间安排工作,graph|compiler|runtime,docs/21_software_hardware_codesign/software_hardware_codesign.md,seed
+abi,应用二进制接口,Application Binary Interface,compiler,约定调用、数据布局和二进制兼容,graph|compiler|runtime,docs/21_software_hardware_codesign/software_hardware_codesign.md,seed
+device_driver,设备驱动,Device Driver,compiler,在操作系统和硬件之间管理命令与资源,graph|compiler|runtime,docs/21_software_hardware_codesign/software_hardware_codesign.md,seed
+firmware,固件,Firmware,compiler,在设备控制处理器上运行的低层软件,graph|compiler|runtime,docs/21_software_hardware_codesign/software_hardware_codesign.md,seed
+observability,可观测性,Observability,operations,由外部信号推断系统内部状态的能力,reliability|telemetry|recovery,docs/20_rack_cluster_datacenter/reliability_availability_serviceability.md,seed
+distributed_tracing,分布式追踪,Distributed Tracing,operations,关联跨服务和设备的请求时间线,reliability|telemetry|recovery,docs/20_rack_cluster_datacenter/reliability_availability_serviceability.md,seed
+canary_release,金丝雀发布,Canary Release,operations,先在小范围部署变更以限制风险,reliability|telemetry|recovery,docs/20_rack_cluster_datacenter/reliability_availability_serviceability.md,seed
+rollback,回滚,Rollback,operations,把软件或配置恢复到已知稳定版本,reliability|telemetry|recovery,docs/20_rack_cluster_datacenter/reliability_availability_serviceability.md,seed
+fault_injection,故障注入,Fault Injection,operations,主动制造受控错误验证检测和恢复,reliability|telemetry|recovery,docs/20_rack_cluster_datacenter/reliability_availability_serviceability.md,seed
+checkpoint,检查点,Checkpoint,operations,保存可恢复状态以避免从头重做,reliability|telemetry|recovery,docs/20_rack_cluster_datacenter/reliability_availability_serviceability.md,seed
+graceful_degradation,优雅降级,Graceful Degradation,operations,故障时保留部分功能而非完全中断,reliability|telemetry|recovery,docs/20_rack_cluster_datacenter/reliability_availability_serviceability.md,seed
+blast_radius,故障影响范围,Blast Radius,operations,单一事件能够影响的系统和用户边界,reliability|telemetry|recovery,docs/20_rack_cluster_datacenter/reliability_availability_serviceability.md,seed
+mttr,平均修复时间,Mean Time to Repair,operations,从故障到恢复服务的平均时长,reliability|telemetry|recovery,docs/20_rack_cluster_datacenter/reliability_availability_serviceability.md,seed
+error_budget_burn,错误预算消耗,Error Budget Burn,operations,实际失败相对允许预算的消耗速度,reliability|telemetry|recovery,docs/20_rack_cluster_datacenter/reliability_availability_serviceability.md,seed
+standard_profile,标准配置档,Standard Profile,standard,从标准选取一组必选和可选功能的组合,standard|status|evidence,docs/25_standards/standards_to_interoperability.md,seed
+optional_feature,可选功能,Optional Feature,standard,规范允许实现选择是否支持的能力,standard|status|evidence,docs/25_standards/standards_to_interoperability.md,seed
+compliance_test,符合性测试,Compliance Test,standard,检查实现是否满足规定要求的测试,standard|status|evidence,docs/25_standards/standards_to_interoperability.md,seed
+certification,认证,Certification,standard,由指定流程确认产品达到一组条件,standard|status|evidence,docs/25_standards/standards_to_interoperability.md,seed
+plugfest,互操作活动,Plugfest,standard,多家实现集中互连以发现组合问题,standard|status|evidence,docs/25_standards/standards_to_interoperability.md,seed
+errata,勘误,Errata,standard,发布后确认的规范或实现错误与修正,standard|status|evidence,docs/25_standards/standards_to_interoperability.md,seed
+sampling_status,送样状态,Sampling Status,standard,产品已向有限客户提供评估样品,standard|status|evidence,docs/25_standards/standards_to_interoperability.md,seed
+production_status,量产状态,Production Status,standard,制造流程已进入正式规模生产阶段,standard|status|evidence,docs/25_standards/standards_to_interoperability.md,seed
+shipping_status,出货状态,Shipping Status,standard,产品已向客户实际交付,standard|status|evidence,docs/25_standards/standards_to_interoperability.md,seed
+deployed_status,部署状态,Deployed Status,standard,产品已在真实目标环境持续运行,standard|status|evidence,docs/25_standards/standards_to_interoperability.md,seed
+design_win,设计导入,Design Win,strategy,客户选择方案进入产品设计但未必形成出货,strategy|economics|diligence,docs/26_engineering_to_strategy/engineering_to_strategy.md,seed
+attach_rate,搭载率,Attach Rate,strategy,某组件随目标系统销售或部署的比例,strategy|economics|diligence,docs/26_engineering_to_strategy/engineering_to_strategy.md,seed
+content_per_system,单系统价值量,Content per System,strategy,每个系统包含的某类组件数量或金额,strategy|economics|diligence,docs/26_engineering_to_strategy/engineering_to_strategy.md,seed
+tam,总体可服务市场上限,Total Addressable Market,strategy,在最宽假设下的总潜在需求,strategy|economics|diligence,docs/26_engineering_to_strategy/engineering_to_strategy.md,seed
+sam,可服务可获得市场范围,Serviceable Available Market,strategy,受产品和渠道约束后可服务的市场,strategy|economics|diligence,docs/26_engineering_to_strategy/engineering_to_strategy.md,seed
+som,近期可获取市场,Serviceable Obtainable Market,strategy,在竞争和执行约束下可能获得的份额,strategy|economics|diligence,docs/26_engineering_to_strategy/engineering_to_strategy.md,seed
+learning_curve,学习曲线,Learning Curve,strategy,累积产出增加时单位成本或缺陷下降的经验关系,strategy|economics|diligence,docs/26_engineering_to_strategy/engineering_to_strategy.md,seed
+capex_intensity,资本密集度,Capital Intensity,strategy,扩大收入或产能需要投入资本的程度,strategy|economics|diligence,docs/26_engineering_to_strategy/engineering_to_strategy.md,seed

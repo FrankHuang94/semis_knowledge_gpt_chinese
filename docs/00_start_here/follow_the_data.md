@@ -410,3 +410,10 @@ Overlap 需要独立 engine、buffer、依赖关系允许以及足够 compute wi
 先把 workload、system boundary、数据流、功率流、热流与 bottleneck 分开。任何“更快”都要说明测量起止点；任何“更省”都要说明分子、分母和被排除的成本。沿路径遇到新名词时，不先记结论，先问状态存在哪里、由谁移动、在哪一层等待。
 
 延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。
+
+
+## 进阶工程术语桥接
+
+本篇进一步需要掌握：微操作、流水线冒险、并行度、shape、动态批处理、尾延迟、数量级与单位经济性。阅读这些术语时，不只记中英文对应，还要补齐系统位置、正常路径、饱和或失败路径、直接 counter、端到端结果、产品状态和证据等级。若工程会议出现“已解决”“无开销”“已量产”，应立即追问 workload、boundary、configuration、status/date、failure mode 与 falsifier。
+
+延伸阅读：[进阶工程术语手册](../31_glossary/advanced_engineering_terms_handbook.md)。

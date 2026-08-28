@@ -2627,3 +2627,10 @@
 - [Open Compute Project](https://www.opencompute.org/) [Primary Source]
 
 术语的 canonical definition、产品状态和单位必须随标准或实现变化复核。新增术语应优先链接已有 deep-dive；只有当机制、设计空间和工程边界无法由现有文章承载时，才新建独立页面。
+
+
+## 进阶工程术语桥接
+
+本篇进一步需要掌握：graph lowering、autotuning、ABI、firmware、observability、canary、fault injection 与 blast radius。阅读这些术语时，不只记中英文对应，还要补齐系统位置、正常路径、饱和或失败路径、直接 counter、端到端结果、产品状态和证据等级。若工程会议出现“已解决”“无开销”“已量产”，应立即追问 workload、boundary、configuration、status/date、failure mode 与 falsifier。
+
+延伸阅读：[进阶工程术语手册](../31_glossary/advanced_engineering_terms_handbook.md)。

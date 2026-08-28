@@ -216,3 +216,10 @@ Pre-silicon estimate 可用于 architecture exploration，但必须标 [Estimate
 先把技术主张还原为 workload、bottleneck、constraint、alternatives、chosen design 和 second-order effect，再讨论市场。价值捕获取决于 IP、产能、认证、生态、客户迁移和成本曲线；技术领先不自动等于 moat。
 
 延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。
+
+
+## 进阶工程术语桥接
+
+本篇进一步需要掌握：profile、compliance、certification、sampling、production、shipping、design win、attach rate 与 value migration。阅读这些术语时，不只记中英文对应，还要补齐系统位置、正常路径、饱和或失败路径、直接 counter、端到端结果、产品状态和证据等级。若工程会议出现“已解决”“无开销”“已量产”，应立即追问 workload、boundary、configuration、status/date、failure mode 与 falsifier。
+
+延伸阅读：[进阶工程术语手册](../31_glossary/advanced_engineering_terms_handbook.md)。

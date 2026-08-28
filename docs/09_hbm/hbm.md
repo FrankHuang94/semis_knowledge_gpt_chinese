@@ -224,3 +224,10 @@ Base die逻辑增加后价值向谁迁移？Hybrid bonding何时成为主流限�
 先区分 stack、channel、pseudo-channel、bank、pin rate、controller efficiency 与有效带宽。HBM 是逻辑 die、memory stack、interposer、封装、热和供应共同系统。容量、带宽、温度、良率和 package area 无法同时独立最大化。
 
 延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。
+
+
+## 进阶工程术语桥接
+
+本篇进一步需要掌握：row buffer、refresh、controller、DMA、IOMMU、ATS、page migration、pooling 与 coherence。阅读这些术语时，不只记中英文对应，还要补齐系统位置、正常路径、饱和或失败路径、直接 counter、端到端结果、产品状态和证据等级。若工程会议出现“已解决”“无开销”“已量产”，应立即追问 workload、boundary、configuration、status/date、failure mode 与 falsifier。
+
+延伸阅读：[进阶工程术语手册](../31_glossary/advanced_engineering_terms_handbook.md)。

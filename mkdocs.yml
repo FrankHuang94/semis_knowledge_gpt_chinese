@@ -214,6 +214,7 @@ nav:
       - Glossary:
           - 模块入口: 31_glossary/index.md
           - Engineering Terms Handbook: 31_glossary/engineering_terms_handbook.md
+          - Advanced Engineering Terms Handbook: 31_glossary/advanced_engineering_terms_handbook.md
       - Quizzes:
           - 模块入口: 32_quizzes/index.md
           - 五级 Core Quiz: 32_quizzes/core_quiz.md

@@ -58,3 +58,10 @@ Known-good die 也不是绝对“good”。它只表示通过既定 coverage 和
 先区分 substrate、interposer、RDL、bump、hybrid bond、die attach、underfill、warpage 和 test。封装不是被动外壳，而是电源、信号、热、机械和良率架构。known-good die 也只表示通过既定测试覆盖。
 
 延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。
+
+
+## 进阶工程术语桥接
+
+本篇进一步需要掌握：IR drop、thermal resistance、warpage、hybrid bonding、wafer sort、process window 与 qualification。阅读这些术语时，不只记中英文对应，还要补齐系统位置、正常路径、饱和或失败路径、直接 counter、端到端结果、产品状态和证据等级。若工程会议出现“已解决”“无开销”“已量产”，应立即追问 workload、boundary、configuration、status/date、failure mode 与 falsifier。
+
+延伸阅读：[进阶工程术语手册](../31_glossary/advanced_engineering_terms_handbook.md)。

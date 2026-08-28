@@ -369,3 +369,10 @@ flowchart LR
 - [Arm Architecture Reference Manuals](https://developer.arm.com/Architectures) [Primary Source]
 - [CUDA C++ Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/) [Vendor Claim]
 - [AMD ROCm Documentation](https://rocm.docs.amd.com/) [Vendor Claim]
+
+
+## 进阶工程术语桥接
+
+本篇进一步需要掌握：微操作、流水线冒险、并行度、shape、动态批处理、尾延迟、数量级与单位经济性。阅读这些术语时，不只记中英文对应，还要补齐系统位置、正常路径、饱和或失败路径、直接 counter、端到端结果、产品状态和证据等级。若工程会议出现“已解决”“无开销”“已量产”，应立即追问 workload、boundary、configuration、status/date、failure mode 与 falsifier。
+
+延伸阅读：[进阶工程术语手册](../31_glossary/advanced_engineering_terms_handbook.md)。
