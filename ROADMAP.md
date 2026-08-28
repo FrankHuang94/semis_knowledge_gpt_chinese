@@ -93,9 +93,17 @@
 - [x] Power / cooling capacity planning
 - [x] Technical Diligence playbooks 与多类 end-to-end cases
 
+## Phase 6 — Foundations & Engineering Vocabulary Expansion（完成）
+
+- [x] 将 114 个 glossary terms 扩展为可用于工程交流与尽调的深度手册
+- [x] 新增工程数学、单位、统计、排队、数量级与不确定性教程
+- [x] 新增数字逻辑、时钟、流水线、CPU/GPU、片上存储与并行执行教程
+- [x] 为原有 92 篇正文加入模块专属“基础概念桥接”与统一学习入口
+- [x] 正文达到 95 篇、209,868 个 Han characters，并由 CI 强制 200,000 下限
+
 ## 持续质量指标
 
-- 中文为主的解释性正文：92 篇、101,509 个 Han characters（排除 index 与模板），CI 下限为 100,000
+- 中文为主的解释性正文：95 篇、209,868 个 Han characters（排除 index 与模板），CI 下限为 200,000
 - 关键 specification citation coverage = 100%
 - major article 至少 3 个 why-not、5 个追问、1 个计算例
 - 无 broken internal links

@@ -106,9 +106,13 @@ Competitive / Strategic Implication
 
 ## 内容规模与验证
 
-截至本轮完成，知识库包含 **92 篇解释性正文**，正文内共有 **101,509 个 Han characters**；该统计排除模块 index 与写作模板，避免用导航文本满足内容门槛。完整 docs Markdown 的中文字符数更高。
+截至本轮完成，知识库包含 **95 篇解释性正文**，正文内共有 **209,868 个 Han characters**；该统计排除模块 index 与写作模板，避免用导航文本满足内容门槛。完整 docs Markdown 的中文字符数更高。
 
-CI 通过 `scripts/validate_content_metrics.py` 强制正文不少于 100,000 个中文字符且不少于 90 篇，并继续执行 relative links、source/freshness、structured intelligence、knowledge graph、MkDocs strict build、quantitative self-test 与 generator checks。
+CI 通过 `scripts/validate_content_metrics.py` 强制正文不少于 200,000 个中文字符且不少于 95 篇，并继续执行 relative links、source/freshness、structured intelligence、knowledge graph、MkDocs strict build、quantitative self-test 与 generator checks。
+
+## 基础概念扩写
+
+新增的[工程基础概念与术语手册](docs/31_glossary/engineering_terms_handbook.md)把现有 114 个术语展开为系统位置、机制拆解、量化测试、证据纪律、常见混淆、工程口语与追问；[工程数学、度量与不确定性](docs/02_engineering_foundations/engineering_measurement_uncertainty.md)和[数字逻辑、处理器与加速器基础](docs/02_engineering_foundations/digital_compute_accelerator_vocabulary.md)提供跨模块共同前置知识。原有 92 篇文章均加入模块专属的“基础概念桥接”，可直接回到这些教程。
 
 ## Repository 导航
 

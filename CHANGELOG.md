@@ -6,6 +6,11 @@
 
 ### Added
 
+- 将正文扩展到 95 篇、209,868 个 Han characters，并把 CI body-only content floor 从 100,000 提升到 200,000。
+- 新增 114 术语深度工程手册、工程数学/度量/不确定性教程与数字逻辑/处理器/加速器基础教程。
+- 原有 92 篇正文全部加入模块专属的基础概念桥接，补齐术语边界、测量口径、常见误区和基础阅读入口。
+
+
 - 正文规模达到 92 篇、101,509 个 Han characters，并新增 CI content-floor validator，排除 index 与模板后强制不少于 100,000。
 - 完成 Conference Learning Loop、Architecture Claim Evidence Matrix、conference inbox、工程会谈准备、技术访谈与结构化 Open Questions 队列。
 - 新增 sparsity/compression、recommendation/multimodal、CXL tiered memory、topology-aware collectives、compiler lowering/fusion、RAS、qualification-to-volume-ramp 等系统主题。
