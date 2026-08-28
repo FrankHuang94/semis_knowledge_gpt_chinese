@@ -106,9 +106,9 @@ Competitive / Strategic Implication
 
 ## 内容规模与验证
 
-截至本轮完成，知识库包含 **96 篇解释性正文**，正文内共有 **306,410 个 Han characters**；该统计排除模块 index 与写作模板，避免用导航文本满足内容门槛。完整 docs Markdown 的中文字符数更高。
+截至本轮完成，知识库包含 **103 篇解释性正文**，正文内共有 **579,339 个 Han characters**；该统计排除模块 index 与写作模板，避免用导航文本满足内容门槛。完整 docs Markdown 的中文字符数更高。
 
-CI 通过 `scripts/validate_content_metrics.py` 强制正文不少于 300,000 个中文字符且不少于 96 篇，并继续执行 relative links、source/freshness、structured intelligence、knowledge graph、MkDocs strict build、quantitative self-test 与 generator checks。
+CI 通过 `scripts/validate_content_metrics.py` 强制正文不少于 500,000 个中文字符且不少于 103 篇，并继续执行 relative links、source/freshness、structured intelligence、knowledge graph、MkDocs strict build、quantitative self-test 与 generator checks。
 
 ## 基础概念扩写
 
@@ -151,3 +151,9 @@ mkdocs serve
 ## License 与使用边界
 
 当前仓库用于个人学习与研究。引用外部图片、论文和规格时必须遵守原始许可；优先绘制原创 schematic，并只摘录支持论点所必需的内容。
+
+## 工程案例手册与行业动态
+
+[工程术语计算、测量与故障案例库](docs/34_engineering_casebooks/index.md)把 233 个 glossary terms 逐一转化为系统边界、计算骨架、counter、故障注入、恢复验收、证伪条件和工程到战略的工作单，分为计算、存储、互连、物理制造、软件运维、标准战略六卷。
+
+[2025–2026 AI 数据中心与半导体行业动态](docs/35_industry_updates/ai_infrastructure_2026.md)以 2026-08-28 为核验日期，跟踪加速器平台、HBM4、先进封装、PCIe 7.0、CXL 4.0、UCIe 3.0、UEC 1.0、CPO、液冷和软件栈，并区分 [Primary Source]、[Vendor Claim] 与 [Inference]。

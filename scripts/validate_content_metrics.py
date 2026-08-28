@@ -12,8 +12,8 @@ import sys
 from pathlib import Path
 
 DOCS = Path("docs")
-MIN_BODY_HAN = 300_000
-MIN_BODY_ARTICLES = 96
+MIN_BODY_HAN = 500_000
+MIN_BODY_ARTICLES = 103
 HAN_RE = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]")
 
 

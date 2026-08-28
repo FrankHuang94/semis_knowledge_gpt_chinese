@@ -109,9 +109,17 @@
 - [x] 正文达到 96 篇、306,410 个 Han characters，全部 docs 达到 311,729
 - [x] CI body-only content floor 提升到 300,000
 
+## Phase 8 — 500K Engineering Casebooks & Industry Updates（完成）
+
+- [x] 将 233 个 glossary terms 全部转换为计算、测量、压力测试、故障恢复与证伪工作单
+- [x] 新增计算、存储、互连、物理制造、软件运维、标准战略六卷工程案例手册
+- [x] 新增截至 2026-08-28 的行业动态报告，覆盖加速器、HBM4、先进封装、PCIe 7.0、CXL 4.0、UCIe 3.0、UEC 1.0、CPO、液冷与软件发布
+- [x] 正文达到 103 篇、579,339 个 Han characters，全部 docs 达到 584,822
+- [x] CI body-only content floor 提升到 500,000
+
 ## 持续质量指标
 
-- 中文为主的解释性正文：96 篇、306,410 个 Han characters（排除 index 与模板），CI 下限为 300,000
+- 中文为主的解释性正文：103 篇、579,339 个 Han characters（排除 index 与模板），CI 下限为 500,000
 - 关键 specification citation coverage = 100%
 - major article 至少 3 个 why-not、5 个追问、1 个计算例
 - 无 broken internal links
