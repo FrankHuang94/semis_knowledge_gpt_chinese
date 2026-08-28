@@ -48,3 +48,10 @@ diligence 应要求目标产品的 WIP age、cycle-time distribution、constrain
 - [TSMC Annual Reports](https://investor.tsmc.com/english/annual-reports) [Primary Source]
 - [SEMI Standards](https://www.semi.org/en/standards) [Primary Source]
 - [IRDS Reports](https://irds.ieee.org/editions) [Independent]
+
+
+## 基础概念桥接
+
+先区分 device、process step、wafer、die、package 与 good system。节点名称不是单一物理尺寸，工艺成熟度也不能由一片样品代表。讨论性能时同时记录 process、voltage、temperature；讨论产能时同时记录 cycle time、yield、qualification 和 product mix。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

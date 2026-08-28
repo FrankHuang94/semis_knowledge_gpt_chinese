@@ -200,3 +200,10 @@ Chiplet不是封装同义词，而是一种把architecture切开再用physical/p
 - [UCIe Consortium — Resources](https://www.uciexpress.org/ucie-resources)
 - [Intel Foundry — Advanced Packaging](https://www.intel.com/content/www/us/en/foundry/packaging.html)
 - [TSMC — SoIC](https://www.tsmc.com/english/dedicatedFoundry/technology/SoIC_inDepth)
+
+
+## 基础概念桥接
+
+先区分 chiplet、die-to-die PHY、protocol、active/passive base die、2.5D 与 3D。可组合性还需要 power、clock、thermal、security、debug、yield ownership 和 warranty；接口标准不能自动创造开放市场。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

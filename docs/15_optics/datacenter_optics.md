@@ -212,3 +212,10 @@ Datacenter optics 不是单一器件，而是一条从 switch silicon 到 fiber 
 - [OIF — Implementation Agreements](https://www.oiforum.com/technical-work/implementation-agreements-ias/)
 - [OIF — 800ZR Implementation Agreement](https://www.oiforum.com/wp-content/uploads/OIF-800ZR-01.0.pdf)
 - [IEEE 802.3 Ethernet Working Group](https://www.ieee802.org/3/)
+
+
+## 基础概念桥接
+
+先区分 wavelength、laser、modulator、fiber、connector、receiver、FEC、link budget 与 reach。能亮不等于长期可运行；温度、污染、老化、校准、现场更换和多供应商验证决定 fleet economics。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

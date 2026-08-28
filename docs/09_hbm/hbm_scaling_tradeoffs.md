@@ -48,3 +48,10 @@ chosen design 应先由模型 state、batch、sequence 和并行方式算出 cap
 - [JEDEC Standards and Documents](https://www.jedec.org/standards-documents) [Primary Source]
 - [AMD Instinct documentation](https://instinct.docs.amd.com/) [Vendor Claim]
 - [NVIDIA HBM3E technology overview](https://www.nvidia.com/en-us/data-center/technologies/hbm3e/) [Vendor Claim]
+
+
+## 基础概念桥接
+
+先区分 stack、channel、pseudo-channel、bank、pin rate、controller efficiency 与有效带宽。HBM 是逻辑 die、memory stack、interposer、封装、热和供应共同系统。容量、带宽、温度、良率和 package area 无法同时独立最大化。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

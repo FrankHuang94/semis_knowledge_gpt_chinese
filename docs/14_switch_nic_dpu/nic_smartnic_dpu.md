@@ -198,3 +198,10 @@ DPU市场的关键不是总地址市场乘以每台 server，而是可被可靠 
 - [Primary Source] [NVIDIA BlueField BSP](https://docs.nvidia.com/networking/display/bluefieldbsp4130)
 - [Primary Source] [NVIDIA BlueField Management](https://docs.nvidia.com/networking/display/bluefieldbmcv2601/bluefield-management)
 - [Primary Source] [NVIDIA DOCA RDMA Programming Guide](https://docs.nvidia.com/sdk-v2.2.0/pdf/rdma-programming-guide.pdf)
+
+
+## 基础概念桥接
+
+先区分 switch pipeline、NIC data path、DMA、RDMA、offload、isolation 与 management。把任务从 CPU 移走不等于消失；状态、软件、功耗和故障责任会迁移。比较产品应追踪完整 packet 和 control path。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

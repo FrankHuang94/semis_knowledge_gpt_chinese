@@ -228,3 +228,10 @@ Bear case：固定 NIC迅速吸收常见 offload，CPU cores变便宜，DPU软�
 - [Primary Source] [Linux Kernel NAPI Documentation](https://docs.kernel.org/networking/napi.html)
 - [Primary Source] [NVIDIA BlueField Modes of Operation](https://docs.nvidia.com/networking/display/bluefieldbsp453/modes%2Bof%2Boperation)
 - [Primary Source] [NVIDIA BlueField Management](https://docs.nvidia.com/networking/display/bluefieldbmcv2601/bluefield-management)
+
+
+## 基础概念桥接
+
+案例中的数字必须进入统一 waterfall：理论峰值到 kernel、application、system、availability-adjusted output，再到单位经济性。为 base、upside、downside 分别写依赖和触发器，避免把最好条件的演示直接当财务预测。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

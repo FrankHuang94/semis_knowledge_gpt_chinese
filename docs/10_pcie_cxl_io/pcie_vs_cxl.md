@@ -251,3 +251,10 @@ CXL pooling的真实TCO是否能覆盖switch/software成本？AI KV/optimizer哪
 - [Primary Source] [PCI-SIG — PCIe 6.0 FLIT Mode](https://pcisig.com/what-flit-mode-and-why-did-pci-sig-move-unit-data-exchange)
 - [Primary Source] [CXL Consortium — CXL 3.2 Announcement](https://computeexpresslink.org/wp-content/uploads/2024/12/CXL_3.2-Spec-Announcement_FINAL-1.pdf)
 - [Primary Source] [CXL Consortium — CXL.io and CXL.cache/mem Paths](https://computeexpresslink.org/blog/integrity-and-data-encryption-ide-trends-and-verification-challenges-in-cxl-compute-express-link-2797/)
+
+
+## 基础概念桥接
+
+先区分 PHY、link、transaction、I/O、cache coherence 和 memory semantics。协议支持不等于性能；lane width、payload efficiency、round-trip、switch、HDM placement、OS 与 driver 都会影响结果。pool、tier 和 local memory 也不是同义词。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

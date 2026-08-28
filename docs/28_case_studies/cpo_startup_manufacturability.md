@@ -222,3 +222,10 @@ Startup若只控制 PIC design而把 test、assembly、laser与 customer integra
 - [Primary Source] [OIF Co-Packaging Framework](https://www.oiforum.com/oif-releases-co-packaging-framework-implementation-agreement/)
 - [Primary Source] [OIF 3.2T Co-Packaged Module IA](https://www.oiforum.com/wp-content/uploads/OIF-Co-Packaging-3.2T-Module-01.0.pdf)
 - [Primary Source] [Broadcom TH5 Bailly CPO material](https://docs.broadcom.com/doc/th5-51.2t-bailly-cpo)
+
+
+## 基础概念桥接
+
+案例中的数字必须进入统一 waterfall：理论峰值到 kernel、application、system、availability-adjusted output，再到单位经济性。为 base、upside、downside 分别写依赖和触发器，避免把最好条件的演示直接当财务预测。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

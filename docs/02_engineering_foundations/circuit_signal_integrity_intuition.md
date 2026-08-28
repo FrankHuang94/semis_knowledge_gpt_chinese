@@ -179,3 +179,10 @@ Signal integrity IP 不只是一组 analog block。可持续能力可能来自 c
 - [Primary Source] [AMD UG583：Trace Characteristic Impedance Design](https://docs.amd.com/r/en-US/ug583-ultrascale-pcb-design/Trace-Characteristic-Impedance-Design-for-High-Speed-Transceivers)
 - [Primary Source] [AMD XAPP1392：System-Level SI Analysis](https://docs.amd.com/r/en-US/xapp1392-pcb-chan-design-guidelines/System-Level-SI-Analysis)
 - [Primary Source] [AMD/Xilinx：Signal Integrity Tips and Tricks](https://docs.amd.com/api/khub/documents/0cnBFpU4_p6~hs37twE4yQ/content)
+
+
+## 基础概念桥接
+
+先区分数值表示、组合逻辑、时序状态、时钟、流水线与测量误差。工程上相同功能可有不同 timing、power、area 和 reliability；公式成立也不代表测量边界正确。先做量纲与数量级检查，再进入电路或架构细节。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

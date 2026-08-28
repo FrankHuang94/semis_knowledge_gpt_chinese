@@ -46,3 +46,10 @@ Computer Architecture → GPU → [GPU Execution](../06_gpu_accelerator/gpu_exec
 - 提出至少三个替代 architecture；
 - 指出解决旧瓶颈后最可能出现的新瓶颈；
 - 提出十个工程师愿意回答的 diligence questions。
+
+
+## 基础概念桥接
+
+学习路径中的层级不是孤立课程，而是依赖图。先掌握量、单位、延迟、带宽、容量和利用率，再追踪计算、存储、互连、电源、散热、制造与软件。每学完一层，都应能画 dataflow、列 alternatives、解释 why-not 并提出证伪测试。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

@@ -454,3 +454,10 @@ SRAM area/leakage/wire昂贵，AI working set巨大；streaming data未必复用
 - [Primary Source] [AMD ROCm Compute Unit](https://rocm.docs.amd.com/projects/omniperf/en/docs-6.2.1/conceptual/compute-unit.html)
 - [Primary Source] [AMD CDNA Architecture](https://www.amd.com/en/technologies/cdna.html)
 - [Primary Source] [Google Cloud TPU System Architecture](https://docs.cloud.google.com/tpu/docs/system-architecture-tpu-vm?hl=en)
+
+
+## 基础概念桥接
+
+先区分 thread、warp、block、SM、occupancy、utilization、register、shared memory 和 HBM。线程很多不等于计算单元忙碌；shape、tiling、coalescing、fusion 与 kernel coverage 决定峰值能否兑现。低精度或稀疏还必须通过质量约束。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

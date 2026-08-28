@@ -51,3 +51,10 @@ Known-good die 也不是绝对“good”。它只表示通过既定 coverage 和
 - [IEEE 1838 Standard for 3D Stacked IC Test Access](https://standards.ieee.org/ieee/1838/6846/) [Primary Source]
 - [JEDEC Standards and Documents](https://www.jedec.org/standards-documents) [Primary Source]
 - [imec Advanced Packaging](https://www.imec-int.com/en/what-we-offer/research-portfolio/advanced-packaging) [Independent]
+
+
+## 基础概念桥接
+
+先区分 substrate、interposer、RDL、bump、hybrid bond、die attach、underfill、warpage 和 test。封装不是被动外壳，而是电源、信号、热、机械和良率架构。known-good die 也只表示通过既定测试覆盖。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

@@ -219,3 +219,10 @@ Power delivery是一条从utility到transistor的impedance、conversion与contro
 - [OCP — Open Rack V3 Power Shelf](https://www.opencompute.org/documents/ocp-open-rack-v3-power-shelf-rev-1-0-1-pdf)
 - [OCP — Open Rack Specifications](https://www.opencompute.org/wiki/Open_Rack/SpecsAndDesigns)
 - [NVIDIA — Rack Scale Systems Hardware](https://docs.nvidia.com/dgx/dgxgb200-user-guide/hardware.html)
+
+
+## 基础概念桥接
+
+先区分 voltage、current、power、energy、efficiency、droop、transient、PDN 与 VRM。额定功率不是实测功耗，平均功率也不能保护瞬态。沿 utility、UPS、PDU、shelf、busbar、VRM、package 到 transistor 建立损耗账本。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

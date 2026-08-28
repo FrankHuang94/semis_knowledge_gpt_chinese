@@ -199,3 +199,10 @@ Revenue可能在 Shipping确认，客户价值要到 Utilized才发生。投资�
 - [Primary Source] [AMD MI350 Series Product Page](https://www.amd.com/en/products/accelerators/instinct/mi350.html)
 - [Primary Source] [AMD CDNA4 Architecture Whitepaper](https://www.amd.com/content/dam/amd/en/documents/instinct-tech-docs/white-papers/amd-cdna-4-architecture-whitepaper.pdf)
 - [Primary Source] [AMD Instinct Architecture Documentation](https://instinct.docs.amd.com/latest/gpu-arch/gpu-arch.html)
+
+
+## 基础概念桥接
+
+案例中的数字必须进入统一 waterfall：理论峰值到 kernel、application、system、availability-adjusted output，再到单位经济性。为 base、upside、downside 分别写依赖和触发器，避免把最好条件的演示直接当财务预测。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

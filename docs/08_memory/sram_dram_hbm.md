@@ -170,3 +170,10 @@ Known-good-die 能降低把明显坏 die 带入昂贵封装的概率，却不能
 - [Primary Source] [NVIDIA CUDA Programming Guide：Device Memory Spaces](https://docs.nvidia.com/cuda/cuda-programming-guide/02-basics/writing-cuda-kernels.html)
 - [Primary Source] [NVIDIA CUDA Best Practices Guide：Device Memory Spaces](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html)
 - [Primary Source] [AMD HIP Programming Model：Memory Hierarchy](https://rocm.docs.amd.com/projects/HIP/en/latest/understand/programming_model.html)
+
+
+## 基础概念桥接
+
+先区分容量、延迟、带宽、并发、访问粒度和持久性。memory hierarchy 依赖 locality；命中率必须和 miss penalty、bank conflict、queue 与搬运放大一起看。更多容量不会自动提高速度，更多带宽也不能消除依赖延迟。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

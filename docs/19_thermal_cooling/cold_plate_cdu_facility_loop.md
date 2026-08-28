@@ -69,3 +69,10 @@ diligence 应查看 P&ID、材料兼容矩阵、压力/流量 envelope、控制�
 - [OCP Cold Plate Cooling Loop Requirements](https://www.opencompute.org/documents/cold-plate-cooling-loop-requirements-rev-2-pdf) [Primary Source]
 - [OCP Cold Plate Development and Qualification](https://www.opencompute.org/documents/ocp-cold-plate-development-and-qualification-with-integrated-comments-pdf) [Primary Source]
 - [ASHRAE Thermal Guidelines for Data Processing Environments](https://www.ashrae.org/technical-resources/bookstore/thermal-guidelines-for-data-processing-environments-5th-ed) [Independent]
+
+
+## 基础概念桥接
+
+先区分 temperature、heat、thermal resistance、thermal capacitance、flow、pressure drop 与 cooling capacity。冷板、CDU 和 facility water 属于不同边界；总流量正常也可能存在局部 starvation。稳态与瞬态都要验证。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

@@ -61,3 +61,10 @@ chosen design 要看资产剩余寿命、目标 rack rollout、停机窗口和�
 - [OCP Cold Plate Cooling Loop Requirements](https://www.opencompute.org/documents/cold-plate-cooling-loop-requirements-rev-2-pdf) [Primary Source]
 - [ASHRAE Thermal Guidelines](https://www.ashrae.org/technical-resources/bookstore/thermal-guidelines-for-data-processing-environments-5th-ed) [Independent]
 - [OCP Advanced Cooling Solutions](https://www.opencompute.org/projects/advanced-cooling-solutions) [Primary Source]
+
+
+## 基础概念桥接
+
+案例中的数字必须进入统一 waterfall：理论峰值到 kernel、application、system、availability-adjusted output，再到单位经济性。为 base、upside、downside 分别写依赖和触发器，避免把最好条件的演示直接当财务预测。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

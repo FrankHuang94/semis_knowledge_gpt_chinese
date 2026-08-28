@@ -235,3 +235,10 @@ Modern AI rack 是 silicon 与 facility 的共同 architecture。最好的 rack 
 - [Open Compute Project — Project Deschutes CDU Specification](https://ocpprodweb3.opencompute.org/documents/ocp-specification-deschutes-final-2025-09-05-pdf)
 - [NVIDIA — DGX GB Rack Scale Systems Hardware Guide](https://docs.nvidia.com/dgx/dgxgb200-user-guide/hardware.html)
 - [NVIDIA — Multi-Node NVLink Systems](https://docs.nvidia.com/multi-node-nvlink-systems/index.html)
+
+
+## 基础概念桥接
+
+先把 rack 当成计算机：compute、memory、network、power、cooling、firmware、controls 与 operations 共同决定 useful work。nameplate 数量不等于 commissioned capacity；安装、验收、故障恢复、spares 与维护窗口必须进入 TCO。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

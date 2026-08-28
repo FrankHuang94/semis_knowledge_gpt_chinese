@@ -218,3 +218,10 @@ Serving engine 需要 continuous batching、paged KV、prefix caching、admissio
 - [Primary Source] [Switch Transformers](https://arxiv.org/abs/2101.03961)
 - [Primary Source] [NVIDIA Megatron Core：MoE](https://docs.nvidia.com/megatron-core/developer-guide/nightly/user-guide/features/moe.html)
 - [Primary Source] [NVIDIA Megatron Core：MoE dispatcher configuration](https://docs.nvidia.com/megatron-core/developer-guide/latest/apidocs/core/core.transformer.transformer_config.html)
+
+
+## 基础概念桥接
+
+先把训练、prefill、decode、embedding、recommendation 与 multimodal 拆成不同 phase。明确 weights、activations、gradients、optimizer state、KV cache 的生命周期，再写 batch、sequence、precision、arrival distribution 和 SLO。模型名称本身不是硬件需求。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

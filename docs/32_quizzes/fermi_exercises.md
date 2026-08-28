@@ -184,3 +184,10 @@ Machine ridge point 上升约 1.85×，[Inference]；原本接近 memory-bound �
 - 给 range/sensitivity：可决策；
 - 指出模型何时失效：成熟；
 - 连接 bottleneck、TCO 与 value capture：完成。
+
+
+## 基础概念桥接
+
+练习的目标不是背答案，而是展示推理链。每道题先写已知、未知、单位、边界和假设，再做数量级计算；最后指出替代方案、最敏感输入、证伪测试和 bottleneck 迁移。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

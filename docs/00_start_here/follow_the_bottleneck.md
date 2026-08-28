@@ -482,3 +482,10 @@ Microbenchmark刻意隔离一个 roof，可测上限，却排除了 software、c
 - [Primary Source] [Lawrence Berkeley National Laboratory — Roofline Overview](https://amcr.lbl.gov/departments/computer-science-department/ppan/roofline-performance-model/)
 - [Primary Source] [NVIDIA Hopper Tuning Guide](https://docs.nvidia.com/cuda/hopper-tuning-guide/index.html)
 - [Primary Source] [OCP Open Systems for AI Whitepaper](https://www.opencompute.org/documents/ocp-open-systems-for-ai-whitepaper-v1-0-0-final-pdf)
+
+
+## 基础概念桥接
+
+先把 workload、system boundary、数据流、功率流、热流与 bottleneck 分开。任何“更快”都要说明测量起止点；任何“更省”都要说明分子、分母和被排除的成本。沿路径遇到新名词时，不先记结论，先问状态存在哪里、由谁移动、在哪一层等待。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

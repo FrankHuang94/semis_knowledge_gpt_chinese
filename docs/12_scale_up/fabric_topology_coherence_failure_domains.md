@@ -53,3 +53,10 @@ runtime 必须知道 topology，才能把 tensor parallel、pipeline stage 或 e
 - [Compute Express Link Specifications](https://computeexpresslink.org/cxl-specification/) [Primary Source]
 - [NVIDIA NCCL User Guide](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/) [Vendor Claim]
 - [Ultra Ethernet Consortium Specifications](https://ultraethernet.org/specifications/) [Primary Source]
+
+
+## 基础概念桥接
+
+先区分 scale-up domain、scale-out network、topology、bisection、coherence scope 和 collective pattern。可连接数量不等于有效规模；routing、placement、failure domain、cabling 和 degraded efficiency 决定实际可用性。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

@@ -46,3 +46,10 @@ chosen design 应建立分层验证：先做 electrical/protocol conformance，�
 - [Compute Express Link Specifications](https://computeexpresslink.org/cxl-specification/) [Primary Source]
 - [JEDEC Standards and Documents](https://www.jedec.org/standards-documents) [Primary Source]
 - [IEEE Standards Association](https://standards.ieee.org/) [Primary Source]
+
+
+## 基础概念桥接
+
+先区分 specification、version、profile、optional feature、compliance、certification、plugfest 和 interoperability。符合标准不保证可替换；真实 host、switch、endpoint、cable、firmware 与错误路径仍需组合验证。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

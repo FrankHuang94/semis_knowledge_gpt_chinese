@@ -247,3 +247,10 @@ Parallel bus → NRZ SerDes → higher baud/loss → PAM4 + stronger EQ/FEC → 
 - [Primary Source] [PCI-SIG — PCIe 6.0 FLIT, PAM4 and FEC](https://pcisig.com/what-flit-mode-and-why-did-pci-sig-move-unit-data-exchange)
 - [Primary Source] [IEEE ISSCC — 224 Gb/s PAM4 Receiver](https://resourcecenter.ieee.org/education/isscc-deep-dives/sscs2023dd0010)
 - [Primary Source] [Broadcom BCM81356 PAM4 PHY/Retimer Datasheet](https://docs.broadcom.com/doc/81356-DS2)
+
+
+## 基础概念桥接
+
+先区分 bit rate、symbol rate、encoding、eye、jitter、noise、loss、equalization 与 BER。channel 是 Tx、package、board、connector、cable 和 Rx 的整体。实验室 compliance、系统 interoperability 和 production test 提供不同证据。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

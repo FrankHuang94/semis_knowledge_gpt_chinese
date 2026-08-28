@@ -119,3 +119,10 @@ Early field failures可能需要 containment、screen、firmware或 recall。War
 - [Primary Source] [TSMC 2025 Annual Report](https://investor.tsmc.com/static/annualReports/2025/english/index.html)
 - [Primary Source] [PCI-SIG Integrators List and Compliance](https://pcisig.com/developers/integrators-list)
 - [Primary Source] [AMD Instinct Customer Acceptance Guide](https://instinct.docs.amd.com/projects/system-acceptance/en/latest/)
+
+
+## 基础概念桥接
+
+先区分 wafer starts、WIP、throughput、cycle time、die yield、assembly yield、qualified capacity 与 good shipments。设备已安装不代表产品可出货；材料、HBM、substrate、test、客户认证和地理风险都会迁移约束。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

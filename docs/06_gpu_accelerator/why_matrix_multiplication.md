@@ -460,3 +460,10 @@ Sparsity减少理论operations/bytes，但index metadata、irregular access、lo
 - [Primary Source] [Google Research — In-Datacenter TPU](https://research.google/pubs/in-datacenter-performance-analysis-of-a-tensor-processing-unit/)
 - [Primary Source] [Google Cloud TPU Architecture](https://docs.cloud.google.com/tpu/docs/system-architecture-tpu-vm?hl=en)
 - [Primary Source] [Berkeley Roofline Model](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-134.pdf)
+
+
+## 基础概念桥接
+
+先区分 thread、warp、block、SM、occupancy、utilization、register、shared memory 和 HBM。线程很多不等于计算单元忙碌；shape、tiling、coalescing、fusion 与 kernel coverage 决定峰值能否兑现。低精度或稀疏还必须通过质量约束。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

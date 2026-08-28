@@ -185,3 +185,10 @@ Compression或低 precision KV减少 capacity和 bytes，却需要 accuracy验�
 - [Primary Source] [vLLM PagedAttention documentation PDF](https://docs.vllm.ai/_/downloads/en/v0.5.3/pdf/)
 - [Primary Source] [MLCommons Inference Policies](https://github.com/mlcommons/inference_policies/blob/master/inference_rules.adoc)
 - [Primary Source] [MLCommons Inference Reference Suite](https://github.com/mlcommons/inference)
+
+
+## 基础概念桥接
+
+先把训练、prefill、decode、embedding、recommendation 与 multimodal 拆成不同 phase。明确 weights、activations、gradients、optimizer state、KV cache 的生命周期，再写 batch、sequence、precision、arrival distribution 和 SLO。模型名称本身不是硬件需求。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

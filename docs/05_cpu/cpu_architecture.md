@@ -415,3 +415,10 @@ Performance约为 IPC×frequency，IPC依 workload；memory、core count、power
 - [Primary Source] [Intel NUMA Hardware and Software Guide](https://www.intel.com/content/www/us/en/developer/articles/technical/hardware-and-software-approach-for-using-numa-systems.html)
 - [Primary Source] [AMD Software Optimization Guide resources](https://docs.amd.com/r/en-US/57368-uProf-user-guide/Useful-URLs)
 - [Primary Source] [Arm Neoverse V2 Product Support](https://developer.arm.com/compute-ip/neoverse-v2)
+
+
+## 基础概念桥接
+
+先区分 core、thread、instruction、cycle、IPC、frequency、cache miss 和 branch misprediction。CPU 擅长低延迟控制和复杂分支，不等于所有阶段都应留在 CPU。主机 orchestration、NUMA、I/O 与 accelerator feeding 也属于端到端关键路径。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

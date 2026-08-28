@@ -206,3 +206,10 @@ Traffic matrix/message size？Collective mix？NIC injection？oversubscription�
 - [Primary Source] [NVIDIA Networking — RoCE](https://docs.nvidia.com/networking/display/rdmacore50/rdma+over+converged+ethernet+(roce))
 - [Primary Source] [IETF RFC 3168 — ECN](https://www.rfc-editor.org/rfc/rfc3168)
 - [Primary Source] [IEEE 802.1Qbb — Priority-based Flow Control](https://1.ieee802.org/dcb/802-1qbb/)
+
+
+## 基础概念桥接
+
+先区分 packet、frame、flow、queue、buffer、routing、congestion、loss 与 collective。线速不是应用吞吐，平均利用率也看不到 microburst。消息尺寸、incast、ECN、PFC、retransmission、topology 和 job placement 必须联合测试。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

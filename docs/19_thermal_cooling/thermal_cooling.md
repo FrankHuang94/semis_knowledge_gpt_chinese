@@ -204,3 +204,10 @@ Thermal & cooling是一条从nanometer hotspot到facility heat rejection的serie
 - [OCP — Liquid Cooling Cold Plate Requirements](https://www.opencompute.org/documents/ocp-acs-liquid-cooling-cold-plate-requirements-pdf)
 - [OCP — Project Deschutes](https://ocpprodweb3.opencompute.org/documents/ocp-specification-deschutes-final-2025-09-05-pdf)
 - [NVIDIA — Rack Scale Systems Hardware](https://docs.nvidia.com/dgx/dgxgb200-user-guide/hardware.html)
+
+
+## 基础概念桥接
+
+先区分 temperature、heat、thermal resistance、thermal capacitance、flow、pressure drop 与 cooling capacity。冷板、CDU 和 facility water 属于不同边界；总流量正常也可能存在局部 starvation。稳态与瞬态都要验证。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

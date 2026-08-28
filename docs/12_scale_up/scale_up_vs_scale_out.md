@@ -201,3 +201,10 @@ Scale-up domain应扩到多大？In-network compute如何保持numerical/program
 - [Primary Source] [UALink Consortium — Specifications](https://ualinkconsortium.org/specification/)
 - [Primary Source] [UALink 1.0 Specification Overview](https://ualinkconsortium.org/wp-content/uploads/2025/04/UALink-1.0-Specification-Overview_FINAL-1.pdf)
 - [Primary Source] [UALink About / Scale-up Semantics](https://ualinkconsortium.org/about-ualink/)
+
+
+## 基础概念桥接
+
+先区分 scale-up domain、scale-out network、topology、bisection、coherence scope 和 collective pattern。可连接数量不等于有效规模；routing、placement、failure domain、cabling 和 degraded efficiency 决定实际可用性。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

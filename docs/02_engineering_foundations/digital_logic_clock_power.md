@@ -177,3 +177,10 @@ Training 大型 GEMM 常有足够并行度，较容易从 pipeline throughput �
 - [Primary Source] [Berkeley：Digital Integrated Circuits 参考书与研究入口](https://people.eecs.berkeley.edu/~bora/Copy%20of%20publications.html)
 - [Primary Source] [IEEE IRDS 2024：Emerging Logic and Alternative Information Processing Devices](https://irds.ieee.org/images/files/pdf/2024/2024IRDS_BC.pdf)
 - [Primary Source] [AMD/Xilinx：I/O and Clock Planning Design Flow](https://docs.amd.com/r/2024.1-English/ug899-vivado-io-clock-planning/I/O-and-Clock-Planning-Design-Flow-Steps)
+
+
+## 基础概念桥接
+
+先区分数值表示、组合逻辑、时序状态、时钟、流水线与测量误差。工程上相同功能可有不同 timing、power、area 和 reliability；公式成立也不代表测量边界正确。先做量纲与数量级检查，再进入电路或架构细节。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

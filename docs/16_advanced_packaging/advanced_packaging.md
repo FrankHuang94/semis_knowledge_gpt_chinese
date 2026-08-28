@@ -230,3 +230,10 @@ Advanced packaging 是 architecture，不是装配附件。它同时决定 die p
 - [TSMC — CoWoS](https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm)
 - [TSMC — SoIC](https://www.tsmc.com/english/dedicatedFoundry/technology/SoIC_inDepth)
 - [Intel Foundry — Advanced Packaging](https://www.intel.com/content/www/us/en/foundry/packaging.html)
+
+
+## 基础概念桥接
+
+先区分 substrate、interposer、RDL、bump、hybrid bond、die attach、underfill、warpage 和 test。封装不是被动外壳，而是电源、信号、热、机械和良率架构。known-good die 也只表示通过既定测试覆盖。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

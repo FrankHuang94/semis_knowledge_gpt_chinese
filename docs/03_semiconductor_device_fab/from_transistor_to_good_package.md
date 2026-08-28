@@ -207,3 +207,10 @@ flowchart LR
 - [Primary Source] [Intel：Explaining Common Chip Terms — yield 与 PPA](https://newsroom.intel.com/tech101/explaining-common-chip-terms)
 - [Primary Source] [Intel Foundry：systems foundry、known-good-die 与 advanced packaging](https://www.intel.com/content/www/us/en/foundry/library/fact-sheet.html)
 - [Primary Source] [TSMC eFoundry：wafer yield、WAT、quality 与 lot visibility](https://www.tsmc.com/english/dedicatedFoundry/services/eFoundry)
+
+
+## 基础概念桥接
+
+先区分 device、process step、wafer、die、package 与 good system。节点名称不是单一物理尺寸，工艺成熟度也不能由一片样品代表。讨论性能时同时记录 process、voltage、temperature；讨论产能时同时记录 cycle time、yield、qualification 和 product mix。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

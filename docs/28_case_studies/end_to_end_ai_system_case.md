@@ -188,3 +188,10 @@ Gate E：availability/TCO proof。
 ## 26. 小结
 
 End-to-end case的核心纪律是让每个headline经过workload、architecture、performance、power/thermal、manufacturing、deployment与economics七道门。最终结论不是“技术好不好”，而是在哪些条件下创造并捕获多少可持续价值。
+
+
+## 基础概念桥接
+
+案例中的数字必须进入统一 waterfall：理论峰值到 kernel、application、system、availability-adjusted output，再到单位经济性。为 base、upside、downside 分别写依赖和触发器，避免把最好条件的演示直接当财务预测。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

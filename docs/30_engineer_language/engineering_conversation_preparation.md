@@ -65,3 +65,10 @@ flowchart TB
 - 会议是否真正改变了某个概率或决策？
 
 成熟的工程对话不以问题数量衡量，而以不确定性下降和错误假设被及时暴露来衡量。
+
+
+## 基础概念桥接
+
+工程师口语是压缩上下文。“跑满”“带宽够”“production ready”“良率很好”都必须还原为 metric、boundary、condition、status、evidence 和 falsifier。记录原话与自己的解释分开，再用 teach-back 校准。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

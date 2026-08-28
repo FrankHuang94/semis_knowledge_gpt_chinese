@@ -209,3 +209,10 @@ Switch、NIC 与 DPU 是一条连续 packet-to-memory machine。评价它们时�
 - [NVIDIA — DOCA Documentation](https://docs.nvidia.com/doca-documentation-3-1-0.pdf)
 - [AMD — Pensando SSDK Architecture](https://docs.amd.com/r/en-US/ug1669-amd-pensando-ssdk-hello-world-user-guide/Architecture)
 - [IEEE 802.3 Ethernet Working Group](https://www.ieee802.org/3/)
+
+
+## 基础概念桥接
+
+先区分 switch pipeline、NIC data path、DMA、RDMA、offload、isolation 与 management。把任务从 CPU 移走不等于消失；状态、软件、功耗和故障责任会迁移。比较产品应追踪完整 packet 和 control path。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

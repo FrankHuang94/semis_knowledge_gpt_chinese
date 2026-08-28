@@ -97,3 +97,10 @@ Failure语义包括 poison、media error、link reset、switch isolation和 part
 - [Primary Source] [Linux Kernel CXL Documentation](https://docs.kernel.org/driver-api/cxl/index.html)
 - [Primary Source] [Linux CXL Hotplug](https://docs.kernel.org/driver-api/cxl/platform/device-hotplug.html)
 - [Primary Source] [Linux CXL CDAT](https://docs.kernel.org/driver-api/cxl/platform/cdat.html)
+
+
+## 基础概念桥接
+
+先区分 PHY、link、transaction、I/O、cache coherence 和 memory semantics。协议支持不等于性能；lane width、payload efficiency、round-trip、switch、HDM placement、OS 与 driver 都会影响结果。pool、tier 和 local memory 也不是同义词。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

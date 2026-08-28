@@ -209,3 +209,10 @@ Pre-silicon estimate 可用于 architecture exploration，但必须标 [Estimate
 - [Primary Source] [MLPerf Inference Submission Guide](https://docs.mlcommons.org/inference/submission/)
 - [Primary Source] [MLCommons benchmark methodology overview](https://mlcommons.org/benchmarks/)
 - [Independent] [MLPerf Inference Benchmark paper](https://arxiv.org/abs/1911.02549)
+
+
+## 基础概念桥接
+
+先把技术主张还原为 workload、bottleneck、constraint、alternatives、chosen design 和 second-order effect，再讨论市场。价值捕获取决于 IP、产能、认证、生态、客户迁移和成本曲线；技术领先不自动等于 moat。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

@@ -67,3 +67,10 @@ chosen design 不必支持所有 operator，但必须对目标 segment 有清晰
 - [OpenXLA GPU Architecture](https://openxla.org/xla/gpu_architecture) [Primary Source]
 - [MLIR Documentation](https://mlir.llvm.org/docs/) [Primary Source]
 - [PyTorch Custom Operators](https://pytorch.org/tutorials/advanced/custom_ops_landing_page.html) [Primary Source]
+
+
+## 基础概念桥接
+
+案例中的数字必须进入统一 waterfall：理论峰值到 kernel、application、system、availability-adjusted output，再到单位经济性。为 base、upside、downside 分别写依赖和触发器，避免把最好条件的演示直接当财务预测。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

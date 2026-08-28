@@ -346,3 +346,10 @@ flowchart LR
 - [Primary Source] [NVIDIA CUTLASS — Efficient GEMM](https://docs.nvidia.com/cutlass/latest/media/docs/cpp/efficient_gemm.html)
 - [Primary Source] [Intel 64 and IA-32 Architectures Optimization Reference Manual](https://www.intel.com/content/www/us/en/developer/articles/technical/intel64-and-ia32-architectures-optimization.html)
 - [Primary Source] [CUDA Programming Guide — Unified and System Memory](https://docs.nvidia.com/cuda/cuda-programming-guide/02-basics/understanding-memory.html)
+
+
+## 基础概念桥接
+
+先区分容量、延迟、带宽、并发、访问粒度和持久性。memory hierarchy 依赖 locality；命中率必须和 miss penalty、bank conflict、queue 与搬运放大一起看。更多容量不会自动提高速度，更多带宽也不能消除依赖延迟。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

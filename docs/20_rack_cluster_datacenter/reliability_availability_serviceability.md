@@ -113,3 +113,10 @@ Telemetry也消耗 bandwidth、storage与工程。应优先保留能预测或定
 
 - [Primary Source] [ASHRAE Data Center Resources](https://www.ashrae.org/technical-resources/bookstore/datacom-series)
 - [Primary Source] [Linux PCI Error Recovery](https://docs.kernel.org/PCI/pci-error-recovery.html)
+
+
+## 基础概念桥接
+
+先把 rack 当成计算机：compute、memory、network、power、cooling、firmware、controls 与 operations 共同决定 useful work。nameplate 数量不等于 commissioned capacity；安装、验收、故障恢复、spares 与维护窗口必须进入 TCO。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

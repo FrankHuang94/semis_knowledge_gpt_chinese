@@ -124,3 +124,10 @@ Software stack的价值在 compiler与 runtime共同选择，而非编译器单�
 - [Primary Source] [OpenXLA GPU Architecture Overview](https://openxla.org/xla/gpu_architecture)
 - [Primary Source] [OpenXLA Operation Semantics](https://openxla.org/xla/operation_semantics)
 - [Primary Source] [MLIR Documentation](https://mlir.llvm.org/)
+
+
+## 基础概念桥接
+
+先区分 framework graph、IR、lowering、fusion、kernel、runtime、driver 与 firmware。硬件 feature 只有被正确导入、覆盖、调试和部署才产生价值。首次编译、warm cache、dynamic shape、fallback 与版本回归需要分别测量。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

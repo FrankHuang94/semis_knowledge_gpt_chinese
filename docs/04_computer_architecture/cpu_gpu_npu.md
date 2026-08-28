@@ -174,3 +174,10 @@ NPU 尤其依赖 graph lowering、shape specialization、layout propagation、fu
 - [Primary Source] [NVIDIA CUDA Programming Guide：SIMT Kernels](https://docs.nvidia.com/cuda/cuda-programming-guide/02-basics/writing-cuda-kernels.html)
 - [Primary Source] [Google Research：In-Datacenter Performance Analysis of a Tensor Processing Unit](https://research.google/pubs/in-datacenter-performance-analysis-of-a-tensor-processing-unit/)
 - [Primary Source] [Google Research：A Learned Performance Model for the TPU](https://research.google/pubs/a-learned-performance-model-for-the-tensor-processing-unit/)
+
+
+## 基础概念桥接
+
+先区分 ISA、微架构、执行单元、memory hierarchy 和 software-visible behavior。峰值运算只是上限；前端供给、依赖、局部性、并行度、编译器和功耗共同决定有效吞吐。比较架构必须使用同一 workload、质量和系统边界。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

@@ -44,3 +44,10 @@ chosen design 应按算子特征、数据位置、batch 和 SLO 划分，而不�
 - [Linux kernel NUMA memory policy](https://docs.kernel.org/admin-guide/mm/numa_memory_policy.html) [Primary Source]
 - [PyTorch DataLoader documentation](https://pytorch.org/docs/stable/data.html) [Primary Source]
 - [NVIDIA CUDA Best Practices Guide](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/) [Vendor Claim]
+
+
+## 基础概念桥接
+
+先区分 core、thread、instruction、cycle、IPC、frequency、cache miss 和 branch misprediction。CPU 擅长低延迟控制和复杂分支，不等于所有阶段都应留在 CPU。主机 orchestration、NUMA、I/O 与 accelerator feeding 也属于端到端关键路径。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

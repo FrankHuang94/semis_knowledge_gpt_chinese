@@ -169,3 +169,10 @@ Floorplan必须把 hotspot、HBM、VRM与 cold plate共同优化。一个逻辑�
 - [Primary Source] [UCIe Consortium Specifications](https://www.uciexpress.org/specifications)
 - [Primary Source] [TSMC 3DFabric Technology](https://3dfabric.tsmc.com/schinese/dedicatedFoundry/technology/3DFabric.htm)
 - [Primary Source] [TSMC CoWoS Technology](https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm)
+
+
+## 基础概念桥接
+
+先区分 chiplet、die-to-die PHY、protocol、active/passive base die、2.5D 与 3D。可组合性还需要 power、clock、thermal、security、debug、yield ownership 和 warranty；接口标准不能自动创造开放市场。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

@@ -515,3 +515,10 @@ flowchart TB
 - [Primary Source] [Hot Chips 2025 — Call for Contributions and evaluation criteria](https://hc2025.hotchips.org/call_for_contrib/)
 - [Primary Source] [NVIDIA Hopper Tuning Guide](https://docs.nvidia.com/cuda/hopper-tuning-guide/index.html)
 - [Primary Source] [OCP Open Systems for AI Whitepaper](https://www.opencompute.org/documents/ocp-open-systems-for-ai-whitepaper-v1-0-0-final-pdf)
+
+
+## 基础概念桥接
+
+演讲材料同时包含机制、规格、路线图和营销，四者证据门槛不同。记录页码、时间戳、status 与 as-of date；把 claim 拆成原子命题，更新 prerequisites、backlinks、product lineage、strategy implication 和 open questions。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

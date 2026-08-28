@@ -34,3 +34,10 @@ ECC、parity、timeout 和 watchdog 能发现部分错误，却必须定义谁�
 - [AMBA Specifications](https://www.arm.com/architecture/system-architectures/amba-specifications) [Primary Source]
 - [Accellera CDC resources](https://www.accellera.org/) [Primary Source]
 - [RISC-V Reliability Extensions](https://riscv.org/technical/specifications/) [Primary Source]
+
+
+## 基础概念桥接
+
+先区分数值表示、组合逻辑、时序状态、时钟、流水线与测量误差。工程上相同功能可有不同 timing、power、area 和 reliability；公式成立也不代表测量边界正确。先做量纲与数量级检查，再进入电路或架构细节。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

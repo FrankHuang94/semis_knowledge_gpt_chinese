@@ -65,6 +65,8 @@ nav:
           - 数字逻辑、时钟与功耗: 02_engineering_foundations/digital_logic_clock_power.md
           - 电路与 Signal Integrity 直觉: 02_engineering_foundations/circuit_signal_integrity_intuition.md
           - Clock, Reset & Error Containment: 02_engineering_foundations/clock_reset_error_containment.md
+          - Engineering Measurement & Uncertainty: 02_engineering_foundations/engineering_measurement_uncertainty.md
+          - Digital Compute & Accelerator Vocabulary: 02_engineering_foundations/digital_compute_accelerator_vocabulary.md
       - Device & Fab:
           - 模块入口: 03_semiconductor_device_fab/index.md
           - Transistor 到 Good Package: 03_semiconductor_device_fab/from_transistor_to_good_package.md
@@ -209,7 +211,9 @@ nav:
           - Engineer Language Decoder: 30_engineer_language/engineer_language_decoder.md
           - Engineering Conversation Preparation: 30_engineer_language/engineering_conversation_preparation.md
           - Technical Interview Field Guide: 30_engineer_language/technical_interview_field_guide.md
-      - Glossary: 31_glossary/index.md
+      - Glossary:
+          - 模块入口: 31_glossary/index.md
+          - Engineering Terms Handbook: 31_glossary/engineering_terms_handbook.md
       - Quizzes:
           - 模块入口: 32_quizzes/index.md
           - 五级 Core Quiz: 32_quizzes/core_quiz.md

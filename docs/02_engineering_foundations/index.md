@@ -23,3 +23,9 @@
 ## 深化阅读
 
 - [Clock、Reset 与 Error Containment](clock_reset_error_containment.md)
+
+
+## 基础教程
+
+- [工程数学、度量与不确定性](engineering_measurement_uncertainty.md)
+- [数字逻辑、处理器与加速器基础词汇](digital_compute_accelerator_vocabulary.md)

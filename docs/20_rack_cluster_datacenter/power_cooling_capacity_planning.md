@@ -170,3 +170,10 @@ NIC、memory、VRM、optics和 storage仍可能靠空气；全液冷增加连接
 - [Primary Source] [ASHRAE Datacom Series](https://www.ashrae.org/technical-resources/bookstore/datacom-series)
 - [Primary Source] [ASHRAE：Emergence and Expansion of Liquid Cooling](https://www.ashrae.org/file%20library/technical%20resources/bookstore/emergence-and-expansion-of-liquid-cooling-in-mainstream-data-centers_wp.pdf)
 - [Primary Source] [Open Compute Project Advanced Cooling Solutions](https://www.opencompute.org/wiki/Cooling_Environments_Advanced_Cooling_Solutions)
+
+
+## 基础概念桥接
+
+先把 rack 当成计算机：compute、memory、network、power、cooling、firmware、controls 与 operations 共同决定 useful work。nameplate 数量不等于 commissioned capacity；安装、验收、故障恢复、spares 与维护窗口必须进入 TCO。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

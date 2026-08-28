@@ -183,3 +183,10 @@ HBM bandwidth wall缓解后，价值最可能向哪些components/capabilities迁
 | Strategy | 只谈TAM | 有TCO | value capture/moat/falsifier闭环 |
 
 每题满分十二分；十至十二为“可用于工程对话”，七至九为“需补一轮”，低于七回到对应核心文章。
+
+
+## 基础概念桥接
+
+练习的目标不是背答案，而是展示推理链。每道题先写已知、未知、单位、边界和假设，再做数量级计算；最后指出替代方案、最敏感输入、证伪测试和 bottleneck 迁移。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

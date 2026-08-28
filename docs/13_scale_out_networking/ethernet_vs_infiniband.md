@@ -174,3 +174,10 @@ InfiniBand 与 Ethernet 都可以构建隔离，机制与运营模式不同。Di
 - [Primary Source] [InfiniBand Trade Association：About InfiniBand](https://infinibandta.org/about-infiniband/)
 - [Primary Source] [IBTA：InfiniBand Architecture Specification FAQ 与 RoCE说明](https://infinibandta.org/ibta-specification/)
 - [Primary Source] [NVIDIA RDMA Aware Networks Programming User Manual](https://docs.nvidia.com/rdma-aware-networks-programming-user-manual-1-7.pdf)
+
+
+## 基础概念桥接
+
+先区分 packet、frame、flow、queue、buffer、routing、congestion、loss 与 collective。线速不是应用吞吐，平均利用率也看不到 microburst。消息尺寸、incast、ECN、PFC、retransmission、topology 和 job placement 必须联合测试。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

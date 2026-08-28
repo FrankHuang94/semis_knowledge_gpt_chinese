@@ -39,3 +39,10 @@ diligence 应要求多物理场模型与实测 correlation、不同 workload hot
 - [IEEE 1838 Standard for 3D Stacked IC Test Access](https://standards.ieee.org/ieee/1838/6846/) [Primary Source]
 - [imec 3D System Integration](https://www.imec-int.com/en/what-we-offer/research-portfolio/3d-system-integration) [Independent]
 - [JEDEC Standards and Documents](https://www.jedec.org/standards-documents) [Primary Source]
+
+
+## 基础概念桥接
+
+先区分 chiplet、die-to-die PHY、protocol、active/passive base die、2.5D 与 3D。可组合性还需要 power、clock、thermal、security、debug、yield ownership 和 warranty；接口标准不能自动创造开放市场。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

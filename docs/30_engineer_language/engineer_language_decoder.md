@@ -162,3 +162,10 @@ source_date: 2026-08-24
 ## 小结
 
 Decoder的目标不是挑语病，而是把compressed expertise恢复成可验证模型。好的追问具体、尊重context，并能帮助工程师指出真正constraint。
+
+
+## 基础概念桥接
+
+工程师口语是压缩上下文。“跑满”“带宽够”“production ready”“良率很好”都必须还原为 metric、boundary、condition、status、evidence 和 falsifier。记录原话与自己的解释分开，再用 teach-back 校准。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

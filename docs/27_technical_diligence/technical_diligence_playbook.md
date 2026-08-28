@@ -188,3 +188,10 @@ Technical diligence的产物不是“通过/不通过”印章，而是一张可
 - [IEEE 802.3 Working Group](https://www.ieee802.org/3/)
 - [OIF Implementation Agreements](https://www.oiforum.com/technical-work/implementation-agreements-ias/)
 - [OCP Specifications](https://www.opencompute.org/wiki/Open_Rack/SpecsAndDesigns)
+
+
+## 基础概念桥接
+
+尽调先定义决策和可证伪假设，再建立 evidence ladder。区分 primary source、independent evidence、vendor claim、estimate 与 inference；同时检查 mechanism、performance、power、manufacturing、software、deployment 和 economics。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

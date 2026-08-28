@@ -51,3 +51,10 @@ chosen design 应定义从 application collective 到 NIC queue、switch port �
 - [IETF Explicit Congestion Notification](https://datatracker.ietf.org/doc/html/rfc3168) [Primary Source]
 - [Ultra Ethernet Consortium Specifications](https://ultraethernet.org/specifications/) [Primary Source]
 - [Open Compute Project Networking](https://www.opencompute.org/projects/networking) [Primary Source]
+
+
+## 基础概念桥接
+
+先区分 switch pipeline、NIC data path、DMA、RDMA、offload、isolation 与 management。把任务从 CPU 移走不等于消失；状态、软件、功耗和故障责任会迁移。比较产品应追踪完整 packet 和 control path。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。

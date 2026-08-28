@@ -94,3 +94,10 @@ Topology-aware optimization过度依赖特定 path时，failure可能反而更�
 
 - [Primary Source] [NVIDIA NCCL Documentation](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/)
 - [Primary Source] [PyTorch DDP Design Note](https://docs.pytorch.org/docs/stable/notes/ddp)
+
+
+## 基础概念桥接
+
+先区分 packet、frame、flow、queue、buffer、routing、congestion、loss 与 collective。线速不是应用吞吐，平均利用率也看不到 microburst。消息尺寸、incast、ECN、PFC、retransmission、topology 和 job placement 必须联合测试。
+
+延伸基础：[工程术语手册](../31_glossary/engineering_terms_handbook.md)；[工程度量与不确定性](../02_engineering_foundations/engineering_measurement_uncertainty.md)；[数字逻辑、处理器与加速器](../02_engineering_foundations/digital_compute_accelerator_vocabulary.md)。
