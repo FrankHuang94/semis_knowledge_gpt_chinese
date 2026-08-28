@@ -220,3 +220,15 @@ nav:
           - 五级 Core Quiz: 32_quizzes/core_quiz.md
           - Fermi Exercises: 32_quizzes/fermi_exercises.md
       - Open Questions: 33_open_questions/index.md
+
+  - Engineering Casebooks:
+      - 模块入口: 34_engineering_casebooks/index.md
+      - 计算、架构与工作负载: 34_engineering_casebooks/compute_workload_casebook.md
+      - 存储层次、DRAM 与 I/O: 34_engineering_casebooks/memory_io_casebook.md
+      - SerDes、网络与光互连: 34_engineering_casebooks/interconnect_optics_casebook.md
+      - 封装、制造、供电与散热: 34_engineering_casebooks/physical_manufacturing_casebook.md
+      - 编译器与生产运维: 34_engineering_casebooks/software_operations_casebook.md
+      - 标准、尽调与战略: 34_engineering_casebooks/standards_strategy_casebook.md
+  - Industry Updates:
+      - 模块入口: 35_industry_updates/index.md
+      - 2025–2026 AI 基础设施动态: 35_industry_updates/ai_infrastructure_2026.md
