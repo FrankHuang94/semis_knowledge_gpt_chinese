@@ -101,9 +101,17 @@
 - [x] 为原有 92 篇正文加入模块专属“基础概念桥接”与统一学习入口
 - [x] 正文达到 95 篇、209,868 个 Han characters，并由 CI 强制 200,000 下限
 
+## Phase 7 — Advanced Vocabulary & 300K Expansion（完成）
+
+- [x] 结构化 glossary 从 114 个扩展到 233 个工程术语
+- [x] 新增进阶工程术语手册，覆盖计算、存储、互连、物理系统、软件运维、标准与战略
+- [x] 为扩写前的 95 篇正文加入模块化进阶术语入口
+- [x] 正文达到 96 篇、306,410 个 Han characters，全部 docs 达到 311,729
+- [x] CI body-only content floor 提升到 300,000
+
 ## 持续质量指标
 
-- 中文为主的解释性正文：95 篇、209,868 个 Han characters（排除 index 与模板），CI 下限为 200,000
+- 中文为主的解释性正文：96 篇、306,410 个 Han characters（排除 index 与模板），CI 下限为 300,000
 - 关键 specification citation coverage = 100%
 - major article 至少 3 个 why-not、5 个追问、1 个计算例
 - 无 broken internal links
